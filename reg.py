@@ -1,32 +1,6 @@
 import re, collections
 import networkx as nx
 import matplotlib.pyplot as plt
-from plot_tabs import *
-
-class FrozenDict(collections.Mapping):
-    """https://stackoverflow.com/questions/2703599/what-would-a-frozen-dict-be"""
-    def __init__(self, *args, **kwargs):
-        self._d = dict(*args, **kwargs)
-        self._hash = None
-
-    def __iter__(self):
-        return iter(self._d)
-
-    def __len__(self):
-        return len(self._d)
-
-    def __getitem__(self, key):
-        return self._d[key]
-
-    def __hash__(self):
-        if self._hash is None:
-            self._hash = 0
-            for pair in self.items():
-                self._hash ^= hash(pair)
-        return self._hash
-
-
-
 
 def get_graph_strings():
     graph_strings = {}
@@ -42,67 +16,91 @@ def get_graph_strings():
                 next_str += line
     return graph_strings
 
-_dbg_edges = []
-
-def parse_line(edge_iters, g: nx.Graph, labels: dict, ind: int, input_str: str):
-    _skip_begin = 0
-    node_prev = None
-    for node_i in range(len(input_str)):
-        node = input_str[node_i].replace(" ", "").replace("\t", "")
-        if (len(node) == 0):
-            _skip_begin += 1
-            continue
-        g.add_node(ind, label=node)
-        labels[ind] = node
-        if not node_prev is None:
-            _entity = edge_iters[node_i-_skip_begin]
-            name = _entity.group()
-            g.add_edge(ind-1, ind, label=name)
-        node_prev = node
-        ind += 1
-    return ind
+def add_edge(edge_labels: dict, g: nx.Graph, n1: int, n2: int, label: str):
+    g.add_edge(n1, n2, label=label)
+    edge_labels[(n1,n2)] = label
 
 def parse(input_str: str):
     lines = input_str.split("\n")
     if lines[-1] == "": lines = lines[:-1]  
     assert(len(lines) in (0, 1, 3, 5))
-    g = nx.Graph()
-    labels = {}
+    g = nx.DiGraph()
+    labels, edge_labels = {}, {}
     if len(lines) == 0: return g
-    edge_iterss = []
-    node_iterss = []
+    edgess = []
+    nodess = []
     for i in range(0,len(lines),2):
-        # print(lines[i])
         line = lines[i]
-        reg = re.compile(r"\(?\d?[<-][NP>]-?\d?\)?")
+        reg = re.compile(r"\(?\d?[<-][NP>]P?-?\d?\)?")
         res = re.finditer(reg, line)
-        _res = re.split(reg, line)
-        edge_iterss.append(res)
-        node_iterss.append(_res)
+        nodes_res = re.split(reg, line)
+        edgess.append(res)
+        nodess.append(nodes_res)
     verticalss = []
     retd = {}
     for i in range(1, len(lines), 2):
-        verticalss.append(re.finditer(r"|", lines[i]))
-        for v in verticalss[-1]:
-            pass
-    edge_iterss = [list(n) for n in edge_iterss]
-    ring_ind = -1
-    for i in range(len(lines)):
-        l = lines[i].replace(" ", "").replace("\t", "")
-        if l[:2] == "->":
-            ring_ind = i
-            break
-    assert(ring_ind % 2 == 0)
-    ring_ind //= 2
-    edge_iters = edge_iterss[ring_ind]
-    node_prev = None
-    _skip = 0
+        vs = re.finditer(r"\|", lines[i])
+        verticalss.append([])
+        for v in vs:
+            verticalss[-1].append(v.start())
+    assert(len(verticalss) in range(3))
+    edgess = [list(n) for n in edgess]
     ind = 0
-    _skip_last = 0
-    ind = parse_line(edge_iters, g, labels, ind, node_iterss[ring_ind])
-    last_edge = edge_iters[ind].group() + edge_iters[0].group()
-    g.add_edge(ind-1, 0, label=last_edge)
-    return (g, labels)
+    labels = {}
+    nds = []
+    for g_i in range(len(edgess)):
+        edges = edgess[g_i]
+        for i in range(len(edges)):
+            edge = edges[i]
+            edge_prev = edges[i-1] if i > 0 else None
+            before = {}
+            before["l"] = edge_prev.end() if edge_prev else 0
+            before["r"] = edge.start()
+            before["ws"] = lines[g_i*2][before["l"]:before["r"]]
+            before["cut"] = before["ws"].replace(" ", "").replace("\t", "")
+            before["i"] = g_i
+            before["ind"]=ind
+            bc = before["cut"]
+            if len(bc) > 0: 
+                g.add_node(ind, label=bc)
+                labels[ind] = bc
+                nds.append(before)
+                ind += 1
+
+    for g_i in range(len(edgess)):
+        edges = edgess[g_i]
+        for i in range(len(edges)):
+            edge = edges[i]
+            adj_nodes = [n for n in nds if (n["l"] == edge.end() or n["r"] == edge.start()) and n["i"]==g_i]
+            if edge.group()[:2] == "->":
+                assert(len(adj_nodes)==1)
+                adj_nodes.append(*[n for n in nds if n["r"]==edges[-1].start() and n["i"]==g_i])
+                _lbl = edges[-1].group() + edge.group()
+                assert(not _lbl.find("->->")==-1)
+                _lbl = _lbl.replace("->->", "->")
+                add_edge(edge_labels, g, adj_nodes[1]["ind"], adj_nodes[0]["ind"], _lbl)
+                continue
+            if edge.group()[-2:] == "->":
+                continue
+            assert(len(adj_nodes) in (1,2))
+            vs = [] if len(verticalss)==0 else (verticalss[0] if g_i < 2 else verticalss[1])
+            vf = [v for v in vs if v < edge.end() and v > edge.start()]
+            assert(len(vf) in (0,1))
+            if g_i == 1 and len(verticalss)>1:
+                vf.extend([v for v in verticalss[1] if v < edge.end() and v > edge.start()])
+            if (len(vf) > 0):
+            # for j in range(len(vf)):
+                assert(len(vf)==1)
+                assert(len(adj_nodes)==1 or adj_nodes[1]["ws"][0]==' ')
+                vstart = vf[0]
+                adj_v_node = [n for n in nds if n["l"] < vstart and n["r"] > vstart and abs(n["i"]-g_i) == 1]
+                assert(len(adj_v_node)==1)
+                add_edge(edge_labels, g, adj_nodes[0]["ind"], adj_v_node[0]["ind"], edge.group())
+            else:
+                assert(not adj_nodes[0]["ws"][-1]==' ')
+                assert(not adj_nodes[1]["ws"][0] ==' ')
+                add_edge(edge_labels, g, adj_nodes[0]["ind"], adj_nodes[1]["ind"], edge.group())
+    return (g, labels, edge_labels)
     
 
 
@@ -111,11 +109,4 @@ if __name__=="__main__":
     graphs = []
     for g in gs.items():
         graphs.append((g[0], *parse(g[1])))
-    x = 1
-    pw = PlotWindow()
-    for g in graphs:
-    # g[0]
-        fig = plt.figure()
-        if len(g) == 3: nx.draw(g[1], with_labels=True, font_weight='bold', labels=g[2])
-        pw.addPlot(fig)
-    pw.show()
+    x=1
