@@ -2,6 +2,9 @@ import re, collections
 import networkx as nx
 import matplotlib.pyplot as plt
 from collections import namedtuple
+import numpy as np
+import pickle
+from concurrent.futures import ThreadPoolExecutor
 
 def get_graph_strings():
     graph_strings = {}
@@ -21,13 +24,13 @@ def add_edge(edge_labels: dict, g: nx.Graph, n1: int, n2: int, label: str):
     g.add_edge(n1, n2, label=label)
     edge_labels[(n1,n2)] = label
 
-def parse(input_str: str):
+def parse(nm:str, input_str: str):
     lines = input_str.split("\n")
     if lines[-1] == "": lines = lines[:-1]  
     assert(len(lines) in (0, 1, 3, 5))
-    g = nx.DiGraph()
+    g = nx.DiGraph(name=nm)
     labels, edge_labels = {}, {}
-    if len(lines) == 0: return (g, labels, edge_labels)
+    if len(lines) == 0: return (nm, g, labels, edge_labels)
     edgess = []
     nodess = []
     for i in range(0,len(lines),2):
@@ -49,10 +52,8 @@ def parse(input_str: str):
     ind = 0
     labels = {}
     nds = []
-    for g_i in range(len(edgess)):
-        edges = edgess[g_i]
-        for i in range(len(edges)):
-            edge = edges[i]
+    for g_i, edges in enumerate(edgess):
+        for i, edge in enumerate(edges):
             edge_prev = edges[i-1] if i > 0 else None
             before = {}
             before["l"] = edge_prev.end() if edge_prev else 0
@@ -68,10 +69,8 @@ def parse(input_str: str):
                 nds.append(before)
                 ind += 1
 
-    for g_i in range(len(edgess)):
-        edges = edgess[g_i]
-        for i in range(len(edges)):
-            edge = edges[i]
+    for g_i, edges in enumerate(edgess):
+        for i, edge in enumerate(edges):
             adj_nodes = [n for n in nds if (n["l"] == edge.end() or n["r"] == edge.start()) and n["i"]==g_i]
             if edge.group()[:2] == "->":
                 assert(len(adj_nodes)==1)
@@ -80,6 +79,7 @@ def parse(input_str: str):
                 assert(not _lbl.find("->->")==-1)
                 _lbl = _lbl.replace("->->", "->")
                 add_edge(edge_labels, g, adj_nodes[1]["ind"], adj_nodes[0]["ind"], _lbl)
+                
                 continue
             if edge.group()[-2:] == "->":
                 continue
@@ -101,15 +101,59 @@ def parse(input_str: str):
                 assert(not adj_nodes[0]["ws"][-1]==' ')
                 assert(not adj_nodes[1]["ws"][0] ==' ')
                 add_edge(edge_labels, g, adj_nodes[0]["ind"], adj_nodes[1]["ind"], edge.group())
-    return (g, labels, edge_labels)
+    return (nm, g, labels, edge_labels)
     
 
+def nmatch(n1, n2):
+    return not (n1 == {} or n2 == {}) and n1["label"]==n2["label"]
 
-GraphInfo = namedtuple("GraphInfo", "name g nlabels elabels")
+def ematch(e1, e2):
+    return e1["label"] == e2["label"]
+    # e1[0]["label"] == e2[0]["label"]
+
+Graph = namedtuple("Graph", "name g nlabels elabels")
+edit_distances = None 
+graphs = []
+
+def thread_func(tup: tuple):
+    i, j = tup
+    ed = nx.optimize_graph_edit_distance(graphs[i].g, graphs[j].g, node_match=nmatch, edge_match=ematch)
+    _vs = []
+    for v in ed:
+        _vs.append(v)
+    # assert(len(_vs)==1)
+
+    return (i, j, _vs[-1])
+    # edit_distances[i,j] = _vs[-1]
+    # edpy[i][j].append(*_vs)
+
+
 if __name__=="__main__":
     gs = get_graph_strings()
-    graphs = []
+
 
     for g in gs.items():
-        graphs.append(GraphInfo(g[0], *parse(g[1])))
+        graphs.append(Graph(*parse(g[0], g[1])))
+
+    _l = len(graphs)
+    edit_distances = np.zeros((_l, _l))
+    edpy = [[[] for _ in range(_l)]  for _ in range(_l)]
+    threads = []
+    for i in range(_l):
+        for j in range(_l):
+    # for i in range(5):
+        # for j in range(5):
+            threads.append((i,j))
+    
+    results = None
+    with ThreadPoolExecutor(max_workers = 8) as executor:
+        # results = {(*thp, executor.submit(thread_func, *thp)) for thp in threads}
+        results = executor.map(thread_func, threads)
+    for res in results:
+        # print(res)
+        edit_distances[res[0], res[1]] = res[2]
+    with open("edit_dists.pkl", "wb") as outf:
+        pickle.dump(edit_distances, outf)
+        # pickle.dump()
+
     x=1
