@@ -1,6 +1,7 @@
 import re, collections
 import networkx as nx
 import matplotlib.pyplot as plt
+from collections import namedtuple
 
 def get_graph_strings():
     graph_strings = {}
@@ -26,7 +27,7 @@ def parse(input_str: str):
     assert(len(lines) in (0, 1, 3, 5))
     g = nx.DiGraph()
     labels, edge_labels = {}, {}
-    if len(lines) == 0: return g
+    if len(lines) == 0: return (g, labels, edge_labels)
     edgess = []
     nodess = []
     for i in range(0,len(lines),2):
@@ -104,9 +105,11 @@ def parse(input_str: str):
     
 
 
+GraphInfo = namedtuple("GraphInfo", "name g nlabels elabels")
 if __name__=="__main__":
     gs = get_graph_strings()
     graphs = []
+
     for g in gs.items():
-        graphs.append((g[0], *parse(g[1])))
+        graphs.append(GraphInfo(g[0], *parse(g[1])))
     x=1
