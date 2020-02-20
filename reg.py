@@ -109,7 +109,6 @@ def nmatch(n1, n2):
 
 def ematch(e1, e2):
     return e1["label"] == e2["label"]
-    # e1[0]["label"] == e2[0]["label"]
 
 Graph = namedtuple("Graph", "name g nlabels elabels")
 edit_distances = None 
@@ -121,20 +120,10 @@ def thread_func(tup: tuple):
     _vs = []
     for v in ed:
         _vs.append(v)
-    # assert(len(_vs)==1)
-
     return (i, j, _vs[-1])
-    # edit_distances[i,j] = _vs[-1]
-    # edpy[i][j].append(*_vs)
 
 
-if __name__=="__main__":
-    gs = get_graph_strings()
-
-
-    for g in gs.items():
-        graphs.append(Graph(*parse(g[0], g[1])))
-
+def calc_edit_distances(pickle_save = "edit_dists.pkl"):
     _l = len(graphs)
     edit_distances = np.zeros((_l, _l))
     edpy = [[[] for _ in range(_l)]  for _ in range(_l)]
@@ -152,8 +141,15 @@ if __name__=="__main__":
     for res in results:
         # print(res)
         edit_distances[res[0], res[1]] = res[2]
-    with open("edit_dists.pkl", "wb") as outf:
+    with open(pickle_save, "wb") as outf:
         pickle.dump(edit_distances, outf)
         # pickle.dump()
+
+
+if __name__=="__main__":
+    gs = get_graph_strings()
+    for g in gs.items():
+        graphs.append(Graph(*parse(g[0], g[1])))
+
 
     x=1
