@@ -161,8 +161,8 @@ def thread_func(tup: tuple):
     gi, gj = graphs[i], graphs[j]
     if (not ni == nj):
         repeat_gcd = gcd(ni, nj)
-        istr = repeat_oantigen((_gi.nm, _gi.src_str), repeat_gcd // ni)
-        jstr = repeat_oantigen((_gj.nm, _gj.src_str), repeat_gcd // nj)
+        istr = repeat_oantigen((_gi.name, _gi.src_str), repeat_gcd // ni)
+        jstr = repeat_oantigen((_gj.name, _gj.src_str), repeat_gcd // nj)
         gi, gj = parse(istr), parse(jstr)
 
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
@@ -176,7 +176,7 @@ def thread_func(tup: tuple):
 
 def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
     _l = len(graphs)
-    _l = 4
+    #_l = 8
     edit_distances = np.zeros((_l, _l))
     threads = []
     for i in range(_l):
@@ -188,7 +188,7 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
     # for t in threads:
     #     results.append(thread_func(t))
 
-    with ThreadPoolExecutor(max_workers = 6) as executor:
+    with ThreadPoolExecutor(max_workers = 16) as executor:
         # results = {(*thp, executor.submit(thread_func, *thp)) for thp in threads}
         results = executor.map(thread_func, threads)
     for res in results:
@@ -204,7 +204,6 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
 if __name__=="__main__":
     gs = get_graph_strings()
     for g in gs.items():
-        g = repeat_oantigen(g, 2)
         if len(g[1]) > 0: 
             graphs.append(Graph(*parse(g)))
     calc_edit_distances(graphs)
