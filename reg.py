@@ -6,6 +6,38 @@ import numpy as np
 import pickle
 from concurrent.futures import ThreadPoolExecutor
 
+Graph = namedtuple("Graph", "name g nlabels elabels src_str")
+
+
+def repeat_oantigen(g:tuple, mult:int=1):
+    nm, ls = g
+    lines = ls.split("\n")
+    if lines[-1] == "": lines = lines[:-1]  
+    maxlen = 0
+    linesm = []
+    for line in lines:
+        maxlen = max(maxlen, len(line))
+    for line in lines:
+        linesm.append((line + " " * (maxlen - len(line))) * 3)
+    for i in range(len(linesm)):
+        assert(len(linesm[i]) == len(linesm[0]))
+    return (nm, "\n".join(linesm))
+
+
+def num_cycle_nodes(ls:str):
+    if len(ls) == 0: return 0
+    cycle_i = -1
+    lines = ls.split("\n")
+    for i, line in enumerate(lines):
+        if line.replace(" ", "")[:2] == "->":
+            cycle_i = i
+            break
+    assert(not cycle_i == -1)
+    nodes_res = re.split(r"\(?\d?[<-][NP>]P?-?>?\d?\)?", lines[cycle_i].replace(" ", ""))
+    res = len(nodes_res) - int(nodes_res[0] == "") - int(nodes_res[-1] == "")
+    return res
+
+
 def get_graph_strings():
     graph_strings = {}
     with open("data.txt", "r") as file:
@@ -20,22 +52,26 @@ def get_graph_strings():
                 next_str += line
     return graph_strings
 
+
 def add_edge(edge_labels: dict, g: nx.Graph, n1: int, n2: int, label: str):
+    label = label.replace(" ", "").replace("->->", "->")
     g.add_edge(n1, n2, label=label)
     edge_labels[(n1,n2)] = label
 
-def parse(nm:str, input_str: str):
+
+def parse(inp_g:tuple):
+    nm, input_str = inp_g
     lines = input_str.split("\n")
     if lines[-1] == "": lines = lines[:-1]  
     assert(len(lines) in (0, 1, 3, 5))
     g = nx.DiGraph(name=nm)
     labels, edge_labels = {}, {}
-    if len(lines) == 0: return (nm, g, labels, edge_labels)
+    if len(lines) == 0: return Graph(nm, g, labels, edge_labels, input_str)
     edgess = []
     nodess = []
     for i in range(0,len(lines),2):
         line = lines[i]
-        reg = re.compile(r"\(?\d?[<-][NP>]P?-?\d?\)?")
+        reg = re.compile(r"\(?\d?[<-][NP>] *P?-?>?\d?\)?")
         res = re.finditer(reg, line)
         nodes_res = re.split(reg, line)
         edgess.append(res)
@@ -77,7 +113,6 @@ def parse(nm:str, input_str: str):
                 adj_nodes.append(*[n for n in nds if n["r"]==edges[-1].start() and n["i"]==g_i])
                 _lbl = edges[-1].group() + edge.group()
                 assert(not _lbl.find("->->")==-1)
-                _lbl = _lbl.replace("->->", "->")
                 add_edge(edge_labels, g, adj_nodes[1]["ind"], adj_nodes[0]["ind"], _lbl)
                 
                 continue
@@ -101,7 +136,7 @@ def parse(nm:str, input_str: str):
                 assert(not adj_nodes[0]["ws"][-1]==' ')
                 assert(not adj_nodes[1]["ws"][0] ==' ')
                 add_edge(edge_labels, g, adj_nodes[0]["ind"], adj_nodes[1]["ind"], edge.group())
-    return (nm, g, labels, edge_labels)
+    return Graph(nm, g, labels, edge_labels, input_str)
     
 
 def nmatch(n1, n2):
@@ -110,28 +145,42 @@ def nmatch(n1, n2):
 def ematch(e1, e2):
     return e1["label"] == e2["label"]
 
-Graph = namedtuple("Graph", "name g nlabels elabels")
-edit_distances = None 
-graphs = []
 
+edit_distances = None 
+
+def gcd(a:int, b:int):
+    while b:
+        a, b = b, a % b
+    return a
+
+graphs = []
 def thread_func(tup: tuple):
     i, j = tup
-    ed = nx.optimize_graph_edit_distance(graphs[i].g, graphs[j].g, node_match=nmatch, edge_match=ematch)
+    _gi, _gj = graphs[i], graphs[j]
+    ni, nj = num_cycle_nodes(_gi.src_str), num_cycle_nodes(_gj.src_str)
+    gi, gj = graphs[i], graphs[j]
+    if (not ni == nj):
+        repeat_gcd = gcd(ni, nj)
+        istr = repeat_oantigen((_gi.nm, _gi.src_str), repeat_gcd // ni)
+        jstr = repeat_oantigen((_gj.nm, _gj.src_str), repeat_gcd // nj)
+        gi, gj = parse(istr), parse(jstr)
+
+    ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
     _vs = []
     for v in ed:
         _vs.append(v)
+    with open("rep_graphs/g"+str(i)+"_"+str(j)+".pkl", "wb") as outf:
+        pickle.dump((gi, gj, _vs), outf)
     return (i, j, _vs[-1])
 
 
-def calc_edit_distances(pickle_save = "edit_dists.pkl"):
+def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
     _l = len(graphs)
+    _l = 4
     edit_distances = np.zeros((_l, _l))
-    edpy = [[[] for _ in range(_l)]  for _ in range(_l)]
     threads = []
     for i in range(_l):
-        for j in range(_l):
-    # for i in range(5):
-        # for j in range(5):
+        for j in range(i+1, _l):
             threads.append((i,j))
     
     results = None
@@ -141,15 +190,19 @@ def calc_edit_distances(pickle_save = "edit_dists.pkl"):
     for res in results:
         # print(res)
         edit_distances[res[0], res[1]] = res[2]
+        edit_distances[res[1], res[0]] = res[2]
     with open(pickle_save, "wb") as outf:
         pickle.dump(edit_distances, outf)
-        # pickle.dump()
+    return edit_distances
+
 
 
 if __name__=="__main__":
     gs = get_graph_strings()
     for g in gs.items():
-        graphs.append(Graph(*parse(g[0], g[1])))
-
-
+        g = repeat_oantigen(g, 2)
+        if len(g[1]) > 0: 
+            graphs.append(Graph(*parse(g)))
+    calc_edit_distances(graphs)
     x=1
+
