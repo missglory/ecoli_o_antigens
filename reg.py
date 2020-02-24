@@ -165,7 +165,7 @@ def thread_func(tup: tuple):
     ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
     repeat_gcd = ni
     if (not ni == nj):
-        repeat_gcd = lcm(ni, nj)        
+        repeat_lcm = lcm(ni, nj)        
         imult = repeat_gcd // ni
         if imult > 1:
             istr = repeat_oantigen((gi.name, gi.src_str), imult)
@@ -180,7 +180,8 @@ def thread_func(tup: tuple):
     for v in ed:
         _vs.append(v)
     with open("rep_graphs/g"+str(i)+"_"+str(j)+".pkl", "wb+") as outf:
-        pickle.dump((gi, gj, _vs, i, j, repeat), outf)
+        pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
+            gi, gj, _vs, i, j, repeat), outf)
     return (i, j, _vs[-1])
     # , ni ,repeat_gcd, repeat_gcd // ni, repeat_gcd // nj)
 
