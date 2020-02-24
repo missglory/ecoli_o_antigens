@@ -169,7 +169,7 @@ def thread_func(tup: tuple):
     _vs = []
     for v in ed:
         _vs.append(v)
-    with open("rep_graphs/g"+str(i)+"_"+str(j)+".pkl", "wb") as outf:
+    with open("rep_graphs/g"+str(i)+"_"+str(j)+".pkl", "wb+") as outf:
         pickle.dump((gi, gj, _vs), outf)
     return (i, j, _vs[-1])
 
@@ -183,8 +183,12 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
         for j in range(i+1, _l):
             threads.append((i,j))
     
-    results = None
-    with ThreadPoolExecutor(max_workers = 8) as executor:
+    results = []
+
+    # for t in threads:
+    #     results.append(thread_func(t))
+
+    with ThreadPoolExecutor(max_workers = 6) as executor:
         # results = {(*thp, executor.submit(thread_func, *thp)) for thp in threads}
         results = executor.map(thread_func, threads)
     for res in results:
