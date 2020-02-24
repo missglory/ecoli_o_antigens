@@ -18,7 +18,7 @@ def repeat_oantigen(g:tuple, mult:int=1):
     for line in lines:
         maxlen = max(maxlen, len(line))
     for line in lines:
-        linesm.append((line + " " * (maxlen - len(line))) * 3)
+        linesm.append((line + " " * (maxlen - len(line))) * int(mult))
     for i in range(len(linesm)):
         assert(len(linesm[i]) == len(linesm[0]))
     return (nm, "\n".join(linesm))
@@ -34,7 +34,7 @@ def num_cycle_nodes(ls:str):
             break
     assert(not cycle_i == -1)
     nodes_res = re.split(r"\(?\d?[<-][NP>]P?-?>?\d?\)?", lines[cycle_i].replace(" ", ""))
-    res = len(nodes_res) - int(nodes_res[0] == "") - int(nodes_res[-1] == "")
+    res = int(len(nodes_res) - int(nodes_res[0] == "") - int(nodes_res[-1] == ""))
     return res
 
 
@@ -62,7 +62,7 @@ def add_edge(edge_labels: dict, g: nx.Graph, n1: int, n2: int, label: str):
 def parse(inp_g:tuple):
     nm, input_str = inp_g
     lines = input_str.split("\n")
-    if lines[-1] == "": lines = lines[:-1]  
+    while len(lines) > 0 and lines[-1] == "": lines = lines[:-1]  
     assert(len(lines) in (0, 1, 3, 5))
     g = nx.DiGraph(name=nm)
     labels, edge_labels = {}, {}
@@ -149,34 +149,45 @@ def ematch(e1, e2):
 edit_distances = None 
 
 def gcd(a:int, b:int):
+    """Compute the greatest common divisor of a and b"""
     while b:
         a, b = b, a % b
     return a
 
+def lcm(a:int, b:int):
+    """Compute the lowest common multiple of a and b"""
+    return a * b // gcd(a, b)
+
 graphs = []
 def thread_func(tup: tuple):
     i, j = tup
-    _gi, _gj = graphs[i], graphs[j]
-    ni, nj = num_cycle_nodes(_gi.src_str), num_cycle_nodes(_gj.src_str)
     gi, gj = graphs[i], graphs[j]
+    ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
+    repeat_gcd = ni
     if (not ni == nj):
-        repeat_gcd = gcd(ni, nj)
-        istr = repeat_oantigen((_gi.name, _gi.src_str), repeat_gcd // ni)
-        jstr = repeat_oantigen((_gj.name, _gj.src_str), repeat_gcd // nj)
-        gi, gj = parse(istr), parse(jstr)
+        repeat_gcd = lcm(ni, nj)        
+        imult = repeat_gcd // ni
+        if imult > 1:
+            istr = repeat_oantigen((gi.name, gi.src_str), imult)
+            gi = parse(istr)
+        jmult = repeat_gcd // nj
+        if jmult > 1:
+            jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
+            gj = parse(jstr)
 
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
     _vs = []
     for v in ed:
         _vs.append(v)
     with open("rep_graphs/g"+str(i)+"_"+str(j)+".pkl", "wb+") as outf:
-        pickle.dump((gi, gj, _vs), outf)
+        pickle.dump((gi, gj, _vs, i, j, repeat), outf)
     return (i, j, _vs[-1])
+    # , ni ,repeat_gcd, repeat_gcd // ni, repeat_gcd // nj)
 
 
 def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
     _l = len(graphs)
-    #_l = 8
+    # _l = 4
     edit_distances = np.zeros((_l, _l))
     threads = []
     for i in range(_l):
@@ -184,18 +195,12 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
             threads.append((i,j))
     
     results = []
-
-    # for t in threads:
-    #     results.append(thread_func(t))
-
     with ThreadPoolExecutor(max_workers = 16) as executor:
-        # results = {(*thp, executor.submit(thread_func, *thp)) for thp in threads}
         results = executor.map(thread_func, threads)
     for res in results:
-        # print(res)
         edit_distances[res[0], res[1]] = res[2]
         edit_distances[res[1], res[0]] = res[2]
-    with open(pickle_save, "wb") as outf:
+    with open(pickle_save, "wb+") as outf:
         pickle.dump(edit_distances, outf)
     return edit_distances
 
