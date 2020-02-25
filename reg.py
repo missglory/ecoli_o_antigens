@@ -177,9 +177,10 @@ def thread_func(tup: tuple):
             jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
             gj = parse(jstr)
 
-    fname = "rep_graphs/g"+str(i)+"_"+str(j)+".pkl"
+
+    fname = "rep_graphs/%s"+str(i)+"_"+str(j)+"_"+gi.name.replace(" ", "_")+"___"+gj.name.replace(" ", "_")+".pkl"
     try:
-        with open(fname, "rb") as in_pkl:
+        with open(fname%"g", "rb") as in_pkl:
             ob = pickle.load(in_pkl)
             assert(ni == ob[0][0])
             assert(nj == ob[0][1])
@@ -191,14 +192,36 @@ def thread_func(tup: tuple):
             logging.warning(f"deserialize {gi.name}, {gj.name}")
             return (i,j,ob[3][-1])
     except: pass
+    try:
+        fn = "rep_graphs/g"+str(i)+"_"+str(j)+".pkl"
+        with open(fn, "rb") as in_pkl:
+            ob = pickle.load(in_pkl)
+            assert(ni == ob[0][0])
+            assert(nj == ob[0][1])
+            assert(repeat_lcm == ob[0][2])
+            assert(gi.name == ob[1].name)
+            assert(gj.name == ob[2].name)
+            assert(i == ob[4])
+            assert(j == ob[5])
+            logging.warning(f"deserialize {gi.name}, {gj.name}")
+            with open(fname % "g", "wb+") as outf:
+                pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj), \
+                            gi, gj, [ob[3][-1]], i, j), outf)
+            return (i,j,ob[3][-1])
+    except: pass
+
+    # with open(fname % "_g", "wb+") as outf:
+        # pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj), gi, gj), outf)
+
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
     _vs = []
     for v in ed:
         _vs.append(v)
     logging.warning(f"finish calc {gi.name}, {gj.name}")
-    with open(fname, "wb+") as outf:
+    with open(fname % "g", "wb+") as outf:
         pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
             gi, gj, _vs, i, j), outf)
+
     return (i, j, _vs[-1])
     # , ni ,repeat_gcd, repeat_gcd // ni, repeat_gcd // nj)
 
