@@ -166,28 +166,28 @@ def thread_func(tup: tuple):
     repeat_lcm = ni
     if (not ni == nj):
         repeat_lcm = lcm(ni, nj)        
-        imult = repeat_gcd // ni
+        imult = repeat_lcm // ni
         if imult > 1:
             istr = repeat_oantigen((gi.name, gi.src_str), imult)
             gi = parse(istr)
-        jmult = repeat_gcd // nj
+        jmult = repeat_lcm // nj
         if jmult > 1:
             jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
             gj = parse(jstr)
 
     fname = "rep_graphs/g"+str(i)+"_"+str(j)+".pkl"
-    # try:
-    with open(fname, "rb") as in_pkl:
-        ob = pickle.load(in_pkl)
-        assert(ni == ob[0][0])
-        assert(nj == ob[0][1])
-        assert(repeat_lcm == ob[0][2])
-        assert(gi == ob[1])
-        assert(gj == ob[2])
-        assert(i == g[4])
-        assert(j == g[5])
-        return (i,j,g[3][-1])
-    # except: pass
+    try:
+        with open(fname, "rb") as in_pkl:
+            ob = pickle.load(in_pkl)
+            assert(ni == ob[0][0])
+            assert(nj == ob[0][1])
+            assert(repeat_lcm == ob[0][2])
+            assert(gi == ob[1])
+            assert(gj == ob[2])
+            assert(i == g[4])
+            assert(j == g[5])
+            return (i,j,g[3][-1])
+    except: pass
 
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
     _vs = []
