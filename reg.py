@@ -5,7 +5,8 @@ from collections import namedtuple
 import numpy as np
 import pickle
 from concurrent.futures import ThreadPoolExecutor
-
+import logging
+logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
 Graph = namedtuple("Graph", "name g nlabels elabels src_str")
 
 
@@ -164,6 +165,7 @@ def thread_func(tup: tuple):
     gi, gj = graphs[i], graphs[j]
     ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
     repeat_lcm = ni
+    logging.warning(f"start {gi.name}, {gj.name}")
     if (not ni == nj):
         repeat_lcm = lcm(ni, nj)        
         imult = repeat_lcm // ni
@@ -182,17 +184,18 @@ def thread_func(tup: tuple):
             assert(ni == ob[0][0])
             assert(nj == ob[0][1])
             assert(repeat_lcm == ob[0][2])
-            assert(gi == ob[1])
-            assert(gj == ob[2])
-            assert(i == g[4])
-            assert(j == g[5])
-            return (i,j,g[3][-1])
+            assert(gi.name == ob[1].name)
+            assert(gj.name == ob[2].name)
+            assert(i == ob[4])
+            assert(j == ob[5])
+            logging.warning(f"deserialize {gi.name}, {gj.name}")
+            return (i,j,ob[3][-1])
     except: pass
-
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
     _vs = []
     for v in ed:
         _vs.append(v)
+    logging.warning(f"finish calc {gi.name}, {gj.name}")
     with open(fname, "wb+") as outf:
         pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
             gi, gj, _vs, i, j), outf)
@@ -200,9 +203,9 @@ def thread_func(tup: tuple):
     # , ni ,repeat_gcd, repeat_gcd // ni, repeat_gcd // nj)
 
 
-def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
+def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
     _l = len(graphs)
-    _l = 8
+    #_l = 8
     edit_distances = np.zeros((_l, _l))
     threads = []
     for i in range(_l):
