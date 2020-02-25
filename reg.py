@@ -163,7 +163,7 @@ def thread_func(tup: tuple):
     i, j = tup
     gi, gj = graphs[i], graphs[j]
     ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
-    repeat_gcd = ni
+    repeat_lcm = ni
     if (not ni == nj):
         repeat_lcm = lcm(ni, nj)        
         imult = repeat_gcd // ni
@@ -175,20 +175,34 @@ def thread_func(tup: tuple):
             jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
             gj = parse(jstr)
 
+    fname = "rep_graphs/g"+str(i)+"_"+str(j)+".pkl"
+    # try:
+    with open(fname, "rb") as in_pkl:
+        ob = pickle.load(in_pkl)
+        assert(ni == ob[0][0])
+        assert(nj == ob[0][1])
+        assert(repeat_lcm == ob[0][2])
+        assert(gi == ob[1])
+        assert(gj == ob[2])
+        assert(i == g[4])
+        assert(j == g[5])
+        return (i,j,g[3][-1])
+    # except: pass
+
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
     _vs = []
     for v in ed:
         _vs.append(v)
-    with open("rep_graphs/g"+str(i)+"_"+str(j)+".pkl", "wb+") as outf:
+    with open(fname, "wb+") as outf:
         pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
-            gi, gj, _vs, i, j, repeat), outf)
+            gi, gj, _vs, i, j), outf)
     return (i, j, _vs[-1])
     # , ni ,repeat_gcd, repeat_gcd // ni, repeat_gcd // nj)
 
 
 def calc_edit_distances(graphs:list, pickle_save = "edit_dists.pkl"):
     _l = len(graphs)
-    # _l = 4
+    _l = 8
     edit_distances = np.zeros((_l, _l))
     threads = []
     for i in range(_l):
