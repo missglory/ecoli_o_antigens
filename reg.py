@@ -54,9 +54,21 @@ def get_graph_strings():
     return graph_strings
 
 
-def add_edge(edge_labels: dict, g: nx.Graph, n1: int, n2: int, label: str):
+global_labels, global_label_idx = {}, 0
+def get_label_idx(lbl: str):
+    idx = -1
+    try:
+        idx = global_labels[lbl]
+    except:
+        global_labels[lbl] = global_label_idx
+        idx = global_label_idx
+        global_label_idx += 1
+    assert(not idx == -1)
+    return idx
+
+def add_edge(edge_labels: dict, g: nx.Graph, n1: int, n2: int, lbl: str):
     label = label.replace(" ", "").replace("->->", "->")
-    g.add_edge(n1, n2, label=label)
+    g.add_edge(n1, n2, i=get_label_idx(label), label=label)
     edge_labels[(n1,n2)] = label
 
 
@@ -101,7 +113,7 @@ def parse(inp_g:tuple):
             before["ind"]=ind
             bc = before["cut"]
             if len(bc) > 0: 
-                g.add_node(ind, label=bc)
+                g.add_node(ind, i=get_label_idx(bc), label=bc)
                 labels[ind] = bc
                 nds.append(before)
                 ind += 1
@@ -141,7 +153,7 @@ def parse(inp_g:tuple):
     
 
 def nmatch(n1, n2):
-    return not (n1 == {} or n2 == {}) and n1["label"]==n2["label"]
+    return not (len(n1) == 0 or len(n2) == 0) and n1["label"]==n2["label"]
 
 def ematch(e1, e2):
     return e1["label"] == e2["label"]
