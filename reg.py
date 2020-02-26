@@ -6,7 +6,7 @@ import numpy as np
 import pickle
 from concurrent.futures import ThreadPoolExecutor
 import logging
-logging.basicConfig(filename='app.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)-15s - %(levelname)s - %(message)s')
 Graph = namedtuple("Graph", "name g nlabels elabels src_str")
 
 
@@ -165,7 +165,6 @@ def thread_func(tup: tuple):
     gi, gj = graphs[i], graphs[j]
     ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
     repeat_lcm = ni
-    logging.warning(f"start {gi.name}, {gj.name}")
     if (not ni == nj):
         repeat_lcm = lcm(ni, nj)        
         imult = repeat_lcm // ni
@@ -177,7 +176,7 @@ def thread_func(tup: tuple):
             jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
             gj = parse(jstr)
 
-
+    logging.warning(f"start {gi.name}, {gj.name}. lcm: {repeat_lcm}, multipliers: {repeat_lcm//ni}, {repeat_lcm//nj} ({ni},{nj})")
     fname = "rep_graphs/%s"+str(i)+"_"+str(j)+"_"+gi.name.replace(" ", "_")+"___"+gj.name.replace(" ", "_")+".pkl"
     try:
         with open(fname%"g", "rb") as in_pkl:
@@ -189,24 +188,7 @@ def thread_func(tup: tuple):
             assert(gj.name == ob[2].name)
             assert(i == ob[4])
             assert(j == ob[5])
-            logging.warning(f"deserialize {gi.name}, {gj.name}")
-            return (i,j,ob[3][-1])
-    except: pass
-    try:
-        fn = "rep_graphs/g"+str(i)+"_"+str(j)+".pkl"
-        with open(fn, "rb") as in_pkl:
-            ob = pickle.load(in_pkl)
-            assert(ni == ob[0][0])
-            assert(nj == ob[0][1])
-            assert(repeat_lcm == ob[0][2])
-            assert(gi.name == ob[1].name)
-            assert(gj.name == ob[2].name)
-            assert(i == ob[4])
-            assert(j == ob[5])
-            logging.warning(f"deserialize {gi.name}, {gj.name}")
-            with open(fname % "g", "wb+") as outf:
-                pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj), \
-                            gi, gj, [ob[3][-1]], i, j), outf)
+            logging.warning(f"deserialize {gi.name}, {gj.name} (m: {repeat_lcm//ni}, {repeat_lcm//nj})")
             return (i,j,ob[3][-1])
     except: pass
 
@@ -236,7 +218,7 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
             threads.append((i,j))
     
     results = []
-    with ThreadPoolExecutor(max_workers = 16) as executor:
+    with ThreadPoolExecutor(max_workers = 6) as executor:
         results = executor.map(thread_func, threads)
     for res in results:
         edit_distances[res[0], res[1]] = res[2]
