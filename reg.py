@@ -3,7 +3,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from collections import namedtuple
 import numpy as np
-import pickle
+import pickle, time
 from concurrent.futures import ThreadPoolExecutor
 import logging
 logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)-15s - %(levelname)s - %(message)s')
@@ -206,12 +206,13 @@ def thread_func(tup: tuple):
 
     # with open(fname % "_g", "wb+") as outf:
         # pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj), gi, gj), outf)
-
+    _start_time = time.time()
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
+    _end_time = time.time()
     _vs = []
     for v in ed:
         _vs.append(v)
-    logging.warning(f"finish calc {gi.name}, {gj.name}")
+    logging.warning(f"finish calc {gi.name}, {gj.name}. Time: {_end_time - _start_time}")
     with open(fname % "g", "wb+") as outf:
         pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
             gi, gj, _vs, i, j), outf)
