@@ -54,9 +54,11 @@ def get_graph_strings():
     return graph_strings
 
 
-global_labels, global_label_idx = {}, 0
+global_labels = {}
+global_label_idx = 0
 def get_label_idx(lbl: str):
     idx = -1
+    global global_label_idx
     try:
         idx = global_labels[lbl]
     except:
@@ -67,9 +69,9 @@ def get_label_idx(lbl: str):
     return idx
 
 def add_edge(edge_labels: dict, g: nx.Graph, n1: int, n2: int, lbl: str):
-    label = label.replace(" ", "").replace("->->", "->")
-    g.add_edge(n1, n2, i=get_label_idx(label), label=label)
-    edge_labels[(n1,n2)] = label
+    lbl = lbl.replace(" ", "").replace("->->", "->")
+    g.add_edge(n1, n2, i=get_label_idx(lbl), label=lbl)
+    edge_labels[(n1,n2)] = lbl
 
 
 def parse(inp_g:tuple):
