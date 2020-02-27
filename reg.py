@@ -179,32 +179,32 @@ def thread_func(tup: tuple):
     gi, gj = graphs[i], graphs[j]
     ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
     repeat_lcm = ni
-    if (not ni == nj):
-        repeat_lcm = lcm(ni, nj)        
-        imult = repeat_lcm // ni
-        if imult > 1:
-            istr = repeat_oantigen((gi.name, gi.src_str), imult)
-            gi = parse(istr)
-        jmult = repeat_lcm // nj
-        if jmult > 1:
-            jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
-            gj = parse(jstr)
+    # if (not ni == nj):
+    #     repeat_lcm = lcm(ni, nj)        
+    #     imult = repeat_lcm // ni
+    #     if imult > 1:
+    #         istr = repeat_oantigen((gi.name, gi.src_str), imult)
+    #         gi = parse(istr)
+    #     jmult = repeat_lcm // nj
+    #     if jmult > 1:
+    #         jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
+    #         gj = parse(jstr)
 
     logging.warning(f"start {gi.name}, {gj.name}. lcm: {repeat_lcm}, multipliers: {repeat_lcm//ni}, {repeat_lcm//nj} ({ni},{nj})")
     fname = "rep_graphs/%s"+str(i)+"_"+str(j)+"_"+gi.name.replace(" ", "_")+"___"+gj.name.replace(" ", "_")+".pkl"
-    try:
-        with open(fname%"g", "rb") as in_pkl:
-            ob = pickle.load(in_pkl)
-            assert(ni == ob[0][0])
-            assert(nj == ob[0][1])
-            assert(repeat_lcm == ob[0][2])
-            assert(gi.name == ob[1].name)
-            assert(gj.name == ob[2].name)
-            assert(i == ob[4])
-            assert(j == ob[5])
-            logging.warning(f"deserialize {gi.name}, {gj.name} (m: {repeat_lcm//ni}, {repeat_lcm//nj})")
-            return (i,j,ob[3][-1])
-    except: pass
+    # try:
+    #     with open(fname%"g", "rb") as in_pkl:
+    #         ob = pickle.load(in_pkl)
+    #         assert(ni == ob[0][0])
+    #         assert(nj == ob[0][1])
+    #         assert(repeat_lcm == ob[0][2])
+    #         assert(gi.name == ob[1].name)
+    #         assert(gj.name == ob[2].name)
+    #         assert(i == ob[4])
+    #         assert(j == ob[5])
+    #         logging.warning(f"deserialize {gi.name}, {gj.name} (m: {repeat_lcm//ni}, {repeat_lcm//nj})")
+    #         return (i,j,ob[3][-1])
+    # except: pass
 
     # with open(fname % "_g", "wb+") as outf:
         # pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj), gi, gj), outf)
