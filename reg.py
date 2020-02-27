@@ -175,6 +175,7 @@ def lcm(a:int, b:int):
 
 graphs = []
 _gfc = 0
+_gtime = 0
 def thread_func(tup: tuple):
     i, j = tup
     gi, gj = graphs[i], graphs[j]
@@ -191,7 +192,7 @@ def thread_func(tup: tuple):
               jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
               gj = parse(jstr)
 
-    logging.warning(f"start {gi.name}, {gj.name}. lcm: {repeat_lcm}, multipliers: {repeat_lcm//ni}, {repeat_lcm//nj} ({ni},{nj})")
+    logging.warning(f"start {gi.name}, {gj.name}.")
     fname = "rep_graphs/%s"+str(i)+"_"+str(j)+"_"+gi.name.replace(" ", "_")+"___"+gj.name.replace(" ", "_")+".pkl"
     # try:
     #     with open(fname%"g", "rb") as in_pkl:
@@ -216,7 +217,8 @@ def thread_func(tup: tuple):
         _vs.append(v)
     _end_time = time.time()
     global _gfc
-    logging.warning(f"finish calc {gi.name}, {gj.name}. Time: {_end_time - _start_time}. Num of finished: {_gfc}")
+    global _gtime
+    logging.warning(f"finish calc {gi.name}, {gj.name}. Time: {_end_time - _gtime:.3f}. Num of finished: {_gfc}. lcm: {repeat_lcm}, multipliers: {repeat_lcm//ni}, {repeat_lcm//nj} ({ni},{nj})")
     _gfc += 1
     with open(fname % "g", "wb+") as outf:
         pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
@@ -229,7 +231,8 @@ def thread_func(tup: tuple):
 def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
     _start_time = time.time()
     _l = len(graphs)
-    _l = 13
+    global _gtime
+    _gtime = time.time()
     edit_distances = np.zeros((_l, _l))
     threads = []
     for i in range(_l):
