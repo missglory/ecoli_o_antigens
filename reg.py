@@ -155,10 +155,10 @@ def parse(inp_g:tuple):
     
 
 def nmatch(n1, n2):
-    return not (len(n1) == 0 or len(n2) == 0) and n1["label"]==n2["label"]
+    return not (len(n1) == 0 or len(n2) == 0) and n1["i"]==n2["i"]
 
 def ematch(e1, e2):
-    return e1["label"] == e2["label"]
+    return e1["i"] == e2["i"]
 
 
 edit_distances = None 
@@ -174,21 +174,22 @@ def lcm(a:int, b:int):
     return a * b // gcd(a, b)
 
 graphs = []
+_gfc = 0
 def thread_func(tup: tuple):
     i, j = tup
     gi, gj = graphs[i], graphs[j]
     ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
     repeat_lcm = ni
-    # if (not ni == nj):
-    #     repeat_lcm = lcm(ni, nj)        
-    #     imult = repeat_lcm // ni
-    #     if imult > 1:
-    #         istr = repeat_oantigen((gi.name, gi.src_str), imult)
-    #         gi = parse(istr)
-    #     jmult = repeat_lcm // nj
-    #     if jmult > 1:
-    #         jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
-    #         gj = parse(jstr)
+    if (not ni == nj):
+          repeat_lcm = lcm(ni, nj)        
+          imult = repeat_lcm // ni
+          if imult > 1:
+              istr = repeat_oantigen((gi.name, gi.src_str), imult)
+              gi = parse(istr)
+          jmult = repeat_lcm // nj
+          if jmult > 1:
+              jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
+              gj = parse(jstr)
 
     logging.warning(f"start {gi.name}, {gj.name}. lcm: {repeat_lcm}, multipliers: {repeat_lcm//ni}, {repeat_lcm//nj} ({ni},{nj})")
     fname = "rep_graphs/%s"+str(i)+"_"+str(j)+"_"+gi.name.replace(" ", "_")+"___"+gj.name.replace(" ", "_")+".pkl"
@@ -214,7 +215,9 @@ def thread_func(tup: tuple):
     for v in ed:
         _vs.append(v)
     _end_time = time.time()
-    logging.warning(f"finish calc {gi.name}, {gj.name}. Time: {_end_time - _start_time}")
+    global _gfc
+    logging.warning(f"finish calc {gi.name}, {gj.name}. Time: {_end_time - _start_time}. Num of finished: {_gfc}")
+    _gfc += 1
     with open(fname % "g", "wb+") as outf:
         pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
             gi, gj, _vs, i, j), outf)
@@ -224,8 +227,9 @@ def thread_func(tup: tuple):
 
 
 def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
+    _start_time = time.time()
     _l = len(graphs)
-    #_l = 8
+    _l = 13
     edit_distances = np.zeros((_l, _l))
     threads = []
     for i in range(_l):
@@ -240,6 +244,8 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
         edit_distances[res[1], res[0]] = res[2]
     with open(pickle_save, "wb+") as outf:
         pickle.dump(edit_distances, outf)
+    _end_time = time.time()
+    logging.warning(f"TOTAL TIME: {_end_time - _start_time}")
     return edit_distances
 
 
