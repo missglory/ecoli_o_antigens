@@ -6,7 +6,7 @@ import numpy as np
 import pickle, time
 from concurrent.futures import ThreadPoolExecutor
 import logging
-logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)-15s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)-15s - %(message)s')
 Graph = namedtuple("Graph", "name g nlabels elabels src_str")
 
 
@@ -45,8 +45,13 @@ def get_graph_strings():
         next_name, next_str = "", ""
         for line in file.readlines():
             if not re.search(r"\||-", line):
-                if not next_name == "":
-                    graph_strings[next_name.replace("\t","").replace("\n","")] = next_str
+                if not len(next_name) == 0 and not len(next_str) == 0:
+                    valid_name = next_name.replace("\t","").replace("\n","")
+                    _incr, name_postfix = 2, ""
+                    while valid_name + name_postfix in graph_strings:
+                        name_postfix = "." + str(_incr)
+                        _incr += 1
+                    graph_strings[valid_name + name_postfix] = next_str
                     next_str = ""
                 next_name = line
             else:
@@ -192,7 +197,7 @@ def thread_func(tup: tuple):
               jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
               gj = parse(jstr)
 
-    logging.warning(f"start {gi.name}, {gj.name}.")
+    logging.warning(f"start {gi.name}, {gj.name}.\nlcm: {repeat_lcm}, m: {repeat_lcm//ni}, {repeat_lcm//nj} ({ni},{nj})")
     fname = "rep_graphs/%s"+str(i)+"_"+str(j)+"_"+gi.name.replace(" ", "_")+"___"+gj.name.replace(" ", "_")+".pkl"
     # try:
     #     with open(fname%"g", "rb") as in_pkl:
@@ -235,8 +240,18 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
     _gtime = time.time()
     edit_distances = np.zeros((_l, _l))
     threads = []
-    for i in range(_l):
-        for j in range(i+1, _l):
+
+    _len = 2
+    _inds = []
+    for i, g in enumerate(graphs):
+        if num_cycle_nodes(g.src_str) == _len:
+            _len += 1
+            _inds.append((i, g.name))
+        if _len > 5:
+            break
+    for _i, i in enumerate(_inds):
+        for _j, j in enumerate(_inds):
+            if not _j > _i: continue
             threads.append((i,j))
     
     results = []
@@ -259,5 +274,6 @@ if __name__=="__main__":
         if len(g[1]) > 0: 
             graphs.append(Graph(*parse(g)))
     calc_edit_distances(graphs)
+
     x=1
 
