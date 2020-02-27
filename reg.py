@@ -210,10 +210,10 @@ def thread_func(tup: tuple):
         # pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj), gi, gj), outf)
     _start_time = time.time()
     ed = nx.optimize_graph_edit_distance(gi.g, gj.g, node_match=nmatch, edge_match=ematch)
-    _end_time = time.time()
     _vs = []
     for v in ed:
         _vs.append(v)
+    _end_time = time.time()
     logging.warning(f"finish calc {gi.name}, {gj.name}. Time: {_end_time - _start_time}")
     with open(fname % "g", "wb+") as outf:
         pickle.dump(((ni, nj, repeat_lcm, repeat_lcm // ni, repeat_lcm // nj),
@@ -233,7 +233,7 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
             threads.append((i,j))
     
     results = []
-    with ThreadPoolExecutor(max_workers = 6) as executor:
+    with ThreadPoolExecutor(max_workers = 8) as executor:
         results = executor.map(thread_func, threads)
     for res in results:
         edit_distances[res[0], res[1]] = res[2]
