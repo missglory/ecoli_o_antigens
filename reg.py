@@ -252,10 +252,10 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
     for _i, i in enumerate(_inds):
         for _j, j in enumerate(_inds):
             if not _j > _i: continue
-            threads.append((i,j))
+            threads.append((i[0],j[0]))
     
     results = []
-    with ThreadPoolExecutor(max_workers = 8) as executor:
+    with ThreadPoolExecutor(max_workers = 6) as executor:
         results = executor.map(thread_func, threads)
     for res in results:
         edit_distances[res[0], res[1]] = res[2]
@@ -265,7 +265,6 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
     _end_time = time.time()
     logging.warning(f"TOTAL TIME: {_end_time - _start_time}")
     return edit_distances
-
 
 
 if __name__=="__main__":
