@@ -5,9 +5,9 @@ from collections import namedtuple
 import numpy as np
 import pickle, time
 from concurrent.futures import ThreadPoolExecutor
-import logging
+import logging, sys
 logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)-15s - %(message)s')
-Graph = namedtuple("Graph", "name g nlabels elabels src_str")
+Graph = namedtuple("Graph", "name g nlabels elabels src_str num_cycle_nodes")
 
 
 def repeat_oantigen(g:tuple, mult:int=1):
@@ -86,7 +86,7 @@ def parse(inp_g:tuple):
     assert(len(lines) in (0, 1, 3, 5))
     g = nx.DiGraph(name=nm)
     labels, edge_labels = {}, {}
-    if len(lines) == 0: return Graph(nm, g, labels, edge_labels, input_str)
+    if len(lines) == 0: return Graph(nm, g, labels, edge_labels, input_str, num_cycle_nodes(input_str))
     edgess = []
     nodess = []
     for i in range(0,len(lines),2):
@@ -156,7 +156,7 @@ def parse(inp_g:tuple):
                 assert(not adj_nodes[0]["ws"][-1]==' ')
                 assert(not adj_nodes[1]["ws"][0] ==' ')
                 add_edge(edge_labels, g, adj_nodes[0]["ind"], adj_nodes[1]["ind"], edge.group())
-    return Graph(nm, g, labels, edge_labels, input_str)
+    return Graph(nm, g, labels, edge_labels, input_str, num_cycle_nodes(input_str))
     
 
 def nmatch(n1, n2):
@@ -241,6 +241,16 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
     edit_distances = np.zeros((_l, _l))
     threads = []
 
+    # _di = {}    
+    # for i in range(_l):
+    #     for j in range(i+1, _l):
+    #         _lcm = lcm(graphs[i].num_cycle_nodes, graphs[j].num_cycle_nodes)
+    #         if _lcm in _di:
+    #             _di[_lcm] += 1
+    #         else:
+    #             _di[_lcm] = 1
+
+
     _len = 2
     _inds = []
     for i, g in enumerate(graphs):
@@ -266,13 +276,70 @@ def calc_edit_distances(graphs:list, pickle_save = "edit_dists_cld.pkl"):
     logging.warning(f"TOTAL TIME: {_end_time - _start_time}")
     return edit_distances
 
+def print_graph(graph):
+    print(graph.name)
+    print(graph.g.number_of_nodes(), graph.g.number_of_edges())
+    for i,n in graph.g.nodes(data=True):
+        print(i, n["i"])
+    for n in graph.g.edges(data=True):
+        print(n[0], n[1], n[2]["i"])
+
+def print_repeated_pair_of_graphs(i,j):
+    gi, gj = graphs[i], graphs[j]
+    ni, nj = num_cycle_nodes(gi.src_str), num_cycle_nodes(gj.src_str)
+    repeat_lcm = ni
+    if (not ni == nj):
+        repeat_lcm = lcm(ni, nj)        
+        imult = repeat_lcm // ni
+        if imult > 1:
+            istr = repeat_oantigen((gi.name, gi.src_str), imult)
+            gi = parse(istr)
+        jmult = repeat_lcm // nj
+        if jmult > 1:
+            jstr = repeat_oantigen((gj.name, gj.src_str), jmult)
+            gj = parse(jstr)
+    if len(gi.src_str) == 0 or len(gj.src_str)==0:
+        # continue
+        return False
+    print_graph(gi)
+    print_graph(gj)
+    return True
+
 
 if __name__=="__main__":
     gs = get_graph_strings()
     for g in gs.items():
         if len(g[1]) > 0: 
             graphs.append(Graph(*parse(g)))
-    calc_edit_distances(graphs)
+    
+    num_pairs, batch, batch_sz = 0, 0, 100
+    overall = (len(graphs)**2-len(graphs))//2
+    left = overall
+    # with open("graphs_rep_data.txt", "w+") as out_graphs:
+    stdout_orig = sys.stdout
+    rep_data_file = "rep_data/graphs_rep_data_batch_%i.txt"
+    sys.stdout = open(rep_data_file % batch, "w+")
+    print(min(left*2, batch_sz*2))
+    for i in range(len(graphs)):
+        for j in range(i+1, len(graphs)):
+            if print_repeated_pair_of_graphs(i,j):
+                num_pairs += 1
+            if num_pairs >= batch_sz:
+                sys.stdout.close()
+                batch += 1
+                assert left >= num_pairs
+                left -= num_pairs
+                assert num_pairs == batch_sz
+                num_pairs = 0
+                sys.stdout = open(rep_data_file % batch, "w+")
+                print(min(left*2, batch_sz*2))
+        # print()
+    sys.stdout.close()
+    sys.stdout = stdout_orig
+    # calc_edit_distances(graphs)
 
     x=1
+
+
+    #17578
 

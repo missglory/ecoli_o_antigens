@@ -1,3 +1,16 @@
 {
-    "python.pythonPath": "C:\\Users\\User\\Anaconda3\\python.exe"
+    "python.pythonPath": "/home/missglory/anaconda3/bin/python",
+    "files.associations": {
+        "*.ipp": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "*.tcc": "cpp",
+        "chrono": "cpp",
+        "thread": "cpp",
+        "fstream": "cpp",
+        "string": "cpp",
+        "rope": "cpp",
+        "future": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools"
 }
