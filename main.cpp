@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <ctime>
+#include <bits/stdc++.h> 
 using std::string;
 using std::vector;
 namespace asio = boost::asio; 
@@ -30,27 +31,27 @@ void check_time(const std::string& msg) {
 }
 
 vector<string> method_names = {
-        "BRANCH",              //!< Selects ged::Branch.
-		"BRANCH_FAST",         //!< Selects ged::BranchFast.
-		"BRANCH_TIGHT",        //!< Selects ged::BranchTight.
-		"BRANCH_UNIFORM",      //!< Selects ged::BranchUniform.
-		"BRANCH_COMPACT",      //!< Selects ged::BranchCompact.
-		"PARTITION",           //!< Selects ged::Partition.
-		"HYBRID",              //!< Selects ged::Hybrid.
-		"RING",                //!< Selects ged::Ring.
-		"ANCHOR_AWARE_GED",    //!< Selects ged::AnchorAwareGED.
-		"WALKS",               //!< Selects ged::Walks.
-		"IPFP",                //!< Selects ged::IPFP
-		"BIPARTITE",           //!< Selects ged::Bipartite.
-		"SUBGRAPH",            //!< Selects ged::Subgraph.
-		"NODE",                //!< Selects ged::Node.
-		"RING_ML",             //!< Selects ged::RingML.
-		"BIPARTITE_ML",        //!< Selects ged::BipartiteML.
-		"REFINE",              //!< Selects ged::Refine.
-		"BP_BEAM",             //!< Selects ged::BPBeam.
-		"SIMULATED_ANNEALING", //!< Selects ged::SimulatedAnnealing.
-		"HED",				 //!< Selects ged::HED.
-		"STAR"				 //!< Selects ged::Star.
+        "BRANCH",              //!< Selects ged::Branch.             0
+		"BRANCH_FAST",         //!< Selects ged::BranchFast.         1
+		"BRANCH_TIGHT",        //!< Selects ged::BranchTight.        2
+		"BRANCH_UNIFORM",      //!< Selects ged::BranchUniform.      3
+		"BRANCH_COMPACT",      //!< Selects ged::BranchCompact.      4
+		"PARTITION",           //!< Selects ged::Partition.          5
+		"HYBRID",              //!< Selects ged::Hybrid.             6
+		"RING",                //!< Selects ged::Ring.               7
+		"ANCHOR_AWARE_GED",    //!< Selects ged::AnchorAwareGED.     8
+		"WALKS",               //!< Selects ged::Walks.              9
+		"IPFP",                //!< Selects ged::IPFP                10
+		"BIPARTITE",           //!< Selects ged::Bipartite.          11
+		"SUBGRAPH",            //!< Selects ged::Subgraph.           12
+		"NODE",                //!< Selects ged::Node.               13
+		"RING_ML",             //!< Selects ged::RingML.             14
+		"BIPARTITE_ML",        //!< Selects ged::BipartiteML.        15
+		"REFINE",              //!< Selects ged::Refine.             16
+		"BP_BEAM",             //!< Selects ged::BPBeam.             17
+		"SIMULATED_ANNEALING", //!< Selects ged::SimulatedAnnealing. 18
+		"HED",				   //!< Selects ged::HED.                19
+		"STAR"				   //!< Selects ged::Star.               20
 };
 
 vector<ged::Options::GEDMethod> methods = {
@@ -77,6 +78,30 @@ vector<ged::Options::GEDMethod> methods = {
 		ged::Options::GEDMethod::STAR				 //!< Selects ged::Star.
 };
 
+vector<ged::Options::GEDMethod> to_calc = {
+        ged::Options::GEDMethod::BRANCH,              //!< Selects ged::Branch.
+		ged::Options::GEDMethod::BRANCH_FAST,         //!< Selects ged::BranchFast.
+		ged::Options::GEDMethod::BRANCH_TIGHT,        //!< Selects ged::BranchTight.
+		ged::Options::GEDMethod::BRANCH_UNIFORM,      //!< Selects ged::BranchUniform.
+		ged::Options::GEDMethod::BRANCH_COMPACT,      //!< Selects ged::BranchCompact.
+		ged::Options::GEDMethod::PARTITION,           //!< Selects ged::Partition.
+		ged::Options::GEDMethod::HYBRID,              //!< Selects ged::Hybrid.
+		ged::Options::GEDMethod::RING,                //!< Selects ged::Ring.
+		// ged::Options::GEDMethod::ANCHOR_AWARE_GED,    //!< Selects ged::AnchorAwareGED.
+		ged::Options::GEDMethod::WALKS,               //!< Selects ged::Walks.
+		ged::Options::GEDMethod::IPFP,                //!< Selects ged::IPFP
+		ged::Options::GEDMethod::BIPARTITE,           //!< Selects ged::Bipartite.
+		ged::Options::GEDMethod::SUBGRAPH,            //!< Selects ged::Subgraph.
+		ged::Options::GEDMethod::NODE,                //!< Selects ged::Node.
+		// ged::Options::GEDMethod::RING_ML,             //!< Selects ged::RingML.
+		// ged::Options::GEDMethod::BIPARTITE_ML,        //!< Selects ged::BipartiteML.
+		ged::Options::GEDMethod::REFINE,              //!< Selects ged::Refine.
+		ged::Options::GEDMethod::BP_BEAM,             //!< Selects ged::BPBeam.
+		ged::Options::GEDMethod::SIMULATED_ANNEALING, //!< Selects ged::SimulatedAnnealing.
+		ged::Options::GEDMethod::HED,				 //!< Selects ged::HED.
+		ged::Options::GEDMethod::STAR				 //!< Selects ged::Star.
+};
+
 ged::GEDEnv<int, int, int> env;
 std::mutex mtx;
 vector<ged::GEDGraph::GraphID> graphs(188);
@@ -85,16 +110,21 @@ vector<string> graph_names(188);
 std::ofstream log_file;
 
 struct res {
-    double upper_bound, lower_bound, runtime;
+    double upper_bound, lower_bound;
 };
 
-res tf(int j, int k, ged::Options::GEDMethod method_i) {
+res tf(int j, int k, ged::Options::GEDMethod method_i, bool write_log = true) {
     env.run_method(graphs[j], graphs[k]);
-    std::lock_guard<std::mu tex> lk(mtx);
-    log_file << method_names[(size_t)method_i] << ":" << graph_names[j] << " : " << graph_names[k] << ". " 
-        << "bounds: " << env.get_lower_bound(graphs[j], graphs[k]) << " " << env.get_upper_bound(graphs[j], graphs[k]) << "\n";
-    return { env.get_lower_bound(graphs[j], graphs[k]), env.get_upper_bound(graphs[j], graphs[k]), env.get_runtime(graphs[j], graphs[k]) };
+    if (write_log)
+    {
+        check_time(std::to_string(j) + "_" + std::to_string(k));
+        std::lock_guard<std::mutex> lk(mtx);
+        log_file << method_names[(size_t)method_i] << ":" << graph_names[j] << " : " << graph_names[k] << ". " 
+            << "bounds: " << env.get_lower_bound(graphs[j], graphs[k]) << " " << env.get_upper_bound(graphs[j], graphs[k]) << " . Time: " << elapses.back().t.count() <<"\n";
+    }
+    return { env.get_lower_bound(graphs[j], graphs[k]), env.get_upper_bound(graphs[j], graphs[k])};
 }
+
 
 typedef boost::packaged_task<res> task_t;
 typedef boost::shared_ptr<task_t> ptask_t;
@@ -105,8 +135,8 @@ void push_job(int j, int k, ged::Options::GEDMethod method_i, boost::asio::io_se
 	io_service.post(boost::bind(&task_t::operator(), task));
 }
 
-
-void thread_func(ged::Options::GEDMethod method_i, int lmt)
+using gpair = std::pair<ged::GEDGraph::GraphID, ged::GEDGraph::GraphID>;
+std::unordered_map<> thread_func(ged::Options::GEDMethod method_i, int lmt)
 {
     env.set_method(method_i);
     start = std::chrono::system_clock::now();
@@ -123,13 +153,12 @@ void thread_func(ged::Options::GEDMethod method_i, int lmt)
 	}
 	std::vector<boost::shared_future<res> > pending_data; // vector of futures
 #endif
-    for (int j = 0; j < lmt; j++)
-        for (int k = j + 1; k < lmt; k++)
+    for (int j = 0; j < lmt; j+=2)
+        // for (int k = j + 1; k < lmt; k++)
 #ifndef MULTITHREAD
-            tf(j,k, method_i);
+        tf(j,j+1, method_i);
 #else
-            push_job(j, k, method_i, io_service, pending_data);
-    
+        push_job(j, k, method_i, io_service, pending_data);
     boost::wait_for_all(pending_data.begin(), pending_data.end());
 #endif
     check_time("total");
@@ -139,13 +168,17 @@ void thread_func(ged::Options::GEDMethod method_i, int lmt)
 
 
 int main(int argc, const char* argv[]) {
-    if (argc != 2) {
-        std::cout << "usage: ./oantigens [method_id]";
+    if (argc != 3) {
+        std::cout << "usage: ./oantigens [method_id] [batch_file_num]";
         return 1;
     }
+    
     int method_i = atoi(argv[1]);
+    int batch_i = atoi(argv[2]);
+    std::cout << "Current method: " << method_names[method_i] << "\n"
+        << "Batch: " << batch_i << "\n\n";
     std::ifstream ifs;
-    ifs.open("graphs_data.txt", std::ios::in);
+    ifs.open("rep_data/graphs_rep_data_batch_"+std::to_string(batch_i)+".txt", std::ios::in);
     int num_graphs;
     ifs >> num_graphs;
     string graph_name = "";
@@ -178,9 +211,20 @@ int main(int argc, const char* argv[]) {
     env.init();
 
     time_t now = time(0);
-    char* dt = ctime(&now);
+    // char* dt = ctime(&now);
+    tm *ltm = localtime(&now);
 
-    log_file.open("cpp_logs/log.txt"+std::string(dt), std::ios::out);
+    std::stringstream sstream;
+    sstream 
+        << 1 + ltm->tm_hour << ":"
+        << 1 + ltm->tm_min << ":"
+        << 1 + ltm->tm_sec << "_"
+        << -100 + ltm->tm_year << "."
+        << 1 + ltm->tm_mon<< "."
+        <<  ltm->tm_mday << ""
+        << std::endl;
+    string log_time_str = sstream.str();
+    log_file.open("cpp_logs/log_"+method_names[method_i]+"_batch_"+std::to_string(batch_i)+"_"+log_time_str, std::ios::out);
     // for (auto method_i : methods) {
     if (!(method_i > 0 and method_i < methods.size())) {
         std::cout << "wrong method_i\n";
