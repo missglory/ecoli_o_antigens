@@ -6,6 +6,10 @@ import numpy as np
 import pickle, time
 from concurrent.futures import ThreadPoolExecutor
 import logging, sys
+from os import listdir
+from os.path import isfile, join
+from math import ceil, floor
+import pandas as pd
 logging.basicConfig(filename='app.log', filemode='w', format='%(asctime)-15s - %(message)s')
 Graph = namedtuple("Graph", "name g nlabels elabels src_str num_cycle_nodes")
 
@@ -305,41 +309,99 @@ def print_repeated_pair_of_graphs(i,j):
     print_graph(gj)
     return True
 
+def get_edit_dist_value(lbf:float, ubf:float):
+    if lbf>ubf:
+        return ubf
+    return (lbf+ubf)/2
+
+def parse_cpp_edit_dists(gs:dict):
+    """
+    parse batches
+    """
+    mypath = "cpp_logs"
+    onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+    assert(len(onlyfiles)==176)
+    num_graphs = len(gs)
+    cpp_edit_dists=np.zeros(shape=(num_graphs, num_graphs), dtype=np.float)
+    num_entries=0
+    graph_names = list(gs.keys())
+    _i1check, _i2check, _i1reset, _i2reset = -1,-1, 0, 1
+    # for logfilestr in onlyfiles:
+    logfiletemplate="log_BRANCH_batch_%i_2-33-12_17.3.20"
+    for batch_ind in range(176):
+        assert(logfiletemplate%batch_ind in onlyfiles)
+        with open(mypath+"/"+logfiletemplate%batch_ind) as logfile:
+            lines = logfile.readlines()
+            fresult = lines.index("FINAL RESULT:\n")
+            assert fresult in range(1, 1000000)
+
+            for iline, line in enumerate(lines):
+                if iline < fresult + 1: continue
+                vals = re.split(" : | . bounds: ", line)
+                vals[-1]=vals[-1].replace("\n","").split(" ")
+                vals.append(vals[-1][-1])
+                vals[-2]=vals[-2][0]
+                assert vals[0] in graph_names
+                assert vals[1] in graph_names
+                assert len(vals)==4
+                i1, i2 = graph_names.index(vals[0]), graph_names.index(vals[1])
+                _v=get_edit_dist_value(float(vals[2]),float(vals[3]))
+                graph_pair = [g for g in graphs if g.name in vals]
+                assert len(graph_pair)==2
+                lcmu=lcm(graph_pair[0].num_cycle_nodes, graph_pair[1].num_cycle_nodes)
+                _v /= lcmu
+                assert cpp_edit_dists[i1, i2]==0
+                cpp_edit_dists[i1, i2]=_v
+                assert cpp_edit_dists[i2, i1]==0
+                cpp_edit_dists[i2, i1]=_v
+                num_entries+=2
+    assert(num_entries==num_graphs**2-num_graphs)
+    dataset = pd.DataFrame(data=cpp_edit_dists, index=graph_names, columns=graph_names)
+    dataset.to_csv("cpp_edit_dists.csv")
+    return cpp_edit_dists
+
 
 if __name__=="__main__":
     gs = get_graph_strings()
+    print(list(gs.keys()))
     for g in gs.items():
         if len(g[1]) > 0: 
             graphs.append(Graph(*parse(g)))
     
-    num_pairs, batch, batch_sz = 0, 0, 100
-    overall = (len(graphs)**2-len(graphs))//2
-    left = overall
-    # with open("graphs_rep_data.txt", "w+") as out_graphs:
-    stdout_orig = sys.stdout
-    rep_data_file = "rep_data/graphs_rep_data_batch_%i.txt"
-    sys.stdout = open(rep_data_file % batch, "w+")
-    print(min(left*2, batch_sz*2))
-    for i in range(len(graphs)):
-        for j in range(i+1, len(graphs)):
-            if print_repeated_pair_of_graphs(i,j):
-                num_pairs += 1
-            if num_pairs >= batch_sz:
-                sys.stdout.close()
-                batch += 1
-                assert left >= num_pairs
-                left -= num_pairs
-                assert num_pairs == batch_sz
-                num_pairs = 0
-                sys.stdout = open(rep_data_file % batch, "w+")
-                print(min(left*2, batch_sz*2))
-        # print()
-    sys.stdout.close()
-    sys.stdout = stdout_orig
+    parse_cpp_edit_dists(gs)
+
+
+    """
+    generate batches of data to parse with C++ gedlib
+    """
+    # num_pairs, batch, batch_sz = 0, 0, 100
+    # overall = (len(graphs)**2-len(graphs))//2
+    # left = overall
+    # stdout_orig = sys.stdout
+    # rep_data_file = "rep_data/graphs_rep_data_batch_%i.txt"
+    # sys.stdout = open(rep_data_file % batch, "w+")
+    # print(min(left*2, batch_sz*2))
+    # for i in range(len(graphs)):
+    #     for j in range(i+1, len(graphs)):
+    #         if print_repeated_pair_of_graphs(i,j):
+    #             num_pairs += 1
+    #         if num_pairs >= batch_sz:
+    #             sys.stdout.close()
+    #             batch += 1
+    #             assert left >= num_pairs
+    #             left -= num_pairs
+    #             assert num_pairs == batch_sz
+    #             num_pairs = 0
+    #             sys.stdout = open(rep_data_file % batch, "w+")
+    #             print(min(left*2, batch_sz*2))
+    #     # print()
+    # sys.stdout.close()
+    # sys.stdout = stdout_orig
+    
+    
+
+
     # calc_edit_distances(graphs)
-
-    x=1
-
 
     #17578
 

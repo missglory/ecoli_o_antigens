@@ -17,15 +17,17 @@
 #include <bits/stdc++.h> 
 using std::string;
 using std::vector;
+using std::endl;
 namespace asio = boost::asio; 
 
-std::chrono::time_point<std::chrono::system_clock> start, end;
+using tmpt = std::chrono::time_point<std::chrono::system_clock>;
+tmpt start, end;
 struct timep {
 	std::chrono::duration<double> t;
 	std::string s;
 };
 vector<timep> elapses;
-void check_time(const std::string& msg) {
+void check_time(const std::string& msg, tmpt& start = start) {
 	elapses.push_back({ std::chrono::system_clock::now() - start, msg });
 	start = std::chrono::system_clock::now();
 }
@@ -104,13 +106,13 @@ vector<ged::Options::GEDMethod> to_calc = {
 
 ged::GEDEnv<int, int, int> env;
 std::mutex mtx;
-vector<ged::GEDGraph::GraphID> graphs(188);
-vector<string> graph_names(188);
+vector<ged::GEDGraph::GraphID> graphs;
+vector<string> graph_names;
 
 std::ofstream log_file;
 
 struct res {
-    double upper_bound, lower_bound;
+    double lower_bound, upper_bound;
 };
 
 res tf(int j, int k, ged::Options::GEDMethod method_i, bool write_log = true) {
@@ -126,61 +128,44 @@ res tf(int j, int k, ged::Options::GEDMethod method_i, bool write_log = true) {
 }
 
 
-typedef boost::packaged_task<res> task_t;
-typedef boost::shared_ptr<task_t> ptask_t;
-void push_job(int j, int k, ged::Options::GEDMethod method_i, boost::asio::io_service& io_service, std::vector<boost::shared_future<res> >& pending_data) {
-	ptask_t task = boost::make_shared<task_t>(boost::bind(&tf, j, k, method_i));
-	boost::shared_future<res> fut(task->get_future());
-	pending_data.push_back(fut);
-	io_service.post(boost::bind(&task_t::operator(), task));
-}
-
-using gpair = std::pair<ged::GEDGraph::GraphID, ged::GEDGraph::GraphID>;
-std::unordered_map<> thread_func(ged::Options::GEDMethod method_i, int lmt)
+vector<res> thread_func(ged::Options::GEDMethod method_i, int lmt, bool write_log = true)
 {
     env.set_method(method_i);
-    start = std::chrono::system_clock::now();
-// #define MULTITHREAD
-#ifdef MULTITHREAD
-	boost::asio::io_service io_service;
-	boost::thread_group threads;
-	boost::asio::io_service::work work(io_service);
-    int _hc = boost::thread::hardware_concurrency();
-	for (int i = 0; i < _hc; ++i)
-	{
-		threads.create_thread(boost::bind(&boost::asio::io_service::run,
-			&io_service));
-	}
-	std::vector<boost::shared_future<res> > pending_data; // vector of futures
-#endif
+    tmpt ttl = std::chrono::system_clock::now();
+    vector<res> ret(lmt/2);
     for (int j = 0; j < lmt; j+=2)
-        // for (int k = j + 1; k < lmt; k++)
-#ifndef MULTITHREAD
-        tf(j,j+1, method_i);
-#else
-        push_job(j, k, method_i, io_service, pending_data);
-    boost::wait_for_all(pending_data.begin(), pending_data.end());
-#endif
-    check_time("total");
-    std::lock_guard<std::mutex> lk(mtx);
+        ret[j/2] = tf(j,j+1, method_i, write_log);
+    check_time("total", ttl);
     log_file << "time: " << elapses.back().t.count() << " Method: " << method_names[(size_t)method_i] << "\n\n";
+    return ret;
 }
 
 
 int main(int argc, const char* argv[]) {
+    std::ios_base::sync_with_stdio(1);
+    int batch_i=0, method_i=0;
     if (argc != 3) {
-        std::cout << "usage: ./oantigens [method_id] [batch_file_num]";
-        return 1;
-    }
-    
-    int method_i = atoi(argv[1]);
-    int batch_i = atoi(argv[2]);
-    std::cout << "Current method: " << method_names[method_i] << "\n"
+        std::cout << "usage: ./oantigens [method_id] [batch_file_num]\n";
+        std::cout << "using batch 175\n";
+        // return 1;
+        batch_i = 174;
+    } else {
+        method_i = atoi(argv[1]);
+        batch_i = atoi(argv[2]);
+    }    
+    std::cout 
+        // << "Current method: " << method_names[method_i] << "\n"
         << "Batch: " << batch_i << "\n\n";
     std::ifstream ifs;
-    ifs.open("rep_data/graphs_rep_data_batch_"+std::to_string(batch_i)+".txt", std::ios::in);
+
+    std::string _pref = "/mnt/d/Github/oantigens/";
+    
+    ifs.open(_pref + "rep_data/graphs_rep_data_batch_"+std::to_string(batch_i)+".txt", std::ios::in);
     int num_graphs;
+    assert(ifs.is_open());
     ifs >> num_graphs;
+    graph_names.resize(num_graphs);
+    graphs.resize(num_graphs);
     string graph_name = "";
     std::getline(ifs, graph_name);
     for (int i = 0; i < num_graphs; i++)
@@ -216,20 +201,22 @@ int main(int argc, const char* argv[]) {
 
     std::stringstream sstream;
     sstream 
-        << 1 + ltm->tm_hour << ":"
-        << 1 + ltm->tm_min << ":"
+        << 1 + ltm->tm_hour << "-"//":"
+        << 1 + ltm->tm_min << "-"//":"
         << 1 + ltm->tm_sec << "_"
-        << -100 + ltm->tm_year << "."
+        << ltm->tm_mday << "."
         << 1 + ltm->tm_mon<< "."
-        <<  ltm->tm_mday << ""
-        << std::endl;
+        << -100 + ltm->tm_year
+        ;
     string log_time_str = sstream.str();
-    log_file.open("cpp_logs/log_"+method_names[method_i]+"_batch_"+std::to_string(batch_i)+"_"+log_time_str, std::ios::out);
-    // for (auto method_i : methods) {
-    if (!(method_i > 0 and method_i < methods.size())) {
-        std::cout << "wrong method_i\n";
-        return 1;
-    } else {
+    string log_name = _pref+"cpp_logs/log_"+method_names[method_i]+"_batch_"+std::to_string(batch_i)+"_"+log_time_str;
+    std::cout << "log file: " << log_name << endl;
+    log_file.open(log_name, std::ios::out);
+    
+    vector<res> final_res(num_graphs/2, {0, 1e5});
+    assert(num_graphs/2*2==num_graphs);
+
+    for (auto method_i : to_calc) {
         string& mn = method_names[(size_t)method_i];
         string _ml = mn.substr(mn.size()-2, 2);
         if (_ml == "ML") {
@@ -237,8 +224,19 @@ int main(int argc, const char* argv[]) {
             return 1;
             // continue;
         }
-        thread_func(static_cast<ged::Options::GEDMethod>(method_i), num_graphs);
+        vector<res> mres = thread_func(static_cast<ged::Options::GEDMethod>(method_i), num_graphs);
+        for (size_t i = 0; i < mres.size(); i++) {
+            res& fr = final_res[i];
+            fr.lower_bound = std::max(fr.lower_bound, mres[i].lower_bound);
+            fr.upper_bound = std::min(fr.upper_bound, mres[i].upper_bound);
+        }
     }
+
+    log_file << "\nFINAL RESULT:\n";
+    for (int i = 0; i < final_res.size(); i++) {
+        log_file << graph_names[i*2] << " : " << graph_names[i*2+1] << " . bounds: " << final_res[i].lower_bound << " " << final_res[i].upper_bound << endl;
+    }
+
     log_file.close();
     ifs.close();
     return 0;
