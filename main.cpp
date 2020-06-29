@@ -3,14 +3,6 @@
 #include <thread>
 #include <fstream>
 #include <mutex>
-#include <boost/asio/thread_pool.hpp>
-#include <boost/asio/post.hpp>
-#include <boost/shared_ptr.hpp>
-#include <boost/make_shared.hpp>
-#include <boost/thread.hpp>
-#include <boost/bind.hpp>
-#include <boost/asio.hpp>
-#include <boost/move/move.hpp>
 #include <unistd.h>
 #include <stdlib.h>
 #include <ctime>
@@ -18,7 +10,6 @@
 using std::string;
 using std::vector;
 using std::endl;
-namespace asio = boost::asio; 
 
 using tmpt = std::chrono::time_point<std::chrono::system_clock>;
 tmpt start, end;
@@ -160,7 +151,7 @@ int main(int argc, const char* argv[]) {
 
     std::string _pref = "/mnt/d/Github/oantigens/";
     
-    ifs.open(_pref + "rep_data/graphs_rep_data_batch_"+std::to_string(batch_i)+".txt", std::ios::in);
+    ifs.open(_pref + "repeated_pairs/rep_pairs_of_graphs_batch_"+std::to_string(batch_i)+".txt", std::ios::in);
     int num_graphs;
     assert(ifs.is_open());
     ifs >> num_graphs;
@@ -201,15 +192,15 @@ int main(int argc, const char* argv[]) {
 
     std::stringstream sstream;
     sstream 
-        << 1 + ltm->tm_hour << "-"//":"
-        << 1 + ltm->tm_min << "-"//":"
-        << 1 + ltm->tm_sec << "_"
+        << 1 + ltm->tm_hour << "h-"//":"
+        // << 1 + ltm->tm_min << "-"//":"
+        // << 1 + ltm->tm_sec << "_"
         << ltm->tm_mday << "."
         << 1 + ltm->tm_mon<< "."
         << -100 + ltm->tm_year
         ;
     string log_time_str = sstream.str();
-    string log_name = _pref+"cpp_logs/log_"+method_names[method_i]+"_batch_"+std::to_string(batch_i)+"_"+log_time_str;
+    string log_name = _pref+"gedlib_results/log_batch_"+std::to_string(batch_i)+"_"+log_time_str;
     std::cout << "log file: " << log_name << endl;
     log_file.open(log_name, std::ios::out);
     

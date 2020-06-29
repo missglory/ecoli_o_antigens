@@ -1,0 +1,1938 @@
+BRANCH:O8 : O173. bounds: 23 36 . Time: 1.59335e+09
+BRANCH:O8 : O174 ab. bounds: 6.5 8 . Time: 0.0002085
+BRANCH:O8 : O174 ac. bounds: 6.5 8 . Time: 0.000195
+BRANCH:O8 : O175. bounds: 13 39 . Time: 0.0023103
+BRANCH:O8 : O176. bounds: 6 25 . Time: 0.0017455
+BRANCH:O8 : O177. bounds: 17 19 . Time: 0.0033657
+BRANCH:O8 : O178. bounds: 24 31 . Time: 0.172529
+BRANCH:O8 : O180. bounds: 18 26 . Time: 0.0014683
+BRANCH:O8 : O181. bounds: 26 41 . Time: 0.0017808
+BRANCH:O8 : O182. bounds: 7 8 . Time: 0.0001414
+BRANCH:O8 : O183. bounds: 23 36 . Time: 0.0021738
+BRANCH:O8 : O184. bounds: 17 19 . Time: 0.0013575
+BRANCH:O8 : O185. bounds: 22 36 . Time: 0.282228
+BRANCH:O8 : O186. bounds: 20 21 . Time: 0.0013565
+BRANCH:O8 : O187. bounds: 6 12 . Time: 0.0003669
+BRANCH:O9 : O9 a. bounds: 2 24 . Time: 0.0036854
+BRANCH:O9 : O10. bounds: 39.5 57 . Time: 0.224709
+BRANCH:O9 : O11. bounds: 37 58 . Time: 0.0046633
+BRANCH:O9 : O12. bounds: 27 50 . Time: 0.0037302
+BRANCH:O9 : O13. bounds: 31.5 67 . Time: 0.224659
+BRANCH:O9 : O15. bounds: 19 37 . Time: 0.0021212
+BRANCH:O9 : O16. bounds: 37 60 . Time: 0.22478
+BRANCH:O9 : O16.2. bounds: 27 50 . Time: 0.0037823
+BRANCH:O9 : O16.3. bounds: 27 50 . Time: 0.0037652
+BRANCH:O9 : O17. bounds: 25 46 . Time: 0.224843
+BRANCH:O9 : O18 A. bounds: 38 60 . Time: 0.004761
+BRANCH:O9 : O18 A1. bounds: 48 70 . Time: 0.235958
+BRANCH:O9 : O18 A1A2. bounds: 48 68 . Time: 0.0063465
+BRANCH:O9 : O18 ab. bounds: 42 69 . Time: 0.204724
+BRANCH:O9 : O18 ac. bounds: 38 60 . Time: 0.0046507
+BRANCH:O9 : O18 B. bounds: 42 69 . Time: 0.224745
+BRANCH:O9 : O18 B1. bounds: 52 79 . Time: 0.0055927
+BRANCH:O9 : O19 ab. bounds: 6 6 . Time: 0.0002773
+BRANCH:O9 : O20 ab. bounds: 16 17 . Time: 0.221018
+BRANCH:O9 : O20 ac. bounds: 23.5 38 . Time: 0.0014953
+BRANCH:O9 : O21. bounds: 41.5 63 . Time: 0.0037859
+BRANCH:O9 : O22. bounds: 8 8 . Time: 0.0002659
+BRANCH:O9 : O23 A. bounds: 52 74 . Time: 0.226783
+BRANCH:O9 : O24. bounds: 33 49 . Time: 0.0027422
+BRANCH:O9 : O25. bounds: 44 62 . Time: 0.0036951
+BRANCH:O9 : O26. bounds: 24 43 . Time: 0.222148
+BRANCH:O9 : O27. bounds: 53 70 . Time: 0.0043409
+BRANCH:O9 : O28 ab. bounds: 32 50 . Time: 0.224356
+BRANCH:O9 : O28 ac. bounds: 27 50 . Time: 0.0039472
+BRANCH:O9 : O29. bounds: 52 78 . Time: 0.226293
+BRANCH:O9 : O30. bounds: 33 53 . Time: 0.0030167
+BRANCH:O9 : O32. bounds: 10 10 . Time: 0.0002983
+BRANCH:O9 : O35. bounds: 7.5 13 . Time: 0.0003098
+BRANCH:O9 : O36. bounds: 36.5 60 . Time: 0.226566
+BRANCH:O9 : O37. bounds: 44 46 . Time: 0.0053646
+BRANCH:O9 : O38. bounds: 44 53 . Time: 0.224991
+BRANCH:O9 : O39. bounds: 32 53 . Time: 0.004762
+BRANCH:O9 : O40. bounds: 30 50 . Time: 0.0038039
+BRANCH:O9 : O41. bounds: 10 14 . Time: 0.210348
+BRANCH:O9 : O42. bounds: 37 67 . Time: 0.0050917
+BRANCH:O9 : O43. bounds: 37 60 . Time: 0.0046754
+BRANCH:O9 : O44. bounds: 25 46 . Time: 0.215625
+BRANCH:O9 : O45. bounds: 19 37 . Time: 0.0021171
+BRANCH:O9 : O45 rel. bounds: 19 37 . Time: 0.0021357
+BRANCH:O9 : O46. bounds: 35 45 . Time: 0.216094
+BRANCH:O9 : O48. bounds: 42 58 . Time: 0.234788
+BRANCH:O9 : O49. bounds: 30 50 . Time: 0.0036943
+BRANCH:O9 : O52. bounds: 16 16 . Time: 0.0009754
+BRANCH:O9 : O53. bounds: 41.5 65 . Time: 0.225339
+BRANCH:O9 : O55. bounds: 41.5 61 . Time: 0.0034739
+BRANCH:O9 : O56. bounds: 33 49 . Time: 0.0028194
+BRANCH:O9 : O58. bounds: 30.5 33 . Time: 0.223554
+BRANCH:O9 : O59. bounds: 32 55 . Time: 0.0046209
+BRANCH:O9 : O61. bounds: 25.5 39 . Time: 0.002088
+BRANCH:O9 : O62. bounds: 40.5 65 . Time: 0.213576
+BRANCH:O9 : O64. bounds: 42 59 . Time: 0.0048366
+BRANCH:O9 : O65. bounds: 8 15 . Time: 0.0003311
+BRANCH:O9 : O66. bounds: 6 10 . Time: 0.0002776
+BRANCH:O9 : O68. bounds: 6.5 7 . Time: 0.0004041
+BRANCH:O9 : O69. bounds: 5 5 . Time: 0.0002803
+BRANCH:O9 : O70. bounds: 42 64 . Time: 0.224847
+BRANCH:O9 : O71. bounds: 34 36 . Time: 0.0038362
+BRANCH:O9 : O73. bounds: 35 57 . Time: 0.226017
+BRANCH:O9 : O73 ab. bounds: 25 38 . Time: 0.0045995
+BRANCH:O9 : O74. bounds: 35.5 38 . Time: 0.0028486
+BRANCH:O9 : O75. bounds: 34 50 . Time: 0.203177
+BRANCH:O9 : O76. bounds: 35 45 . Time: 0.0038865
+BRANCH:O9 : O77. bounds: 15 36 . Time: 0.0036596
+BRANCH:O9 : O78. bounds: 30 40 . Time: 0.203842
+BRANCH:O9 : O79. bounds: 9 14 . Time: 0.0003515
+BRANCH:O9 : O82. bounds: 45 55 . Time: 0.0047271
+BRANCH:O9 : O83. bounds: 10 10 . Time: 0.0002886
+BRANCH:O9 : O85. bounds: 39 55 . Time: 0.214863
+BRANCH:O9 : O86. bounds: 37 55 . Time: 0.0047986
+BRANCH:O9 : O86.2. bounds: 34.5 62 . Time: 0.21928
+BRANCH:O9 : O86.3. bounds: 37 55 . Time: 0.55568
+BRANCH:O9 : O87. bounds: 32 55 . Time: 0.003765
+BRANCH:O9 : O88. bounds: 24 43 . Time: 0.233519
+BRANCH:O9 : O90. bounds: 27 54 . Time: 0.0051107
+BRANCH:O9 : O91. bounds: 9 12 . Time: 0.0002606
+BRANCH:O9 : O96. bounds: 40 60 . Time: 0.21472
+BRANCH:O9 : O97. bounds: 36 48 . Time: 0.0019425
+BRANCH:O9 : O98. bounds: 32 55 . Time: 0.0036331
+BRANCH:O9 : O99. bounds: 40 74 . Time: 0.257834
+BRANCH:O9 : O100. bounds: 37 63 . Time: 0.218538
+time: 8.1027 Method: BRANCH
+
+BRANCH_FAST:O8 : O173. bounds: 23 36 . Time: 0.0012698
+BRANCH_FAST:O8 : O174 ab. bounds: 6.5 8 . Time: 0.000134
+BRANCH_FAST:O8 : O174 ac. bounds: 6.5 8 . Time: 0.0001281
+BRANCH_FAST:O8 : O175. bounds: 13 39 . Time: 0.0015
+BRANCH_FAST:O8 : O176. bounds: 6 25 . Time: 0.0008777
+BRANCH_FAST:O8 : O177. bounds: 17 19 . Time: 0.0009394
+BRANCH_FAST:O8 : O178. bounds: 24 31 . Time: 0.0014068
+BRANCH_FAST:O8 : O180. bounds: 18 26 . Time: 0.210955
+BRANCH_FAST:O8 : O181. bounds: 26 41 . Time: 0.0014164
+BRANCH_FAST:O8 : O182. bounds: 7 8 . Time: 0.0001442
+BRANCH_FAST:O8 : O183. bounds: 23 36 . Time: 0.0017098
+BRANCH_FAST:O8 : O184. bounds: 17 19 . Time: 0.0010353
+BRANCH_FAST:O8 : O185. bounds: 22 36 . Time: 0.0015654
+BRANCH_FAST:O8 : O186. bounds: 20 21 . Time: 0.0010236
+BRANCH_FAST:O8 : O187. bounds: 6 12 . Time: 0.000291
+BRANCH_FAST:O9 : O9 a. bounds: 2 24 . Time: 0.242891
+BRANCH_FAST:O9 : O10. bounds: 39.5 57 . Time: 0.0044154
+BRANCH_FAST:O9 : O11. bounds: 37 58 . Time: 0.0045102
+BRANCH_FAST:O9 : O12. bounds: 27 50 . Time: 0.207299
+BRANCH_FAST:O9 : O13. bounds: 31.5 67 . Time: 0.174874
+BRANCH_FAST:O9 : O15. bounds: 19 37 . Time: 0.0020347
+BRANCH_FAST:O9 : O16. bounds: 37 60 . Time: 0.0061476
+BRANCH_FAST:O9 : O16.2. bounds: 27 50 . Time: 0.213989
+BRANCH_FAST:O9 : O16.3. bounds: 27 50 . Time: 0.0038131
+BRANCH_FAST:O9 : O17. bounds: 25 46 . Time: 0.215269
+BRANCH_FAST:O9 : O18 A. bounds: 38 60 . Time: 0.005537
+BRANCH_FAST:O9 : O18 A1. bounds: 48 70 . Time: 0.217005
+BRANCH_FAST:O9 : O18 A1A2. bounds: 48 68 . Time: 0.217035
+BRANCH_FAST:O9 : O18 ab. bounds: 42 69 . Time: 0.0053559
+BRANCH_FAST:O9 : O18 ac. bounds: 38 60 . Time: 0.393438
+BRANCH_FAST:O9 : O18 B. bounds: 42 69 . Time: 0.0053823
+BRANCH_FAST:O9 : O18 B1. bounds: 52 79 . Time: 0.216843
+BRANCH_FAST:O9 : O19 ab. bounds: 6 6 . Time: 0.000312
+BRANCH_FAST:O9 : O20 ab. bounds: 16 17 . Time: 0.0011697
+BRANCH_FAST:O9 : O20 ac. bounds: 23.5 38 . Time: 0.0017296
+BRANCH_FAST:O9 : O21. bounds: 41.5 63 . Time: 0.23467
+BRANCH_FAST:O9 : O22. bounds: 8 8 . Time: 0.0003268
+BRANCH_FAST:O9 : O23 A. bounds: 52 74 . Time: 0.0067941
+BRANCH_FAST:O9 : O24. bounds: 33 49 . Time: 0.223372
+BRANCH_FAST:O9 : O25. bounds: 44 62 . Time: 0.188893
+BRANCH_FAST:O9 : O26. bounds: 24 43 . Time: 0.0023419
+BRANCH_FAST:O9 : O27. bounds: 53 70 . Time: 0.268628
+BRANCH_FAST:O9 : O28 ab. bounds: 32 50 . Time: 0.0037701
+BRANCH_FAST:O9 : O28 ac. bounds: 27 50 . Time: 0.0037568
+BRANCH_FAST:O9 : O29. bounds: 52 78 . Time: 0.23664
+BRANCH_FAST:O9 : O30. bounds: 33 53 . Time: 0.003467
+BRANCH_FAST:O9 : O32. bounds: 10 10 . Time: 0.0003228
+BRANCH_FAST:O9 : O35. bounds: 7.5 13 . Time: 0.0004015
+BRANCH_FAST:O9 : O36. bounds: 36.5 60 . Time: 0.214305
+BRANCH_FAST:O9 : O37. bounds: 44 46 . Time: 0.0054168
+BRANCH_FAST:O9 : O38. bounds: 44 53 . Time: 0.188783
+BRANCH_FAST:O9 : O39. bounds: 32 53 . Time: 0.205588
+BRANCH_FAST:O9 : O40. bounds: 30 50 . Time: 0.0037902
+BRANCH_FAST:O9 : O41. bounds: 10 14 . Time: 0.0004334
+BRANCH_FAST:O9 : O42. bounds: 37 67 . Time: 0.225582
+BRANCH_FAST:O9 : O43. bounds: 37 60 . Time: 0.0055246
+BRANCH_FAST:O9 : O44. bounds: 25 46 . Time: 0.215925
+BRANCH_FAST:O9 : O45. bounds: 19 37 . Time: 0.0022683
+BRANCH_FAST:O9 : O45 rel. bounds: 19 37 . Time: 0.002229
+BRANCH_FAST:O9 : O46. bounds: 35 45 . Time: 0.235432
+BRANCH_FAST:O9 : O48. bounds: 42 58 . Time: 0.196848
+BRANCH_FAST:O9 : O49. bounds: 30 50 . Time: 0.0039653
+BRANCH_FAST:O9 : O52. bounds: 16 16 . Time: 0.0037627
+BRANCH_FAST:O9 : O53. bounds: 41.5 65 . Time: 0.145455
+BRANCH_FAST:O9 : O55. bounds: 41.5 61 . Time: 0.235816
+BRANCH_FAST:O9 : O56. bounds: 33 49 . Time: 0.0034647
+BRANCH_FAST:O9 : O58. bounds: 30.5 33 . Time: 0.0033358
+BRANCH_FAST:O9 : O59. bounds: 32 55 . Time: 0.206302
+BRANCH_FAST:O9 : O61. bounds: 25.5 39 . Time: 0.0022854
+BRANCH_FAST:O9 : O62. bounds: 40.5 65 . Time: 0.214224
+BRANCH_FAST:O9 : O64. bounds: 42 59 . Time: 0.0051084
+BRANCH_FAST:O9 : O65. bounds: 8 15 . Time: 0.0003085
+BRANCH_FAST:O9 : O66. bounds: 6 10 . Time: 0.0002908
+BRANCH_FAST:O9 : O68. bounds: 6.5 7 . Time: 0.0004457
+BRANCH_FAST:O9 : O69. bounds: 5 5 . Time: 0.0002945
+BRANCH_FAST:O9 : O70. bounds: 42 64 . Time: 0.215172
+BRANCH_FAST:O9 : O71. bounds: 34 36 . Time: 0.0039666
+BRANCH_FAST:O9 : O73. bounds: 35 57 . Time: 0.217067
+BRANCH_FAST:O9 : O73 ab. bounds: 25 38 . Time: 0.0057308
+BRANCH_FAST:O9 : O74. bounds: 35.5 38 . Time: 0.214493
+BRANCH_FAST:O9 : O75. bounds: 34 50 . Time: 0.0044411
+BRANCH_FAST:O9 : O76. bounds: 35 45 . Time: 0.184727
+BRANCH_FAST:O9 : O77. bounds: 15 36 . Time: 0.0037725
+BRANCH_FAST:O9 : O78. bounds: 30 40 . Time: 0.233818
+BRANCH_FAST:O9 : O79. bounds: 9 14 . Time: 0.0005589
+BRANCH_FAST:O9 : O82. bounds: 45 55 . Time: 0.0052475
+BRANCH_FAST:O9 : O83. bounds: 10 10 . Time: 0.0003596
+BRANCH_FAST:O9 : O85. bounds: 39 55 . Time: 0.205457
+BRANCH_FAST:O9 : O86. bounds: 37 55 . Time: 0.0055064
+BRANCH_FAST:O9 : O86.2. bounds: 34.5 62 . Time: 0.215396
+BRANCH_FAST:O9 : O86.3. bounds: 37 55 . Time: 0.0055849
+BRANCH_FAST:O9 : O87. bounds: 32 55 . Time: 0.213921
+BRANCH_FAST:O9 : O88. bounds: 24 43 . Time: 0.0066714
+BRANCH_FAST:O9 : O90. bounds: 27 54 . Time: 0.234149
+BRANCH_FAST:O9 : O91. bounds: 9 12 . Time: 0.0003218
+BRANCH_FAST:O9 : O96. bounds: 40 60 . Time: 0.0052792
+BRANCH_FAST:O9 : O97. bounds: 36 48 . Time: 0.212523
+BRANCH_FAST:O9 : O98. bounds: 32 55 . Time: 0.0038763
+BRANCH_FAST:O9 : O99. bounds: 40 74 . Time: 0.206705
+BRANCH_FAST:O9 : O100. bounds: 37 63 . Time: 0.005438
+time: 8.2743 Method: BRANCH_FAST
+
+BRANCH_TIGHT:O8 : O173. bounds: 23 30 . Time: 2.80936
+BRANCH_TIGHT:O8 : O174 ab. bounds: 6.5 7 . Time: 0.20436
+BRANCH_TIGHT:O8 : O174 ac. bounds: 6.5 7 . Time: 0.0033773
+BRANCH_TIGHT:O8 : O175. bounds: 13.0357 33 . Time: 2.90609
+BRANCH_TIGHT:O8 : O176. bounds: 6.25207 18 . Time: 1.99018
+BRANCH_TIGHT:O8 : O177. bounds: 17 19 . Time: 1.07447
+BRANCH_TIGHT:O8 : O178. bounds: 24.0357 31 . Time: 3.39659
+BRANCH_TIGHT:O8 : O180. bounds: 18.0909 33 . Time: 1.0787
+BRANCH_TIGHT:O8 : O181. bounds: 26.1071 33 . Time: 2.62131
+BRANCH_TIGHT:O8 : O182. bounds: 7 7 . Time: 0.0034399
+BRANCH_TIGHT:O8 : O183. bounds: 23 30 . Time: 6.1916
+BRANCH_TIGHT:O8 : O184. bounds: 17 19 . Time: 1.10809
+BRANCH_TIGHT:O8 : O185. bounds: 22 30 . Time: 2.5633
+BRANCH_TIGHT:O8 : O186. bounds: 20 21 . Time: 1.09941
+BRANCH_TIGHT:O8 : O187. bounds: 6 12 . Time: 0.216166
+BRANCH_TIGHT:O9 : O9 a. bounds: 2.05263 24 . Time: 14.5251
+BRANCH_TIGHT:O9 : O10. bounds: 39.5 57 . Time: 22.9073
+BRANCH_TIGHT:O9 : O11. bounds: 37 60 . Time: 22.9125
+BRANCH_TIGHT:O9 : O12. bounds: 27 55 . Time: 9.21044
+BRANCH_TIGHT:O9 : O13. bounds: 31.5208 62 . Time: 22.6661
+BRANCH_TIGHT:O9 : O15. bounds: 19 37 . Time: 2.78807
+BRANCH_TIGHT:O9 : O16. bounds: 37 66 . Time: 22.0512
+BRANCH_TIGHT:O9 : O16.2. bounds: 27 55 . Time: 9.83688
+BRANCH_TIGHT:O9 : O16.3. bounds: 27 55 . Time: 10.0736
+BRANCH_TIGHT:O9 : O17. bounds: 25.0208 49 . Time: 22.6622
+BRANCH_TIGHT:O9 : O18 A. bounds: 38.0208 64 . Time: 23.1633
+BRANCH_TIGHT:O9 : O18 A1. bounds: 48.0172 68 . Time: 49.0557
+BRANCH_TIGHT:O9 : O18 A1A2. bounds: 48.0172 64 . Time: 48.9865
+BRANCH_TIGHT:O9 : O18 ab. bounds: 42 54 . Time: 22.2646
+BRANCH_TIGHT:O9 : O18 ac. bounds: 38.0208 64 . Time: 22.2332
+BRANCH_TIGHT:O9 : O18 B. bounds: 42 54 . Time: 22.5014
+BRANCH_TIGHT:O9 : O18 B1. bounds: 52 76 . Time: 46.8159
+BRANCH_TIGHT:O9 : O19 ab. bounds: 6 6 . Time: 0.133909
+BRANCH_TIGHT:O9 : O20 ab. bounds: 16 17 . Time: 0.443595
+BRANCH_TIGHT:O9 : O20 ac. bounds: 23.6786 38 . Time: 2.89755
+BRANCH_TIGHT:O9 : O21. bounds: 41.5 64 . Time: 22.5812
+BRANCH_TIGHT:O9 : O22. bounds: 8 10 . Time: 0.0040866
+BRANCH_TIGHT:O9 : O23 A. bounds: 52 65 . Time: 48.5769
+BRANCH_TIGHT:O9 : O24. bounds: 33.1316 49 . Time: 9.72585
+BRANCH_TIGHT:O9 : O25. bounds: 44 52 . Time: 22.4065
+BRANCH_TIGHT:O9 : O26. bounds: 24 31 . Time: 2.88801
+BRANCH_TIGHT:O9 : O27. bounds: 53 71 . Time: 50.727
+BRANCH_TIGHT:O9 : O28 ab. bounds: 32 40 . Time: 8.90606
+BRANCH_TIGHT:O9 : O28 ac. bounds: 27 55 . Time: 9.40204
+BRANCH_TIGHT:O9 : O29. bounds: 52 75 . Time: 49.363
+BRANCH_TIGHT:O9 : O30. bounds: 33.1316 50 . Time: 11.012
+BRANCH_TIGHT:O9 : O32. bounds: 10 10 . Time: 0.158559
+BRANCH_TIGHT:O9 : O35. bounds: 8 8 . Time: 0.594497
+BRANCH_TIGHT:O9 : O36. bounds: 36.5 46 . Time: 26.4262
+BRANCH_TIGHT:O9 : O37. bounds: 44 46 . Time: 25.245
+BRANCH_TIGHT:O9 : O38. bounds: 44 53 . Time: 29.6748
+BRANCH_TIGHT:O9 : O39. bounds: 32 58 . Time: 25.4887
+BRANCH_TIGHT:O9 : O40. bounds: 30.0263 53 . Time: 9.88678
+BRANCH_TIGHT:O9 : O41. bounds: 10 10 . Time: 0.0058075
+BRANCH_TIGHT:O9 : O42. bounds: 37 59 . Time: 26.3231
+BRANCH_TIGHT:O9 : O43. bounds: 37 49 . Time: 26.9961
+BRANCH_TIGHT:O9 : O44. bounds: 25.0208 49 . Time: 24.5151
+BRANCH_TIGHT:O9 : O45. bounds: 19 37 . Time: 2.98225
+BRANCH_TIGHT:O9 : O45 rel. bounds: 19 37 . Time: 3.04302
+BRANCH_TIGHT:O9 : O46. bounds: 35 48 . Time: 9.7935
+BRANCH_TIGHT:O9 : O48. bounds: 42.0833 58 . Time: 25.5004
+BRANCH_TIGHT:O9 : O49. bounds: 30.0263 53 . Time: 9.34818
+BRANCH_TIGHT:O9 : O52. bounds: 16 16 . Time: 0.422866
+BRANCH_TIGHT:O9 : O53. bounds: 41.5 65 . Time: 24.1516
+BRANCH_TIGHT:O9 : O55. bounds: 41.5 53 . Time: 25.1157
+BRANCH_TIGHT:O9 : O56. bounds: 33.1316 49 . Time: 9.26057
+BRANCH_TIGHT:O9 : O58. bounds: 30.5 43 . Time: 9.54901
+BRANCH_TIGHT:O9 : O59. bounds: 32 44 . Time: 23.8164
+BRANCH_TIGHT:O9 : O61. bounds: 25.6071 37 . Time: 2.69189
+BRANCH_TIGHT:O9 : O62. bounds: 40.7083 62 . Time: 22.8881
+BRANCH_TIGHT:O9 : O64. bounds: 42 42 . Time: 23.313
+BRANCH_TIGHT:O9 : O65. bounds: 8 11 . Time: 0.224211
+BRANCH_TIGHT:O9 : O66. bounds: 6 10 . Time: 0.0058218
+BRANCH_TIGHT:O9 : O68. bounds: 6.625 11 . Time: 0.222538
+BRANCH_TIGHT:O9 : O69. bounds: 5 5 . Time: 0.254102
+BRANCH_TIGHT:O9 : O70. bounds: 42 50 . Time: 23.8619
+BRANCH_TIGHT:O9 : O71. bounds: 36 36 . Time: 8.81913
+BRANCH_TIGHT:O9 : O73. bounds: 35 70 . Time: 47.8381
+BRANCH_TIGHT:O9 : O73 ab. bounds: 25 50 . Time: 21.8912
+BRANCH_TIGHT:O9 : O74. bounds: 35.5 38 . Time: 9.15813
+BRANCH_TIGHT:O9 : O75. bounds: 34 41 . Time: 8.57561
+BRANCH_TIGHT:O9 : O76. bounds: 35 48 . Time: 9.26271
+BRANCH_TIGHT:O9 : O77. bounds: 15.0263 40 . Time: 8.32066
+BRANCH_TIGHT:O9 : O78. bounds: 30 43 . Time: 8.80462
+BRANCH_TIGHT:O9 : O79. bounds: 9.34 11 . Time: 0.240507
+BRANCH_TIGHT:O9 : O82. bounds: 45 60 . Time: 24.307
+BRANCH_TIGHT:O9 : O83. bounds: 10 10 . Time: 0.0034551
+BRANCH_TIGHT:O9 : O85. bounds: 39.1667 57 . Time: 23.3338
+BRANCH_TIGHT:O9 : O86. bounds: 37 60 . Time: 22.2982
+BRANCH_TIGHT:O9 : O86.2. bounds: 34.6042 59 . Time: 21.9209
+BRANCH_TIGHT:O9 : O86.3. bounds: 37 60 . Time: 21.9692
+BRANCH_TIGHT:O9 : O87. bounds: 32 40 . Time: 8.51749
+BRANCH_TIGHT:O9 : O88. bounds: 24 32 . Time: 8.95486
+BRANCH_TIGHT:O9 : O90. bounds: 27 38 . Time: 9.36116
+BRANCH_TIGHT:O9 : O91. bounds: 9 9 . Time: 0.0036121
+BRANCH_TIGHT:O9 : O96. bounds: 40.0208 65 . Time: 22.5491
+BRANCH_TIGHT:O9 : O97. bounds: 36 48 . Time: 10.2413
+BRANCH_TIGHT:O9 : O98. bounds: 32 40 . Time: 8.99892
+BRANCH_TIGHT:O9 : O99. bounds: 40.0172 68 . Time: 46.7778
+BRANCH_TIGHT:O9 : O100. bounds: 37 61 . Time: 22.6781
+time: 1447.57 Method: BRANCH_TIGHT
+
+BRANCH_UNIFORM:O8 : O173. bounds: 23 36 . Time: 0.0026336
+BRANCH_UNIFORM:O8 : O174 ab. bounds: 6.5 8 . Time: 0.0001593
+BRANCH_UNIFORM:O8 : O174 ac. bounds: 6.5 8 . Time: 0.0001447
+BRANCH_UNIFORM:O8 : O175. bounds: 13 39 . Time: 0.0013193
+BRANCH_UNIFORM:O8 : O176. bounds: 6 25 . Time: 0.0008368
+BRANCH_UNIFORM:O8 : O177. bounds: 17 19 . Time: 0.0022663
+BRANCH_UNIFORM:O8 : O178. bounds: 24 31 . Time: 0.0013083
+BRANCH_UNIFORM:O8 : O180. bounds: 18 26 . Time: 0.191482
+BRANCH_UNIFORM:O8 : O181. bounds: 26 41 . Time: 0.0010719
+BRANCH_UNIFORM:O8 : O182. bounds: 7 8 . Time: 0.0001547
+BRANCH_UNIFORM:O8 : O183. bounds: 23 36 . Time: 0.0012984
+BRANCH_UNIFORM:O8 : O184. bounds: 17 19 . Time: 0.0009549
+BRANCH_UNIFORM:O8 : O185. bounds: 22 36 . Time: 0.0014501
+BRANCH_UNIFORM:O8 : O186. bounds: 20 21 . Time: 0.0008422
+BRANCH_UNIFORM:O8 : O187. bounds: 6 12 . Time: 0.000308
+BRANCH_UNIFORM:O9 : O9 a. bounds: 2 24 . Time: 0.00216
+BRANCH_UNIFORM:O9 : O10. bounds: 39.5 57 . Time: 0.222908
+BRANCH_UNIFORM:O9 : O11. bounds: 37 58 . Time: 0.0027201
+BRANCH_UNIFORM:O9 : O12. bounds: 27 50 . Time: 0.0022289
+BRANCH_UNIFORM:O9 : O13. bounds: 31.5 67 . Time: 0.0027172
+BRANCH_UNIFORM:O9 : O15. bounds: 19 37 . Time: 0.221378
+BRANCH_UNIFORM:O9 : O16. bounds: 37 60 . Time: 0.0027613
+BRANCH_UNIFORM:O9 : O16.2. bounds: 27 50 . Time: 0.0022429
+BRANCH_UNIFORM:O9 : O16.3. bounds: 27 50 . Time: 0.0024813
+BRANCH_UNIFORM:O9 : O17. bounds: 25 46 . Time: 0.232601
+BRANCH_UNIFORM:O9 : O18 A. bounds: 38 60 . Time: 0.0026807
+BRANCH_UNIFORM:O9 : O18 A1. bounds: 48 70 . Time: 0.0034334
+BRANCH_UNIFORM:O9 : O18 A1A2. bounds: 48 68 . Time: 0.323381
+BRANCH_UNIFORM:O9 : O18 ab. bounds: 42 69 . Time: 0.0026777
+BRANCH_UNIFORM:O9 : O18 ac. bounds: 38 60 . Time: 0.0027198
+BRANCH_UNIFORM:O9 : O18 B. bounds: 42 69 . Time: 0.0027656
+BRANCH_UNIFORM:O9 : O18 B1. bounds: 52 79 . Time: 0.21331
+BRANCH_UNIFORM:O9 : O19 ab. bounds: 6 6 . Time: 0.0002538
+BRANCH_UNIFORM:O9 : O20 ab. bounds: 16 17 . Time: 0.0007053
+BRANCH_UNIFORM:O9 : O20 ac. bounds: 23.5 38 . Time: 0.0010083
+BRANCH_UNIFORM:O9 : O21. bounds: 41.5 63 . Time: 0.0022088
+BRANCH_UNIFORM:O9 : O22. bounds: 8 8 . Time: 0.0002744
+BRANCH_UNIFORM:O9 : O23 A. bounds: 52 74 . Time: 0.213434
+BRANCH_UNIFORM:O9 : O24. bounds: 33 49 . Time: 0.0016708
+BRANCH_UNIFORM:O9 : O25. bounds: 44 62 . Time: 0.0034849
+BRANCH_UNIFORM:O9 : O26. bounds: 24 43 . Time: 0.0013137
+BRANCH_UNIFORM:O9 : O27. bounds: 53 70 . Time: 0.0024243
+BRANCH_UNIFORM:O9 : O28 ab. bounds: 32 50 . Time: 0.232258
+BRANCH_UNIFORM:O9 : O28 ac. bounds: 27 50 . Time: 0.0022704
+BRANCH_UNIFORM:O9 : O29. bounds: 52 78 . Time: 0.0032487
+BRANCH_UNIFORM:O9 : O30. bounds: 33 53 . Time: 0.0017071
+BRANCH_UNIFORM:O9 : O32. bounds: 10 10 . Time: 0.0002292
+BRANCH_UNIFORM:O9 : O35. bounds: 7.5 13 . Time: 0.0002472
+BRANCH_UNIFORM:O9 : O36. bounds: 36.5 60 . Time: 0.202272
+BRANCH_UNIFORM:O9 : O37. bounds: 44 46 . Time: 0.0026915
+BRANCH_UNIFORM:O9 : O38. bounds: 44 53 . Time: 0.0055709
+BRANCH_UNIFORM:O9 : O39. bounds: 32 53 . Time: 0.194914
+BRANCH_UNIFORM:O9 : O40. bounds: 30 50 . Time: 0.0035855
+BRANCH_UNIFORM:O9 : O41. bounds: 10 14 . Time: 0.0002663
+BRANCH_UNIFORM:O9 : O42. bounds: 37 67 . Time: 0.202713
+BRANCH_UNIFORM:O9 : O43. bounds: 37 60 . Time: 0.0026147
+BRANCH_UNIFORM:O9 : O44. bounds: 25 46 . Time: 0.0027254
+BRANCH_UNIFORM:O9 : O45. bounds: 19 37 . Time: 0.0012953
+BRANCH_UNIFORM:O9 : O45 rel. bounds: 19 37 . Time: 0.212393
+BRANCH_UNIFORM:O9 : O46. bounds: 35 45 . Time: 0.0021855
+BRANCH_UNIFORM:O9 : O48. bounds: 42 58 . Time: 0.0027617
+BRANCH_UNIFORM:O9 : O49. bounds: 30 50 . Time: 0.0021959
+BRANCH_UNIFORM:O9 : O52. bounds: 16 16 . Time: 0.0006454
+BRANCH_UNIFORM:O9 : O53. bounds: 41.5 65 . Time: 0.213055
+BRANCH_UNIFORM:O9 : O55. bounds: 41.5 61 . Time: 0.0020469
+BRANCH_UNIFORM:O9 : O56. bounds: 33 49 . Time: 0.001704
+BRANCH_UNIFORM:O9 : O58. bounds: 30.5 33 . Time: 0.0016589
+BRANCH_UNIFORM:O9 : O59. bounds: 32 55 . Time: 0.002617
+BRANCH_UNIFORM:O9 : O61. bounds: 25.5 39 . Time: 0.211403
+BRANCH_UNIFORM:O9 : O62. bounds: 40.5 65 . Time: 0.003386
+BRANCH_UNIFORM:O9 : O64. bounds: 42 59 . Time: 0.0038241
+BRANCH_UNIFORM:O9 : O65. bounds: 8 15 . Time: 0.0003478
+BRANCH_UNIFORM:O9 : O66. bounds: 6 10 . Time: 0.0003196
+BRANCH_UNIFORM:O9 : O68. bounds: 6.5 7 . Time: 0.0004333
+BRANCH_UNIFORM:O9 : O69. bounds: 5 5 . Time: 0.0003233
+BRANCH_UNIFORM:O9 : O70. bounds: 42 64 . Time: 0.383483
+BRANCH_UNIFORM:O9 : O71. bounds: 34 36 . Time: 0.0021356
+BRANCH_UNIFORM:O9 : O73. bounds: 35 57 . Time: 0.0033728
+BRANCH_UNIFORM:O9 : O73 ab. bounds: 25 38 . Time: 0.212677
+BRANCH_UNIFORM:O9 : O74. bounds: 35.5 38 . Time: 0.0016728
+BRANCH_UNIFORM:O9 : O75. bounds: 34 50 . Time: 0.0016439
+BRANCH_UNIFORM:O9 : O76. bounds: 35 45 . Time: 0.0021713
+BRANCH_UNIFORM:O9 : O77. bounds: 15 36 . Time: 0.0021373
+BRANCH_UNIFORM:O9 : O78. bounds: 30 40 . Time: 0.222323
+BRANCH_UNIFORM:O9 : O79. bounds: 9 14 . Time: 0.0002858
+BRANCH_UNIFORM:O9 : O82. bounds: 45 55 . Time: 0.0030155
+BRANCH_UNIFORM:O9 : O83. bounds: 10 10 . Time: 0.0003255
+BRANCH_UNIFORM:O9 : O85. bounds: 39 55 . Time: 0.0027946
+BRANCH_UNIFORM:O9 : O86. bounds: 37 55 . Time: 0.0026446
+BRANCH_UNIFORM:O9 : O86.2. bounds: 34.5 62 . Time: 0.202685
+BRANCH_UNIFORM:O9 : O86.3. bounds: 37 55 . Time: 0.0028484
+BRANCH_UNIFORM:O9 : O87. bounds: 32 55 . Time: 0.0021538
+BRANCH_UNIFORM:O9 : O88. bounds: 24 43 . Time: 0.0017264
+BRANCH_UNIFORM:O9 : O90. bounds: 27 54 . Time: 0.232199
+BRANCH_UNIFORM:O9 : O91. bounds: 9 12 . Time: 0.0002613
+BRANCH_UNIFORM:O9 : O96. bounds: 40 60 . Time: 0.0027283
+BRANCH_UNIFORM:O9 : O97. bounds: 36 48 . Time: 0.001278
+BRANCH_UNIFORM:O9 : O98. bounds: 32 55 . Time: 0.0025099
+BRANCH_UNIFORM:O9 : O99. bounds: 40 74 . Time: 0.213307
+BRANCH_UNIFORM:O9 : O100. bounds: 37 63 . Time: 0.0026597
+time: 4.70318 Method: BRANCH_UNIFORM
+
+BRANCH_COMPACT:O8 : O173. bounds: 15 inf . Time: 0.0017027
+BRANCH_COMPACT:O8 : O174 ab. bounds: 4 inf . Time: 0.0001356
+BRANCH_COMPACT:O8 : O174 ac. bounds: 4 inf . Time: 0.0001232
+BRANCH_COMPACT:O8 : O175. bounds: 9.5 inf . Time: 0.0007145
+BRANCH_COMPACT:O8 : O176. bounds: 4.5 inf . Time: 0.0005309
+BRANCH_COMPACT:O8 : O177. bounds: 12 inf . Time: 0.000553
+BRANCH_COMPACT:O8 : O178. bounds: 15 inf . Time: 0.0007519
+BRANCH_COMPACT:O8 : O180. bounds: 12 inf . Time: 0.0005708
+BRANCH_COMPACT:O8 : O181. bounds: 15 inf . Time: 0.0007418
+BRANCH_COMPACT:O8 : O182. bounds: 4 inf . Time: 0.210216
+BRANCH_COMPACT:O8 : O183. bounds: 13.5 inf . Time: 0.0007408
+BRANCH_COMPACT:O8 : O184. bounds: 12 inf . Time: 0.0005392
+BRANCH_COMPACT:O8 : O185. bounds: 15 inf . Time: 0.0007328
+BRANCH_COMPACT:O8 : O186. bounds: 12 inf . Time: 0.0005238
+BRANCH_COMPACT:O8 : O187. bounds: 4 inf . Time: 0.0002323
+BRANCH_COMPACT:O9 : O9 a. bounds: 1.5 inf . Time: 0.0009451
+BRANCH_COMPACT:O9 : O10. bounds: 25 inf . Time: 0.0013126
+BRANCH_COMPACT:O9 : O11. bounds: 22.5 inf . Time: 0.0038854
+BRANCH_COMPACT:O9 : O12. bounds: 20 inf . Time: 0.20121
+BRANCH_COMPACT:O9 : O13. bounds: 25 inf . Time: 0.0013422
+BRANCH_COMPACT:O9 : O15. bounds: 15 inf . Time: 0.0007228
+BRANCH_COMPACT:O9 : O16. bounds: 25 inf . Time: 0.001386
+BRANCH_COMPACT:O9 : O16.2. bounds: 20 inf . Time: 0.0011287
+BRANCH_COMPACT:O9 : O16.3. bounds: 20 inf . Time: 0.0011639
+BRANCH_COMPACT:O9 : O17. bounds: 17.5 inf . Time: 0.0013158
+BRANCH_COMPACT:O9 : O18 A. bounds: 25 inf . Time: 0.0013495
+BRANCH_COMPACT:O9 : O18 A1. bounds: 30 inf . Time: 0.211642
+BRANCH_COMPACT:O9 : O18 A1A2. bounds: 30 inf . Time: 0.0015668
+BRANCH_COMPACT:O9 : O18 ab. bounds: 25 inf . Time: 0.0014393
+BRANCH_COMPACT:O9 : O18 ac. bounds: 25 inf . Time: 0.0014828
+BRANCH_COMPACT:O9 : O18 B. bounds: 25 inf . Time: 0.001321
+BRANCH_COMPACT:O9 : O18 B1. bounds: 30 inf . Time: 0.001501
+BRANCH_COMPACT:O9 : O19 ab. bounds: 5 inf . Time: 0.0001797
+BRANCH_COMPACT:O9 : O20 ab. bounds: 10 inf . Time: 0.0004298
+BRANCH_COMPACT:O9 : O20 ac. bounds: 15 inf . Time: 0.0005673
+BRANCH_COMPACT:O9 : O21. bounds: 25 inf . Time: 0.0010539
+BRANCH_COMPACT:O9 : O22. bounds: 5 inf . Time: 0.230225
+BRANCH_COMPACT:O9 : O23 A. bounds: 30 inf . Time: 0.0016333
+BRANCH_COMPACT:O9 : O24. bounds: 20 inf . Time: 0.0009346
+BRANCH_COMPACT:O9 : O25. bounds: 25 inf . Time: 0.0011
+BRANCH_COMPACT:O9 : O26. bounds: 15 inf . Time: 0.0007499
+BRANCH_COMPACT:O9 : O27. bounds: 30 inf . Time: 0.001306
+BRANCH_COMPACT:O9 : O28 ab. bounds: 20 inf . Time: 0.0011646
+BRANCH_COMPACT:O9 : O28 ac. bounds: 20 inf . Time: 0.0011158
+BRANCH_COMPACT:O9 : O29. bounds: 30 inf . Time: 0.0015717
+BRANCH_COMPACT:O9 : O30. bounds: 20 inf . Time: 0.191035
+BRANCH_COMPACT:O9 : O32. bounds: 5 inf . Time: 0.0002182
+BRANCH_COMPACT:O9 : O35. bounds: 6 inf . Time: 0.0093708
+BRANCH_COMPACT:O9 : O36. bounds: 22.5 inf . Time: 0.0010721
+BRANCH_COMPACT:O9 : O37. bounds: 25 inf . Time: 0.0014008
+BRANCH_COMPACT:O9 : O38. bounds: 25 inf . Time: 0.0013701
+BRANCH_COMPACT:O9 : O39. bounds: 22.5 inf . Time: 0.0013066
+BRANCH_COMPACT:O9 : O40. bounds: 20 inf . Time: 0.0011806
+BRANCH_COMPACT:O9 : O41. bounds: 6 inf . Time: 0.0002103
+BRANCH_COMPACT:O9 : O42. bounds: 25 inf . Time: 0.0013551
+BRANCH_COMPACT:O9 : O43. bounds: 20.5 inf . Time: 0.001342
+BRANCH_COMPACT:O9 : O44. bounds: 17.5 inf . Time: 0.221325
+BRANCH_COMPACT:O9 : O45. bounds: 15 inf . Time: 0.0007406
+BRANCH_COMPACT:O9 : O45 rel. bounds: 15 inf . Time: 0.0007033
+BRANCH_COMPACT:O9 : O46. bounds: 20 inf . Time: 0.0011875
+BRANCH_COMPACT:O9 : O48. bounds: 25 inf . Time: 0.0013326
+BRANCH_COMPACT:O9 : O49. bounds: 20 inf . Time: 0.0011604
+BRANCH_COMPACT:O9 : O52. bounds: 10 inf . Time: 0.000504
+BRANCH_COMPACT:O9 : O53. bounds: 25 inf . Time: 0.0013365
+BRANCH_COMPACT:O9 : O55. bounds: 25 inf . Time: 0.0011381
+BRANCH_COMPACT:O9 : O56. bounds: 20 inf . Time: 0.0009334
+BRANCH_COMPACT:O9 : O58. bounds: 17.5 inf . Time: 0.200991
+BRANCH_COMPACT:O9 : O59. bounds: 18 inf . Time: 0.0013031
+BRANCH_COMPACT:O9 : O61. bounds: 15 inf . Time: 0.000768
+BRANCH_COMPACT:O9 : O62. bounds: 25 inf . Time: 0.0011436
+BRANCH_COMPACT:O9 : O64. bounds: 25 inf . Time: 0.0013635
+BRANCH_COMPACT:O9 : O65. bounds: 5 inf . Time: 0.0001946
+BRANCH_COMPACT:O9 : O66. bounds: 5 inf . Time: 0.0002111
+BRANCH_COMPACT:O9 : O68. bounds: 5 inf . Time: 0.0002183
+BRANCH_COMPACT:O9 : O69. bounds: 5 inf . Time: 0.0001776
+BRANCH_COMPACT:O9 : O70. bounds: 25 inf . Time: 0.0013483
+BRANCH_COMPACT:O9 : O71. bounds: 20 inf . Time: 0.0011989
+BRANCH_COMPACT:O9 : O73. bounds: 25 inf . Time: 0.222069
+BRANCH_COMPACT:O9 : O73 ab. bounds: 17.5 inf . Time: 0.0013275
+BRANCH_COMPACT:O9 : O74. bounds: 20 inf . Time: 0.0009002
+BRANCH_COMPACT:O9 : O75. bounds: 20 inf . Time: 0.0009264
+BRANCH_COMPACT:O9 : O76. bounds: 20 inf . Time: 0.0012141
+BRANCH_COMPACT:O9 : O77. bounds: 12.5 inf . Time: 0.0010946
+BRANCH_COMPACT:O9 : O78. bounds: 17.5 inf . Time: 0.0011538
+BRANCH_COMPACT:O9 : O79. bounds: 6 inf . Time: 0.0002101
+BRANCH_COMPACT:O9 : O82. bounds: 25 inf . Time: 0.0013825
+BRANCH_COMPACT:O9 : O83. bounds: 5 inf . Time: 0.0002219
+BRANCH_COMPACT:O9 : O85. bounds: 25 inf . Time: 0.211683
+BRANCH_COMPACT:O9 : O86. bounds: 25 inf . Time: 0.0015555
+BRANCH_COMPACT:O9 : O86.2. bounds: 25 inf . Time: 0.0013652
+BRANCH_COMPACT:O9 : O86.3. bounds: 25 inf . Time: 0.001344
+BRANCH_COMPACT:O9 : O87. bounds: 20 inf . Time: 0.0011425
+BRANCH_COMPACT:O9 : O88. bounds: 13.5 inf . Time: 0.0008675
+BRANCH_COMPACT:O9 : O90. bounds: 20 inf . Time: 0.0010796
+BRANCH_COMPACT:O9 : O91. bounds: 5 inf . Time: 0.0001919
+BRANCH_COMPACT:O9 : O96. bounds: 25 inf . Time: 0.0014234
+BRANCH_COMPACT:O9 : O97. bounds: 20 inf . Time: 0.215462
+BRANCH_COMPACT:O9 : O98. bounds: 20 inf . Time: 0.0025466
+BRANCH_COMPACT:O9 : O99. bounds: 30 inf . Time: 0.0014283
+BRANCH_COMPACT:O9 : O100. bounds: 25 inf . Time: 0.101321
+time: 2.31566 Method: BRANCH_COMPACT
+
+PARTITION:O8 : O173. bounds: 21 inf . Time: 0.0066324
+PARTITION:O8 : O174 ab. bounds: 5 inf . Time: 0.0002756
+PARTITION:O8 : O174 ac. bounds: 5 inf . Time: 0.000232
+PARTITION:O8 : O175. bounds: 12 inf . Time: 1.1051
+PARTITION:O8 : O176. bounds: 6 inf . Time: 0.436381
+PARTITION:O8 : O177. bounds: 12 inf . Time: 0.212775
+PARTITION:O8 : O178. bounds: 24 inf . Time: 0.0054444
+PARTITION:O8 : O180. bounds: 18 inf . Time: 0.234219
+PARTITION:O8 : O181. bounds: 24 inf . Time: 0.0064823
+PARTITION:O8 : O182. bounds: 6 inf . Time: 0.0002159
+PARTITION:O8 : O183. bounds: 21 inf . Time: 0.830742
+PARTITION:O8 : O184. bounds: 12 inf . Time: 0.236255
+PARTITION:O8 : O185. bounds: 21 inf . Time: 0.206371
+PARTITION:O8 : O186. bounds: 15 inf . Time: 0.0026524
+PARTITION:O8 : O187. bounds: 5 inf . Time: 0.0022726
+PARTITION:O9 : O9 a. bounds: 0 inf . Time: 5.54879
+PARTITION:O9 : O10. bounds: 25 inf . Time: 0.389688
+PARTITION:O9 : O11. bounds: 30 inf . Time: 3.0282
+PARTITION:O9 : O12. bounds: 25 inf . Time: 0.212427
+PARTITION:O9 : O13. bounds: 25 inf . Time: 0.439363
+PARTITION:O9 : O15. bounds: 15 inf . Time: 0.0045747
+PARTITION:O9 : O16. bounds: 35 inf . Time: 0.644624
+PARTITION:O9 : O16.2. bounds: 25 inf . Time: 0.221926
+PARTITION:O9 : O16.3. bounds: 25 inf . Time: 0.374882
+PARTITION:O9 : O17. bounds: 25 inf . Time: 5.27336
+PARTITION:O9 : O18 A. bounds: 35 inf . Time: 0.443268
+PARTITION:O9 : O18 A1. bounds: 45 inf . Time: 0.859487
+PARTITION:O9 : O18 A1A2. bounds: 45 inf . Time: 0.86968
+PARTITION:O9 : O18 ab. bounds: 35 inf . Time: 0.663627
+PARTITION:O9 : O18 ac. bounds: 35 inf . Time: 0.662927
+PARTITION:O9 : O18 B. bounds: 35 inf . Time: 0.4431
+PARTITION:O9 : O18 B1. bounds: 45 inf . Time: 1.07653
+PARTITION:O9 : O19 ab. bounds: 5 inf . Time: 0.0003165
+PARTITION:O9 : O20 ab. bounds: 15 inf . Time: 0.0014642
+PARTITION:O9 : O20 ac. bounds: 20 inf . Time: 0.0043713
+PARTITION:O9 : O21. bounds: 35 inf . Time: 0.665329
+PARTITION:O9 : O22. bounds: 8 inf . Time: 0.0004595
+PARTITION:O9 : O23 A. bounds: 45 inf . Time: 0.890759
+PARTITION:O9 : O24. bounds: 30 inf . Time: 0.564624
+PARTITION:O9 : O25. bounds: 35 inf . Time: 0.583022
+PARTITION:O9 : O26. bounds: 20 inf . Time: 0.0046862
+PARTITION:O9 : O27. bounds: 45 inf . Time: 0.867271
+PARTITION:O9 : O28 ab. bounds: 25 inf . Time: 0.425515
+PARTITION:O9 : O28 ac. bounds: 25 inf . Time: 0.221269
+PARTITION:O9 : O29. bounds: 45 inf . Time: 0.903803
+PARTITION:O9 : O30. bounds: 30 inf . Time: 0.221491
+PARTITION:O9 : O32. bounds: 10 inf . Time: 0.0003897
+PARTITION:O9 : O35. bounds: 6 inf . Time: 0.0004427
+PARTITION:O9 : O36. bounds: 25 inf . Time: 3.04509
+PARTITION:O9 : O37. bounds: 40 inf . Time: 0.433792
+PARTITION:O9 : O38. bounds: 40 inf . Time: 0.481487
+PARTITION:O9 : O39. bounds: 25 inf . Time: 3.59116
+PARTITION:O9 : O40. bounds: 30 inf . Time: 0.530462
+PARTITION:O9 : O41. bounds: 8 inf . Time: 0.0010665
+PARTITION:O9 : O42. bounds: 30 inf . Time: 0.442192
+PARTITION:O9 : O43. bounds: 25 inf . Time: 3.31623
+PARTITION:O9 : O44. bounds: 25 inf . Time: 6.54534
+PARTITION:O9 : O45. bounds: 15 inf . Time: 0.0045081
+PARTITION:O9 : O45 rel. bounds: 15 inf . Time: 0.481629
+PARTITION:O9 : O46. bounds: 35 inf . Time: 0.224818
+PARTITION:O9 : O48. bounds: 35 inf . Time: 0.441115
+PARTITION:O9 : O49. bounds: 30 inf . Time: 0.251862
+PARTITION:O9 : O52. bounds: 10 inf . Time: 0.211366
+PARTITION:O9 : O53. bounds: 35 inf . Time: 0.446947
+PARTITION:O9 : O55. bounds: 30 inf . Time: 0.442171
+PARTITION:O9 : O56. bounds: 30 inf . Time: 0.4618
+PARTITION:O9 : O58. bounds: 25 inf . Time: 1.11535
+PARTITION:O9 : O59. bounds: 20 inf . Time: 5.81603
+PARTITION:O9 : O61. bounds: 25 inf . Time: 0.0051346
+PARTITION:O9 : O62. bounds: 35 inf . Time: 0.419579
+PARTITION:O9 : O64. bounds: 30 inf . Time: 0.625679
+PARTITION:O9 : O65. bounds: 8 inf . Time: 0.0004607
+PARTITION:O9 : O66. bounds: 5 inf . Time: 0.000345
+PARTITION:O9 : O68. bounds: 5 inf . Time: 0.003059
+PARTITION:O9 : O69. bounds: 5 inf . Time: 0.0003649
+PARTITION:O9 : O70. bounds: 35 inf . Time: 0.451403
+PARTITION:O9 : O71. bounds: 30 inf . Time: 0.411315
+PARTITION:O9 : O73. bounds: 30 inf . Time: 8.18908
+PARTITION:O9 : O73 ab. bounds: 20 inf . Time: 6.5313
+PARTITION:O9 : O74. bounds: 30 inf . Time: 0.431407
+PARTITION:O9 : O75. bounds: 30 inf . Time: 0.220755
+PARTITION:O9 : O76. bounds: 35 inf . Time: 0.220776
+PARTITION:O9 : O77. bounds: 15 inf . Time: 3.80015
+PARTITION:O9 : O78. bounds: 30 inf . Time: 1.09743
+PARTITION:O9 : O79. bounds: 8 inf . Time: 0.0006323
+PARTITION:O9 : O82. bounds: 45 inf . Time: 0.444213
+PARTITION:O9 : O83. bounds: 10 inf . Time: 0.0003634
+PARTITION:O9 : O85. bounds: 35 inf . Time: 0.443192
+PARTITION:O9 : O86. bounds: 30 inf . Time: 0.675727
+PARTITION:O9 : O86.2. bounds: 25 inf . Time: 0.440868
+PARTITION:O9 : O86.3. bounds: 30 inf . Time: 0.442617
+PARTITION:O9 : O87. bounds: 25 inf . Time: 0.421245
+PARTITION:O9 : O88. bounds: 15 inf . Time: 2.65236
+PARTITION:O9 : O90. bounds: 25 inf . Time: 0.837972
+PARTITION:O9 : O91. bounds: 9 inf . Time: 0.000452
+PARTITION:O9 : O96. bounds: 40 inf . Time: 0.639916
+PARTITION:O9 : O97. bounds: 30 inf . Time: 0.36778
+PARTITION:O9 : O98. bounds: 25 inf . Time: 0.376795
+PARTITION:O9 : O99. bounds: 30 inf . Time: 0.879641
+PARTITION:O9 : O100. bounds: 30 inf . Time: 0.616654
+time: 89.7302 Method: PARTITION
+
+HYBRID:O8 : O173. bounds: 23 inf . Time: 0.230824
+HYBRID:O8 : O174 ab. bounds: 6.5 inf . Time: 0.000691
+HYBRID:O8 : O174 ac. bounds: 6.5 inf . Time: 0.0005804
+HYBRID:O8 : O175. bounds: 13 inf . Time: 1.08109
+HYBRID:O8 : O176. bounds: 6 inf . Time: 0.644608
+HYBRID:O8 : O177. bounds: 17 inf . Time: 0.205385
+HYBRID:O8 : O178. bounds: 24 inf . Time: 0.406889
+HYBRID:O8 : O180. bounds: 18 inf . Time: 0.0054978
+HYBRID:O8 : O181. bounds: 26 inf . Time: 0.208171
+HYBRID:O8 : O182. bounds: 7 inf . Time: 0.0006168
+HYBRID:O8 : O183. bounds: 23 inf . Time: 0.99035
+HYBRID:O8 : O184. bounds: 17 inf . Time: 0.204713
+HYBRID:O8 : O185. bounds: 22 inf . Time: 0.0087171
+HYBRID:O8 : O186. bounds: 20 inf . Time: 0.204877
+HYBRID:O8 : O187. bounds: 6 inf . Time: 0.0025293
+HYBRID:O9 : O9 a. bounds: 2 inf . Time: 5.26362
+HYBRID:O9 : O10. bounds: 39.5 inf . Time: 0.424995
+HYBRID:O9 : O11. bounds: 37 inf . Time: 2.86028
+HYBRID:O9 : O12. bounds: 27 inf . Time: 0.438145
+HYBRID:O9 : O13. bounds: 31.5 inf . Time: 0.626409
+HYBRID:O9 : O15. bounds: 19 inf . Time: 0.0072309
+HYBRID:O9 : O16. bounds: 37 inf . Time: 0.679414
+HYBRID:O9 : O16.2. bounds: 27 inf . Time: 0.420521
+HYBRID:O9 : O16.3. bounds: 27 inf . Time: 0.407387
+HYBRID:O9 : O17. bounds: 25 inf . Time: 5.30658
+HYBRID:O9 : O18 A. bounds: 38 inf . Time: 0.620688
+HYBRID:O9 : O18 A1. bounds: 48 inf . Time: 1.08363
+HYBRID:O9 : O18 A1A2. bounds: 48 inf . Time: 1.25519
+HYBRID:O9 : O18 ab. bounds: 42 inf . Time: 0.626977
+HYBRID:O9 : O18 ac. bounds: 38 inf . Time: 0.630616
+HYBRID:O9 : O18 B. bounds: 42 inf . Time: 0.843179
+HYBRID:O9 : O18 B1. bounds: 52 inf . Time: 1.03889
+HYBRID:O9 : O19 ab. bounds: 6 inf . Time: 0.0008897
+HYBRID:O9 : O20 ab. bounds: 16 inf . Time: 0.0030274
+HYBRID:O9 : O20 ac. bounds: 23.5 inf . Time: 0.196534
+HYBRID:O9 : O21. bounds: 41.5 inf . Time: 0.799874
+HYBRID:O9 : O22. bounds: 8 inf . Time: 0.00108
+HYBRID:O9 : O23 A. bounds: 52 inf . Time: 1.02644
+HYBRID:O9 : O24. bounds: 33 inf . Time: 0.416654
+HYBRID:O9 : O25. bounds: 44 inf . Time: 0.820182
+HYBRID:O9 : O26. bounds: 24 inf . Time: 0.207486
+HYBRID:O9 : O27. bounds: 53 inf . Time: 0.855752
+HYBRID:O9 : O28 ab. bounds: 32 inf . Time: 0.415787
+HYBRID:O9 : O28 ac. bounds: 27 inf . Time: 0.416188
+HYBRID:O9 : O29. bounds: 52 inf . Time: 1.08028
+HYBRID:O9 : O30. bounds: 33 inf . Time: 0.215499
+HYBRID:O9 : O32. bounds: 10 inf . Time: 0.0009734
+HYBRID:O9 : O35. bounds: 7.5 inf . Time: 0.0010309
+HYBRID:O9 : O36. bounds: 36.5 inf . Time: 3.06866
+HYBRID:O9 : O37. bounds: 44 inf . Time: 0.896376
+HYBRID:O9 : O38. bounds: 44 inf . Time: 0.830186
+HYBRID:O9 : O39. bounds: 32 inf . Time: 3.45743
+HYBRID:O9 : O40. bounds: 30 inf . Time: 0.216374
+HYBRID:O9 : O41. bounds: 10 inf . Time: 0.0011324
+HYBRID:O9 : O42. bounds: 37 inf . Time: 0.80342
+HYBRID:O9 : O43. bounds: 37 inf . Time: 3.32368
+HYBRID:O9 : O44. bounds: 25 inf . Time: 5.17221
+HYBRID:O9 : O45. bounds: 19 inf . Time: 0.207467
+HYBRID:O9 : O45 rel. bounds: 19 inf . Time: 0.207343
+HYBRID:O9 : O46. bounds: 35 inf . Time: 0.499137
+HYBRID:O9 : O48. bounds: 42 inf . Time: 0.426658
+HYBRID:O9 : O49. bounds: 30 inf . Time: 0.682612
+HYBRID:O9 : O52. bounds: 16 inf . Time: 0.002964
+HYBRID:O9 : O53. bounds: 41.5 inf . Time: 0.629578
+HYBRID:O9 : O55. bounds: 41.5 inf . Time: 0.586714
+HYBRID:O9 : O56. bounds: 33 inf . Time: 0.205846
+HYBRID:O9 : O58. bounds: 30.5 inf . Time: 1.60024
+HYBRID:O9 : O59. bounds: 32 inf . Time: 5.95456
+HYBRID:O9 : O61. bounds: 25.5 inf . Time: 0.0080739
+HYBRID:O9 : O62. bounds: 40.5 inf . Time: 0.626579
+HYBRID:O9 : O64. bounds: 42 inf . Time: 0.6704
+HYBRID:O9 : O65. bounds: 8 inf . Time: 0.0010377
+HYBRID:O9 : O66. bounds: 6 inf . Time: 0.0009179
+HYBRID:O9 : O68. bounds: 6.5 inf . Time: 0.203744
+HYBRID:O9 : O69. bounds: 5 inf . Time: 0.0008902
+HYBRID:O9 : O70. bounds: 42 inf . Time: 0.669321
+HYBRID:O9 : O71. bounds: 34 inf . Time: 0.206289
+HYBRID:O9 : O73. bounds: 35 inf . Time: 8.29332
+HYBRID:O9 : O73 ab. bounds: 25 inf . Time: 5.67431
+HYBRID:O9 : O74. bounds: 35.5 inf . Time: 0.415631
+HYBRID:O9 : O75. bounds: 34 inf . Time: 0.217875
+HYBRID:O9 : O76. bounds: 35 inf . Time: 0.426276
+HYBRID:O9 : O77. bounds: 15 inf . Time: 3.59211
+HYBRID:O9 : O78. bounds: 30 inf . Time: 1.12542
+HYBRID:O9 : O79. bounds: 9 inf . Time: 0.0012816
+HYBRID:O9 : O82. bounds: 45 inf . Time: 0.614762
+HYBRID:O9 : O83. bounds: 10 inf . Time: 0.190995
+HYBRID:O9 : O85. bounds: 39 inf . Time: 0.638655
+HYBRID:O9 : O86. bounds: 37 inf . Time: 0.815762
+HYBRID:O9 : O86.2. bounds: 34.5 inf . Time: 0.60028
+HYBRID:O9 : O86.3. bounds: 37 inf . Time: 0.59843
+HYBRID:O9 : O87. bounds: 32 inf . Time: 0.402801
+HYBRID:O9 : O88. bounds: 24 inf . Time: 2.78665
+HYBRID:O9 : O90. bounds: 27 inf . Time: 0.397003
+HYBRID:O9 : O91. bounds: 9 inf . Time: 0.0009518
+HYBRID:O9 : O96. bounds: 40 inf . Time: 0.514894
+HYBRID:O9 : O97. bounds: 36 inf . Time: 0.202236
+HYBRID:O9 : O98. bounds: 32 inf . Time: 0.3954
+HYBRID:O9 : O99. bounds: 40 inf . Time: 0.797063
+HYBRID:O9 : O100. bounds: 37 inf . Time: 0.428202
+time: 93.4755 Method: HYBRID
+
+RING:O8 : O173. bounds: 0 39 . Time: 0.569829
+RING:O8 : O174 ab. bounds: 0 7 . Time: 0.0008504
+RING:O8 : O174 ac. bounds: 0 7 . Time: 0.200845
+RING:O8 : O175. bounds: 0 38 . Time: 0.607139
+RING:O8 : O176. bounds: 0 18 . Time: 0.400932
+RING:O8 : O177. bounds: 0 28 . Time: 0.591701
+RING:O8 : O178. bounds: 0 39 . Time: 0.813322
+RING:O8 : O180. bounds: 0 23 . Time: 0.557098
+RING:O8 : O181. bounds: 0 38 . Time: 0.40707
+RING:O8 : O182. bounds: 0 7 . Time: 0.0009001
+RING:O8 : O183. bounds: 0 42 . Time: 0.779716
+RING:O8 : O184. bounds: 0 28 . Time: 0.605352
+RING:O8 : O185. bounds: 0 32 . Time: 0.801188
+RING:O8 : O186. bounds: 0 21 . Time: 0.404381
+RING:O8 : O187. bounds: 0 13 . Time: 0.193491
+RING:O9 : O9 a. bounds: 0 24 . Time: 1.62278
+RING:O9 : O10. bounds: 0 60 . Time: 2.1948
+RING:O9 : O11. bounds: 0 61 . Time: 2.20334
+RING:O9 : O12. bounds: 0 59 . Time: 1.39569
+RING:O9 : O13. bounds: 0 67 . Time: 2.40117
+RING:O9 : O15. bounds: 0 37 . Time: 0.793515
+RING:O9 : O16. bounds: 0 64 . Time: 2.35619
+RING:O9 : O16.2. bounds: 0 59 . Time: 1.6601
+RING:O9 : O16.3. bounds: 0 59 . Time: 1.65363
+RING:O9 : O17. bounds: 0 58 . Time: 2.3864
+RING:O9 : O18 A. bounds: 0 69 . Time: 2.22336
+RING:O9 : O18 A1. bounds: 0 78 . Time: 2.71247
+RING:O9 : O18 A1A2. bounds: 0 80 . Time: 3.12244
+RING:O9 : O18 ab. bounds: 0 70 . Time: 2.21983
+RING:O9 : O18 ac. bounds: 0 69 . Time: 2.4176
+RING:O9 : O18 B. bounds: 0 70 . Time: 2.27378
+RING:O9 : O18 B1. bounds: 0 73 . Time: 2.78748
+RING:O9 : O19 ab. bounds: 0 10 . Time: 0.0026552
+RING:O9 : O20 ab. bounds: 0 17 . Time: 0.388501
+RING:O9 : O20 ac. bounds: 0 40 . Time: 0.596179
+RING:O9 : O21. bounds: 0 62 . Time: 1.73305
+RING:O9 : O22. bounds: 0 10 . Time: 0.194702
+RING:O9 : O23 A. bounds: 0 78 . Time: 3.03086
+RING:O9 : O24. bounds: 0 48 . Time: 1.32664
+RING:O9 : O25. bounds: 0 60 . Time: 1.84311
+RING:O9 : O26. bounds: 0 32 . Time: 0.78486
+RING:O9 : O27. bounds: 0 72 . Time: 2.20821
+RING:O9 : O28 ab. bounds: 0 40 . Time: 1.79704
+RING:O9 : O28 ac. bounds: 0 59 . Time: 1.77263
+RING:O9 : O29. bounds: 0 73 . Time: 2.97454
+RING:O9 : O30. bounds: 0 51 . Time: 1.40486
+RING:O9 : O32. bounds: 0 10 . Time: 0.0029028
+RING:O9 : O35. bounds: 0 8 . Time: 0.193889
+RING:O9 : O36. bounds: 0 56 . Time: 1.80017
+RING:O9 : O37. bounds: 0 65 . Time: 2.36613
+RING:O9 : O38. bounds: 0 65 . Time: 2.34473
+RING:O9 : O39. bounds: 0 64 . Time: 2.78461
+RING:O9 : O40. bounds: 0 58 . Time: 1.97513
+RING:O9 : O41. bounds: 0 14 . Time: 0.003577
+RING:O9 : O42. bounds: 0 67 . Time: 2.21293
+RING:O9 : O43. bounds: 0 61 . Time: 2.38832
+RING:O9 : O44. bounds: 0 60 . Time: 2.2905
+RING:O9 : O45. bounds: 0 37 . Time: 1.24499
+RING:O9 : O45 rel. bounds: 0 37 . Time: 0.80569
+RING:O9 : O46. bounds: 0 45 . Time: 2.12471
+RING:O9 : O48. bounds: 0 69 . Time: 2.5452
+RING:O9 : O49. bounds: 0 58 . Time: 2.08171
+RING:O9 : O52. bounds: 0 16 . Time: 0.205643
+RING:O9 : O53. bounds: 0 64 . Time: 2.47952
+RING:O9 : O55. bounds: 0 62 . Time: 1.58408
+RING:O9 : O56. bounds: 0 48 . Time: 1.39539
+RING:O9 : O58. bounds: 0 48 . Time: 1.45755
+RING:O9 : O59. bounds: 0 56 . Time: 2.49531
+RING:O9 : O61. bounds: 0 44 . Time: 1.21271
+RING:O9 : O62. bounds: 0 61 . Time: 1.60616
+RING:O9 : O64. bounds: 0 60 . Time: 2.60747
+RING:O9 : O65. bounds: 0 11 . Time: 0.0035172
+RING:O9 : O66. bounds: 0 10 . Time: 0.193476
+RING:O9 : O68. bounds: 0 7 . Time: 0.0050097
+RING:O9 : O69. bounds: 0 5 . Time: 0.0035021
+RING:O9 : O70. bounds: 0 63 . Time: 2.66126
+RING:O9 : O71. bounds: 0 36 . Time: 1.79952
+RING:O9 : O73. bounds: 0 69 . Time: 3.00511
+RING:O9 : O73 ab. bounds: 0 58 . Time: 2.59486
+RING:O9 : O74. bounds: 0 53 . Time: 1.21868
+RING:O9 : O75. bounds: 0 54 . Time: 1.42016
+RING:O9 : O76. bounds: 0 45 . Time: 2.06757
+RING:O9 : O77. bounds: 0 47 . Time: 1.96658
+RING:O9 : O78. bounds: 0 44 . Time: 1.83153
+RING:O9 : O79. bounds: 0 14 . Time: 0.298231
+RING:O9 : O82. bounds: 0 69 . Time: 2.9104
+RING:O9 : O83. bounds: 0 10 . Time: 0.0037716
+RING:O9 : O85. bounds: 0 70 . Time: 2.95501
+RING:O9 : O86. bounds: 0 67 . Time: 2.5655
+RING:O9 : O86.2. bounds: 0 69 . Time: 2.83148
+RING:O9 : O86.3. bounds: 0 67 . Time: 2.70027
+RING:O9 : O87. bounds: 0 40 . Time: 2.26328
+RING:O9 : O88. bounds: 0 37 . Time: 1.38657
+RING:O9 : O90. bounds: 0 60 . Time: 1.96525
+RING:O9 : O91. bounds: 0 11 . Time: 0.0039623
+RING:O9 : O96. bounds: 0 68 . Time: 2.94702
+RING:O9 : O97. bounds: 0 42 . Time: 0.974821
+RING:O9 : O98. bounds: 0 40 . Time: 1.97239
+RING:O9 : O99. bounds: 0 78 . Time: 3.61055
+RING:O9 : O100. bounds: 0 70 . Time: 2.59525
+time: 156.38 Method: RING
+
+WALKS:O8 : O173. bounds: 0 31 . Time: 0.385761
+WALKS:O8 : O174 ab. bounds: 0 8 . Time: 0.0017436
+WALKS:O8 : O174 ac. bounds: 0 8 . Time: 0.001483
+WALKS:O8 : O175. bounds: 0 25 . Time: 0.386631
+WALKS:O8 : O176. bounds: 0 17 . Time: 0.193942
+WALKS:O8 : O177. bounds: 0 19 . Time: 0.193523
+WALKS:O8 : O178. bounds: 0 27 . Time: 0.0060714
+WALKS:O8 : O180. bounds: 0 21 . Time: 0.193699
+WALKS:O8 : O181. bounds: 0 29 . Time: 0.0046387
+WALKS:O8 : O182. bounds: 0 8 . Time: 0.0005365
+WALKS:O8 : O183. bounds: 0 32 . Time: 0.201615
+WALKS:O8 : O184. bounds: 0 19 . Time: 0.194478
+WALKS:O8 : O185. bounds: 0 26 . Time: 0.00681
+WALKS:O8 : O186. bounds: 0 21 . Time: 0.193896
+WALKS:O8 : O187. bounds: 0 12 . Time: 0.0013619
+WALKS:O9 : O9 a. bounds: 0 10 . Time: 55.0702
+WALKS:O9 : O10. bounds: 0 42 . Time: 0.191257
+WALKS:O9 : O11. bounds: 0 41 . Time: 0.982986
+WALKS:O9 : O12. bounds: 0 33 . Time: 0.188828
+WALKS:O9 : O13. bounds: 0 45 . Time: 0.190374
+WALKS:O9 : O15. bounds: 0 23 . Time: 0.185826
+WALKS:O9 : O16. bounds: 0 47 . Time: 0.234915
+WALKS:O9 : O16.2. bounds: 0 33 . Time: 0.15898
+WALKS:O9 : O16.3. bounds: 0 33 . Time: 0.188891
+WALKS:O9 : O17. bounds: 0 37 . Time: 7.04083
+WALKS:O9 : O18 A. bounds: 0 45 . Time: 0.374748
+WALKS:O9 : O18 A1. bounds: 0 63 . Time: 0.450644
+WALKS:O9 : O18 A1A2. bounds: 0 70 . Time: 0.195113
+WALKS:O9 : O18 ab. bounds: 0 46 . Time: 0.373282
+WALKS:O9 : O18 ac. bounds: 0 45 . Time: 0.162522
+WALKS:O9 : O18 B. bounds: 0 46 . Time: 0.213008
+WALKS:O9 : O18 B1. bounds: 0 66 . Time: 0.365426
+WALKS:O9 : O19 ab. bounds: 0 8 . Time: 0.0008425
+WALKS:O9 : O20 ab. bounds: 0 17 . Time: 0.001943
+WALKS:O9 : O20 ac. bounds: 0 36 . Time: 0.002935
+WALKS:O9 : O21. bounds: 0 55 . Time: 0.188915
+WALKS:O9 : O22. bounds: 0 10 . Time: 0.0009784
+WALKS:O9 : O23 A. bounds: 0 64 . Time: 0.373985
+WALKS:O9 : O24. bounds: 0 40 . Time: 0.0071128
+WALKS:O9 : O25. bounds: 0 55 . Time: 0.180042
+WALKS:O9 : O26. bounds: 0 26 . Time: 0.184845
+WALKS:O9 : O27. bounds: 0 72 . Time: 0.191174
+WALKS:O9 : O28 ab. bounds: 0 34 . Time: 0.198977
+WALKS:O9 : O28 ac. bounds: 0 33 . Time: 0.203063
+WALKS:O9 : O29. bounds: 0 66 . Time: 0.328407
+WALKS:O9 : O30. bounds: 0 46 . Time: 0.176686
+WALKS:O9 : O32. bounds: 0 10 . Time: 0.000992
+WALKS:O9 : O35. bounds: 0 10 . Time: 0.0009266
+WALKS:O9 : O36. bounds: 0 55 . Time: 0.574222
+WALKS:O9 : O37. bounds: 0 46 . Time: 0.37149
+WALKS:O9 : O38. bounds: 0 49 . Time: 0.349852
+WALKS:O9 : O39. bounds: 0 45 . Time: 0.948505
+WALKS:O9 : O40. bounds: 0 35 . Time: 0.188919
+WALKS:O9 : O41. bounds: 0 10 . Time: 0.0010762
+WALKS:O9 : O42. bounds: 0 43 . Time: 0.382351
+WALKS:O9 : O43. bounds: 0 42 . Time: 1.06375
+WALKS:O9 : O44. bounds: 0 37 . Time: 6.85151
+WALKS:O9 : O45. bounds: 0 23 . Time: 0.174554
+WALKS:O9 : O45 rel. bounds: 0 23 . Time: 0.0048237
+WALKS:O9 : O46. bounds: 0 38 . Time: 0.374906
+WALKS:O9 : O48. bounds: 0 46 . Time: 0.163104
+WALKS:O9 : O49. bounds: 0 35 . Time: 0.178948
+WALKS:O9 : O52. bounds: 0 16 . Time: 0.0019128
+WALKS:O9 : O53. bounds: 0 51 . Time: 0.182359
+WALKS:O9 : O55. bounds: 0 46 . Time: 0.181207
+WALKS:O9 : O56. bounds: 0 40 . Time: 0.177464
+WALKS:O9 : O58. bounds: 0 33 . Time: 0.526798
+WALKS:O9 : O59. bounds: 0 37 . Time: 6.50385
+WALKS:O9 : O61. bounds: 0 28 . Time: 0.145888
+WALKS:O9 : O62. bounds: 0 56 . Time: 0.0071427
+WALKS:O9 : O64. bounds: 0 47 . Time: 0.351137
+WALKS:O9 : O65. bounds: 0 10 . Time: 0.0009905
+WALKS:O9 : O66. bounds: 0 8 . Time: 0.0008808
+WALKS:O9 : O68. bounds: 0 7 . Time: 0.0014909
+WALKS:O9 : O69. bounds: 0 7 . Time: 0.0009252
+WALKS:O9 : O70. bounds: 0 44 . Time: 0.172771
+WALKS:O9 : O71. bounds: 0 36 . Time: 0.179522
+WALKS:O9 : O73. bounds: 0 47 . Time: 7.11538
+WALKS:O9 : O73 ab. bounds: 0 37 . Time: 6.3497
+WALKS:O9 : O74. bounds: 0 38 . Time: 0.0073863
+WALKS:O9 : O75. bounds: 0 45 . Time: 0.177381
+WALKS:O9 : O76. bounds: 0 38 . Time: 0.201294
+WALKS:O9 : O77. bounds: 0 22 . Time: 6.92348
+WALKS:O9 : O78. bounds: 0 33 . Time: 1.07276
+WALKS:O9 : O79. bounds: 0 11 . Time: 0.0012189
+WALKS:O9 : O82. bounds: 0 48 . Time: 0.183928
+WALKS:O9 : O83. bounds: 0 10 . Time: 0.171046
+WALKS:O9 : O85. bounds: 0 46 . Time: 0.182359
+WALKS:O9 : O86. bounds: 0 48 . Time: 0.18247
+WALKS:O9 : O86.2. bounds: 0 41 . Time: 0.181458
+WALKS:O9 : O86.3. bounds: 0 48 . Time: 0.182838
+WALKS:O9 : O87. bounds: 0 34 . Time: 0.148809
+WALKS:O9 : O88. bounds: 0 26 . Time: 2.83389
+WALKS:O9 : O90. bounds: 0 33 . Time: 0.188932
+WALKS:O9 : O91. bounds: 0 10 . Time: 0.0008656
+WALKS:O9 : O96. bounds: 0 45 . Time: 0.185095
+WALKS:O9 : O97. bounds: 0 46 . Time: 0.16612
+WALKS:O9 : O98. bounds: 0 34 . Time: 0.17813
+WALKS:O9 : O99. bounds: 0 71 . Time: 0.181859
+WALKS:O9 : O100. bounds: 0 41 . Time: 0.181232
+time: 117.447 Method: WALKS
+
+IPFP:O8 : O173. bounds: 0 27 . Time: 0.867639
+IPFP:O8 : O174 ab. bounds: 0 7 . Time: 0.359772
+IPFP:O8 : O174 ac. bounds: 0 7 . Time: 0.366189
+IPFP:O8 : O175. bounds: 0 20 . Time: 1.80428
+IPFP:O8 : O176. bounds: 0 11 . Time: 0.923236
+IPFP:O8 : O177. bounds: 0 20 . Time: 0.964271
+IPFP:O8 : O178. bounds: 0 33 . Time: 26.0855
+IPFP:O8 : O180. bounds: 0 22 . Time: 1.9439
+IPFP:O8 : O181. bounds: 0 29 . Time: 3.25124
+IPFP:O8 : O182. bounds: 0 7 . Time: 0.0007137
+IPFP:O8 : O183. bounds: 0 27 . Time: 2.94396
+IPFP:O8 : O184. bounds: 0 21 . Time: 0.361848
+IPFP:O8 : O185. bounds: 0 30 . Time: 13.6546
+IPFP:O8 : O186. bounds: 0 25 . Time: 6.92884
+IPFP:O8 : O187. bounds: 0 8 . Time: 0.0014411
+IPFP:O9 : O9 a. bounds: 0 9 . Time: 2.01043
+IPFP:O9 : O10. bounds: 0 43 . Time: 7.27802
+IPFP:O9 : O11. bounds: 0 43 . Time: 9.79639
+IPFP:O9 : O12. bounds: 0 33 . Time: 2.7835
+IPFP:O9 : O13. bounds: 0 42 . Time: 6.23589
+IPFP:O9 : O15. bounds: 0 25 . Time: 2.50058
+IPFP:O9 : O16. bounds: 0 45 . Time: 10.0237
+IPFP:O9 : O16.2. bounds: 0 32 . Time: 2.31933
+IPFP:O9 : O16.3. bounds: 0 35 . Time: 16.8356
+IPFP:O9 : O17. bounds: 0 32 . Time: 4.50614
+IPFP:O9 : O18 A. bounds: 0 52 . Time: 36.3386
+IPFP:O9 : O18 A1. bounds: 0 53 . Time: 8.25489
+IPFP:O9 : O18 A1A2. bounds: 0 58 . Time: 17.7633
+IPFP:O9 : O18 ab. bounds: 0 52 . Time: 40.0829
+IPFP:O9 : O18 ac. bounds: 0 43 . Time: 3.95212
+IPFP:O9 : O18 B. bounds: 0 46 . Time: 7.68698
+IPFP:O9 : O18 B1. bounds: 0 59 . Time: 9.44648
+IPFP:O9 : O19 ab. bounds: 0 6 . Time: 0.0011945
+IPFP:O9 : O20 ab. bounds: 0 18 . Time: 0.332115
+IPFP:O9 : O20 ac. bounds: 0 27 . Time: 0.348432
+IPFP:O9 : O21. bounds: 0 45 . Time: 5.70182
+IPFP:O9 : O22. bounds: 0 8 . Time: 0.0015629
+IPFP:O9 : O23 A. bounds: 0 61 . Time: 50.7826
+IPFP:O9 : O24. bounds: 0 37 . Time: 1.15457
+IPFP:O9 : O25. bounds: 0 53 . Time: 29.8509
+IPFP:O9 : O26. bounds: 0 27 . Time: 1.62046
+IPFP:O9 : O27. bounds: 0 57 . Time: 6.99086
+IPFP:O9 : O28 ab. bounds: 0 37 . Time: 12.5206
+IPFP:O9 : O28 ac. bounds: 0 33 . Time: 7.67324
+IPFP:O9 : O29. bounds: 0 57 . Time: 16.7366
+IPFP:O9 : O30. bounds: 0 37 . Time: 2.10214
+IPFP:O9 : O32. bounds: 0 13 . Time: 0.0049941
+IPFP:O9 : O35. bounds: 0 8 . Time: 0.135059
+IPFP:O9 : O36. bounds: 0 40 . Time: 3.53586
+IPFP:O9 : O37. bounds: 0 50 . Time: 22.2876
+IPFP:O9 : O38. bounds: 0 52 . Time: 23.4261
+IPFP:O9 : O39. bounds: 0 43 . Time: 12.4147
+IPFP:O9 : O40. bounds: 0 37 . Time: 15.1103
+IPFP:O9 : O41. bounds: 0 10 . Time: 0.0009713
+IPFP:O9 : O42. bounds: 0 43 . Time: 2.22697
+IPFP:O9 : O43. bounds: 0 42 . Time: 21.9005
+IPFP:O9 : O44. bounds: 0 32 . Time: 7.69728
+IPFP:O9 : O45. bounds: 0 27 . Time: 0.39217
+IPFP:O9 : O45 rel. bounds: 0 25 . Time: 2.30272
+IPFP:O9 : O46. bounds: 0 41 . Time: 25.7933
+IPFP:O9 : O48. bounds: 0 48 . Time: 40.4212
+IPFP:O9 : O49. bounds: 0 42 . Time: 5.25686
+IPFP:O9 : O52. bounds: 0 18 . Time: 2.13383
+IPFP:O9 : O53. bounds: 0 48 . Time: 9.40937
+IPFP:O9 : O55. bounds: 0 47 . Time: 3.55376
+IPFP:O9 : O56. bounds: 0 36 . Time: 2.30835
+IPFP:O9 : O58. bounds: 0 38 . Time: 19.3646
+IPFP:O9 : O59. bounds: 0 37 . Time: 9.70137
+IPFP:O9 : O61. bounds: 0 29 . Time: 2.30742
+IPFP:O9 : O62. bounds: 0 48 . Time: 5.52879
+IPFP:O9 : O64. bounds: 0 48 . Time: 18.7185
+IPFP:O9 : O65. bounds: 0 8 . Time: 0.002198
+IPFP:O9 : O66. bounds: 0 6 . Time: 0.0706905
+IPFP:O9 : O68. bounds: 0 10 . Time: 0.0070715
+IPFP:O9 : O69. bounds: 0 7 . Time: 0.0011933
+IPFP:O9 : O70. bounds: 0 47 . Time: 17.1161
+IPFP:O9 : O71. bounds: 0 40 . Time: 9.28295
+IPFP:O9 : O73. bounds: 0 45 . Time: 3.32708
+IPFP:O9 : O73 ab. bounds: 0 35 . Time: 12.7576
+IPFP:O9 : O74. bounds: 0 41 . Time: 18.3487
+IPFP:O9 : O75. bounds: 0 41 . Time: 10.9929
+IPFP:O9 : O76. bounds: 0 43 . Time: 19.4421
+IPFP:O9 : O77. bounds: 0 25 . Time: 2.01827
+IPFP:O9 : O78. bounds: 0 39 . Time: 22.4042
+IPFP:O9 : O79. bounds: 0 10 . Time: 0.0011991
+IPFP:O9 : O82. bounds: 0 52 . Time: 20.3378
+IPFP:O9 : O83. bounds: 0 13 . Time: 0.0990369
+IPFP:O9 : O85. bounds: 0 47 . Time: 2.10526
+IPFP:O9 : O86. bounds: 0 43 . Time: 2.35462
+IPFP:O9 : O86.2. bounds: 0 40 . Time: 1.44555
+IPFP:O9 : O86.3. bounds: 0 44 . Time: 2.88473
+IPFP:O9 : O87. bounds: 0 37 . Time: 14.2078
+IPFP:O9 : O88. bounds: 0 30 . Time: 14.9601
+IPFP:O9 : O90. bounds: 0 37 . Time: 2.8819
+IPFP:O9 : O91. bounds: 0 10 . Time: 0.0018615
+IPFP:O9 : O96. bounds: 0 51 . Time: 19.7279
+IPFP:O9 : O97. bounds: 0 38 . Time: 0.394992
+IPFP:O9 : O98. bounds: 0 39 . Time: 4.8668
+IPFP:O9 : O99. bounds: 0 52 . Time: 2.88919
+IPFP:O9 : O100. bounds: 0 44 . Time: 8.657
+time: 853.608 Method: IPFP
+
+BIPARTITE:O8 : O173. bounds: 0 36 . Time: 0.0040089
+BIPARTITE:O8 : O174 ab. bounds: 0 8 . Time: 0.0002904
+BIPARTITE:O8 : O174 ac. bounds: 0 8 . Time: 0.0003361
+BIPARTITE:O8 : O175. bounds: 0 39 . Time: 0.0734067
+BIPARTITE:O8 : O176. bounds: 0 25 . Time: 0.0023911
+BIPARTITE:O8 : O177. bounds: 0 19 . Time: 0.0021261
+BIPARTITE:O8 : O178. bounds: 0 31 . Time: 0.0032748
+BIPARTITE:O8 : O180. bounds: 0 26 . Time: 0.0621682
+BIPARTITE:O8 : O181. bounds: 0 41 . Time: 0.0027896
+BIPARTITE:O8 : O182. bounds: 0 8 . Time: 0.0002281
+BIPARTITE:O8 : O183. bounds: 0 36 . Time: 0.0032029
+BIPARTITE:O8 : O184. bounds: 0 19 . Time: 0.0721985
+BIPARTITE:O8 : O185. bounds: 0 36 . Time: 0.0034006
+BIPARTITE:O8 : O186. bounds: 0 21 . Time: 0.002209
+BIPARTITE:O8 : O187. bounds: 0 12 . Time: 0.0005989
+BIPARTITE:O9 : O9 a. bounds: 0 24 . Time: 0.0758493
+BIPARTITE:O9 : O10. bounds: 0 57 . Time: 0.0673111
+BIPARTITE:O9 : O11. bounds: 0 58 . Time: 0.0074637
+BIPARTITE:O9 : O12. bounds: 0 50 . Time: 0.0757854
+BIPARTITE:O9 : O13. bounds: 0 67 . Time: 0.0681561
+BIPARTITE:O9 : O15. bounds: 0 37 . Time: 0.0034325
+BIPARTITE:O9 : O16. bounds: 0 60 . Time: 0.177323
+BIPARTITE:O9 : O16.2. bounds: 0 50 . Time: 0.0056738
+BIPARTITE:O9 : O16.3. bounds: 0 50 . Time: 0.0656802
+BIPARTITE:O9 : O17. bounds: 0 46 . Time: 0.0804532
+BIPARTITE:O9 : O18 A. bounds: 0 60 . Time: 0.0689843
+BIPARTITE:O9 : O18 A1. bounds: 0 70 . Time: 0.0729729
+BIPARTITE:O9 : O18 A1A2. bounds: 0 68 . Time: 0.0793024
+BIPARTITE:O9 : O18 ab. bounds: 0 69 . Time: 0.0673254
+BIPARTITE:O9 : O18 ac. bounds: 0 60 . Time: 0.0986106
+BIPARTITE:O9 : O18 B. bounds: 0 69 . Time: 0.0075716
+BIPARTITE:O9 : O18 B1. bounds: 0 79 . Time: 0.0790246
+BIPARTITE:O9 : O19 ab. bounds: 0 6 . Time: 0.0004401
+BIPARTITE:O9 : O20 ab. bounds: 0 17 . Time: 0.0015234
+BIPARTITE:O9 : O20 ac. bounds: 0 38 . Time: 0.062435
+BIPARTITE:O9 : O21. bounds: 0 63 . Time: 0.0055893
+BIPARTITE:O9 : O22. bounds: 0 8 . Time: 0.0004143
+BIPARTITE:O9 : O23 A. bounds: 0 74 . Time: 0.0786832
+BIPARTITE:O9 : O24. bounds: 0 49 . Time: 0.0645588
+BIPARTITE:O9 : O25. bounds: 0 62 . Time: 0.0053262
+BIPARTITE:O9 : O26. bounds: 0 43 . Time: 0.0734903
+BIPARTITE:O9 : O27. bounds: 0 70 . Time: 0.080459
+BIPARTITE:O9 : O28 ab. bounds: 0 50 . Time: 0.0089829
+BIPARTITE:O9 : O28 ac. bounds: 0 50 . Time: 0.0475081
+BIPARTITE:O9 : O29. bounds: 0 78 . Time: 0.099581
+BIPARTITE:O9 : O30. bounds: 0 53 . Time: 0.0853719
+BIPARTITE:O9 : O32. bounds: 0 10 . Time: 0.0004464
+BIPARTITE:O9 : O35. bounds: 0 13 . Time: 0.0004917
+BIPARTITE:O9 : O36. bounds: 0 60 . Time: 0.0055323
+BIPARTITE:O9 : O37. bounds: 0 46 . Time: 0.0675792
+BIPARTITE:O9 : O38. bounds: 0 53 . Time: 0.0708571
+BIPARTITE:O9 : O39. bounds: 0 53 . Time: 0.0674304
+BIPARTITE:O9 : O40. bounds: 0 50 . Time: 0.0580964
+BIPARTITE:O9 : O41. bounds: 0 14 . Time: 0.0005263
+BIPARTITE:O9 : O42. bounds: 0 67 . Time: 0.0773388
+BIPARTITE:O9 : O43. bounds: 0 60 . Time: 0.0074413
+BIPARTITE:O9 : O44. bounds: 0 46 . Time: 0.067556
+BIPARTITE:O9 : O45. bounds: 0 37 . Time: 0.0033066
+BIPARTITE:O9 : O45 rel. bounds: 0 37 . Time: 0.063342
+BIPARTITE:O9 : O46. bounds: 0 45 . Time: 0.0059642
+BIPARTITE:O9 : O48. bounds: 0 58 . Time: 0.0677715
+BIPARTITE:O9 : O49. bounds: 0 50 . Time: 0.0761046
+BIPARTITE:O9 : O52. bounds: 0 16 . Time: 0.001504
+BIPARTITE:O9 : O53. bounds: 0 65 . Time: 0.0776291
+BIPARTITE:O9 : O55. bounds: 0 61 . Time: 0.0055765
+BIPARTITE:O9 : O56. bounds: 0 49 . Time: 0.0645162
+BIPARTITE:O9 : O58. bounds: 0 33 . Time: 0.0045375
+BIPARTITE:O9 : O59. bounds: 0 55 . Time: 0.0867883
+BIPARTITE:O9 : O61. bounds: 0 39 . Time: 0.003315
+BIPARTITE:O9 : O62. bounds: 0 65 . Time: 0.0774536
+BIPARTITE:O9 : O64. bounds: 0 59 . Time: 0.0772745
+BIPARTITE:O9 : O65. bounds: 0 15 . Time: 0.0004088
+BIPARTITE:O9 : O66. bounds: 0 10 . Time: 0.0003845
+BIPARTITE:O9 : O68. bounds: 0 7 . Time: 0.0005879
+BIPARTITE:O9 : O69. bounds: 0 5 . Time: 0.0003942
+BIPARTITE:O9 : O70. bounds: 0 64 . Time: 0.0069472
+BIPARTITE:O9 : O71. bounds: 0 36 . Time: 0.0758619
+BIPARTITE:O9 : O73. bounds: 0 57 . Time: 0.0807019
+BIPARTITE:O9 : O73 ab. bounds: 0 38 . Time: 0.0881848
+BIPARTITE:O9 : O74. bounds: 0 38 . Time: 0.0044154
+BIPARTITE:O9 : O75. bounds: 0 50 . Time: 0.0745299
+BIPARTITE:O9 : O76. bounds: 0 45 . Time: 0.0059249
+BIPARTITE:O9 : O77. bounds: 0 36 . Time: 0.0661468
+BIPARTITE:O9 : O78. bounds: 0 40 . Time: 0.0758647
+BIPARTITE:O9 : O79. bounds: 0 14 . Time: 0.0005631
+BIPARTITE:O9 : O82. bounds: 0 55 . Time: 0.0073436
+BIPARTITE:O9 : O83. bounds: 0 10 . Time: 0.0004093
+BIPARTITE:O9 : O85. bounds: 0 55 . Time: 0.0876026
+BIPARTITE:O9 : O86. bounds: 0 55 . Time: 0.067345
+BIPARTITE:O9 : O86.2. bounds: 0 62 . Time: 0.067541
+BIPARTITE:O9 : O86.3. bounds: 0 55 . Time: 0.0075309
+BIPARTITE:O9 : O87. bounds: 0 55 . Time: 0.0759008
+BIPARTITE:O9 : O88. bounds: 0 43 . Time: 0.0046242
+BIPARTITE:O9 : O90. bounds: 0 54 . Time: 0.0659684
+BIPARTITE:O9 : O91. bounds: 0 12 . Time: 0.0004291
+BIPARTITE:O9 : O96. bounds: 0 60 . Time: 0.175464
+BIPARTITE:O9 : O97. bounds: 0 48 . Time: 0.0046955
+BIPARTITE:O9 : O98. bounds: 0 55 . Time: 0.0566523
+BIPARTITE:O9 : O99. bounds: 0 74 . Time: 0.0121438
+BIPARTITE:O9 : O100. bounds: 0 63 . Time: 0.126968
+time: 4.22831 Method: BIPARTITE
+
+SUBGRAPH:O8 : O173. bounds: 0 54 . Time: 1.00833
+SUBGRAPH:O8 : O174 ab. bounds: 0 14 . Time: 0.0022466
+SUBGRAPH:O8 : O174 ac. bounds: 0 14 . Time: 0.0024065
+SUBGRAPH:O8 : O175. bounds: 0 60 . Time: 1.00096
+SUBGRAPH:O8 : O176. bounds: 0 48 . Time: 0.746261
+SUBGRAPH:O8 : O177. bounds: 0 48 . Time: 0.62966
+SUBGRAPH:O8 : O178. bounds: 0 60 . Time: 1.13499
+SUBGRAPH:O8 : O180. bounds: 0 48 . Time: 0.696979
+SUBGRAPH:O8 : O181. bounds: 0 54 . Time: 0.982801
+SUBGRAPH:O8 : O182. bounds: 0 14 . Time: 0.0024681
+SUBGRAPH:O8 : O183. bounds: 0 60 . Time: 1.11901
+SUBGRAPH:O8 : O184. bounds: 0 48 . Time: 0.826574
+SUBGRAPH:O8 : O185. bounds: 0 60 . Time: 1.11796
+SUBGRAPH:O8 : O186. bounds: 0 48 . Time: 0.691603
+SUBGRAPH:O8 : O187. bounds: 0 24 . Time: 0.145119
+SUBGRAPH:O9 : O9 a. bounds: 0 80 . Time: 1.89445
+SUBGRAPH:O9 : O10. bounds: 0 90 . Time: 2.47748
+SUBGRAPH:O9 : O11. bounds: 0 90 . Time: 2.68244
+SUBGRAPH:O9 : O12. bounds: 0 80 . Time: 1.85483
+SUBGRAPH:O9 : O13. bounds: 0 90 . Time: 2.56866
+SUBGRAPH:O9 : O15. bounds: 0 60 . Time: 1.07564
+SUBGRAPH:O9 : O16. bounds: 0 90 . Time: 2.57956
+SUBGRAPH:O9 : O16.2. bounds: 0 80 . Time: 1.83331
+SUBGRAPH:O9 : O16.3. bounds: 0 80 . Time: 1.91207
+SUBGRAPH:O9 : O17. bounds: 0 90 . Time: 2.49874
+SUBGRAPH:O9 : O18 A. bounds: 0 90 . Time: 2.36029
+SUBGRAPH:O9 : O18 A1. bounds: 0 100 . Time: 3.43297
+SUBGRAPH:O9 : O18 A1A2. bounds: 0 100 . Time: 3.30371
+SUBGRAPH:O9 : O18 ab. bounds: 0 90 . Time: 2.42328
+SUBGRAPH:O9 : O18 ac. bounds: 0 90 . Time: 2.53343
+SUBGRAPH:O9 : O18 B. bounds: 0 90 . Time: 2.54136
+SUBGRAPH:O9 : O18 B1. bounds: 0 100 . Time: 3.15375
+SUBGRAPH:O9 : O19 ab. bounds: 0 20 . Time: 0.0682092
+SUBGRAPH:O9 : O20 ab. bounds: 0 40 . Time: 0.421738
+SUBGRAPH:O9 : O20 ac. bounds: 0 50 . Time: 0.683822
+SUBGRAPH:O9 : O21. bounds: 0 80 . Time: 1.94939
+SUBGRAPH:O9 : O22. bounds: 0 20 . Time: 0.111488
+SUBGRAPH:O9 : O23 A. bounds: 0 100 . Time: 2.9234
+SUBGRAPH:O9 : O24. bounds: 0 70 . Time: 1.38191
+SUBGRAPH:O9 : O25. bounds: 0 80 . Time: 1.98746
+SUBGRAPH:O9 : O26. bounds: 0 60 . Time: 0.892582
+SUBGRAPH:O9 : O27. bounds: 0 90 . Time: 2.67669
+SUBGRAPH:O9 : O28 ab. bounds: 0 80 . Time: 1.52419
+SUBGRAPH:O9 : O28 ac. bounds: 0 80 . Time: 1.53267
+SUBGRAPH:O9 : O29. bounds: 0 100 . Time: 3.42441
+SUBGRAPH:O9 : O30. bounds: 0 70 . Time: 1.54713
+SUBGRAPH:O9 : O32. bounds: 0 20 . Time: 0.0084919
+SUBGRAPH:O9 : O35. bounds: 0 22 . Time: 0.175868
+SUBGRAPH:O9 : O36. bounds: 0 80 . Time: 1.88451
+SUBGRAPH:O9 : O37. bounds: 0 90 . Time: 2.33781
+SUBGRAPH:O9 : O38. bounds: 0 90 . Time: 2.23245
+SUBGRAPH:O9 : O39. bounds: 0 90 . Time: 2.22839
+SUBGRAPH:O9 : O40. bounds: 0 80 . Time: 1.60677
+SUBGRAPH:O9 : O41. bounds: 0 22 . Time: 0.0718202
+SUBGRAPH:O9 : O42. bounds: 0 90 . Time: 2.21639
+SUBGRAPH:O9 : O43. bounds: 0 90 . Time: 2.28297
+SUBGRAPH:O9 : O44. bounds: 0 90 . Time: 2.43917
+SUBGRAPH:O9 : O45. bounds: 0 60 . Time: 0.885143
+SUBGRAPH:O9 : O45 rel. bounds: 0 60 . Time: 0.820867
+SUBGRAPH:O9 : O46. bounds: 0 80 . Time: 1.57511
+SUBGRAPH:O9 : O48. bounds: 0 90 . Time: 2.35699
+SUBGRAPH:O9 : O49. bounds: 0 80 . Time: 1.55243
+SUBGRAPH:O9 : O52. bounds: 0 40 . Time: 0.357093
+SUBGRAPH:O9 : O53. bounds: 0 90 . Time: 2.36914
+SUBGRAPH:O9 : O55. bounds: 0 80 . Time: 1.80091
+SUBGRAPH:O9 : O56. bounds: 0 70 . Time: 1.66095
+SUBGRAPH:O9 : O58. bounds: 0 70 . Time: 1.37101
+SUBGRAPH:O9 : O59. bounds: 0 90 . Time: 2.23009
+SUBGRAPH:O9 : O61. bounds: 0 60 . Time: 0.826141
+SUBGRAPH:O9 : O62. bounds: 0 80 . Time: 1.9097
+SUBGRAPH:O9 : O64. bounds: 0 90 . Time: 2.06411
+SUBGRAPH:O9 : O65. bounds: 0 20 . Time: 0.0619758
+SUBGRAPH:O9 : O66. bounds: 0 20 . Time: 0.060659
+SUBGRAPH:O9 : O68. bounds: 0 24 . Time: 0.115356
+SUBGRAPH:O9 : O69. bounds: 0 20 . Time: 0.0587682
+SUBGRAPH:O9 : O70. bounds: 0 90 . Time: 2.09443
+SUBGRAPH:O9 : O71. bounds: 0 80 . Time: 1.50792
+SUBGRAPH:O9 : O73. bounds: 0 100 . Time: 2.82159
+SUBGRAPH:O9 : O73 ab. bounds: 0 90 . Time: 2.12603
+SUBGRAPH:O9 : O74. bounds: 0 70 . Time: 1.25697
+SUBGRAPH:O9 : O75. bounds: 0 70 . Time: 1.37413
+SUBGRAPH:O9 : O76. bounds: 0 80 . Time: 1.51762
+SUBGRAPH:O9 : O77. bounds: 0 80 . Time: 1.38895
+SUBGRAPH:O9 : O78. bounds: 0 80 . Time: 1.6157
+SUBGRAPH:O9 : O79. bounds: 0 22 . Time: 0.0612241
+SUBGRAPH:O9 : O82. bounds: 0 90 . Time: 2.12894
+SUBGRAPH:O9 : O83. bounds: 0 20 . Time: 0.0593429
+SUBGRAPH:O9 : O85. bounds: 0 90 . Time: 2.1558
+SUBGRAPH:O9 : O86. bounds: 0 90 . Time: 2.05436
+SUBGRAPH:O9 : O86.2. bounds: 0 90 . Time: 2.06992
+SUBGRAPH:O9 : O86.3. bounds: 0 90 . Time: 2.07125
+SUBGRAPH:O9 : O87. bounds: 0 80 . Time: 1.54435
+SUBGRAPH:O9 : O88. bounds: 0 70 . Time: 1.4109
+SUBGRAPH:O9 : O90. bounds: 0 80 . Time: 1.45186
+SUBGRAPH:O9 : O91. bounds: 0 20 . Time: 0.0628694
+SUBGRAPH:O9 : O96. bounds: 0 90 . Time: 2.09665
+SUBGRAPH:O9 : O97. bounds: 0 60 . Time: 1.06484
+SUBGRAPH:O9 : O98. bounds: 0 80 . Time: 1.45415
+SUBGRAPH:O9 : O99. bounds: 0 100 . Time: 2.83578
+SUBGRAPH:O9 : O100. bounds: 0 90 . Time: 2.17932
+time: 152.325 Method: SUBGRAPH
+
+NODE:O8 : O173. bounds: 15 32 . Time: 0.117556
+NODE:O8 : O174 ab. bounds: 4 8 . Time: 6.8e-05
+NODE:O8 : O174 ac. bounds: 4 8 . Time: 4.99e-05
+NODE:O8 : O175. bounds: 9 25 . Time: 0.0002968
+NODE:O8 : O176. bounds: 3 17 . Time: 0.0001881
+NODE:O8 : O177. bounds: 12 19 . Time: 0.0001785
+NODE:O8 : O178. bounds: 15 27 . Time: 0.0002451
+NODE:O8 : O180. bounds: 12 21 . Time: 0.0001779
+NODE:O8 : O181. bounds: 15 33 . Time: 0.0002372
+NODE:O8 : O182. bounds: 4 8 . Time: 5.38e-05
+NODE:O8 : O183. bounds: 12 35 . Time: 0.000244
+NODE:O8 : O184. bounds: 12 19 . Time: 0.0001772
+NODE:O8 : O185. bounds: 15 26 . Time: 0.0002514
+NODE:O8 : O186. bounds: 12 21 . Time: 0.0002124
+NODE:O8 : O187. bounds: 4 12 . Time: 8.57e-05
+NODE:O9 : O9 a. bounds: 0 10 . Time: 0.0003881
+NODE:O9 : O10. bounds: 25 42 . Time: 0.0728382
+NODE:O9 : O11. bounds: 20 41 . Time: 0.0005998
+NODE:O9 : O12. bounds: 20 33 . Time: 0.0012292
+NODE:O9 : O13. bounds: 25 48 . Time: 0.0004759
+NODE:O9 : O15. bounds: 15 23 . Time: 0.0002496
+NODE:O9 : O16. bounds: 25 50 . Time: 0.0004925
+NODE:O9 : O16.2. bounds: 20 33 . Time: 0.0003878
+NODE:O9 : O16.3. bounds: 20 33 . Time: 0.000409
+NODE:O9 : O17. bounds: 15 40 . Time: 0.0005037
+NODE:O9 : O18 A. bounds: 25 45 . Time: 0.000492
+NODE:O9 : O18 A1. bounds: 30 62 . Time: 0.0005449
+NODE:O9 : O18 A1A2. bounds: 30 69 . Time: 0.0005676
+NODE:O9 : O18 ab. bounds: 25 46 . Time: 0.0004665
+NODE:O9 : O18 ac. bounds: 25 45 . Time: 0.0004865
+NODE:O9 : O18 B. bounds: 25 46 . Time: 0.0004647
+NODE:O9 : O18 B1. bounds: 30 65 . Time: 0.0005668
+NODE:O9 : O19 ab. bounds: 5 8 . Time: 7.18e-05
+NODE:O9 : O20 ab. bounds: 10 17 . Time: 0.0001401
+NODE:O9 : O20 ac. bounds: 15 34 . Time: 0.0001852
+NODE:O9 : O21. bounds: 25 54 . Time: 0.0004144
+NODE:O9 : O22. bounds: 5 10 . Time: 7.17e-05
+NODE:O9 : O23 A. bounds: 30 63 . Time: 0.000544
+NODE:O9 : O24. bounds: 20 38 . Time: 0.0003368
+NODE:O9 : O25. bounds: 25 54 . Time: 0.0504249
+NODE:O9 : O26. bounds: 15 26 . Time: 0.0002615
+NODE:O9 : O27. bounds: 30 71 . Time: 0.0004585
+NODE:O9 : O28 ab. bounds: 20 34 . Time: 0.0003908
+NODE:O9 : O28 ac. bounds: 20 33 . Time: 0.0003832
+NODE:O9 : O29. bounds: 30 66 . Time: 0.0006197
+NODE:O9 : O30. bounds: 20 45 . Time: 0.0003154
+NODE:O9 : O32. bounds: 5 10 . Time: 6.83e-05
+NODE:O9 : O35. bounds: 6 10 . Time: 7.19e-05
+NODE:O9 : O36. bounds: 20 50 . Time: 0.0004101
+NODE:O9 : O37. bounds: 25 46 . Time: 0.0004723
+NODE:O9 : O38. bounds: 25 53 . Time: 0.0004865
+NODE:O9 : O39. bounds: 20 48 . Time: 0.0004696
+NODE:O9 : O40. bounds: 20 35 . Time: 0.0003885
+NODE:O9 : O41. bounds: 6 14 . Time: 7.98e-05
+NODE:O9 : O42. bounds: 25 43 . Time: 0.0004506
+NODE:O9 : O43. bounds: 20 46 . Time: 0.000499
+NODE:O9 : O44. bounds: 15 40 . Time: 0.0004709
+NODE:O9 : O45. bounds: 15 23 . Time: 0.0002488
+NODE:O9 : O45 rel. bounds: 15 23 . Time: 0.000303
+NODE:O9 : O46. bounds: 20 38 . Time: 0.0003935
+NODE:O9 : O48. bounds: 25 46 . Time: 0.0004886
+NODE:O9 : O49. bounds: 20 35 . Time: 0.0003866
+NODE:O9 : O52. bounds: 10 16 . Time: 0.0001406
+NODE:O9 : O53. bounds: 25 54 . Time: 0.0004889
+NODE:O9 : O55. bounds: 25 46 . Time: 0.0004348
+NODE:O9 : O56. bounds: 20 38 . Time: 0.0003159
+NODE:O9 : O58. bounds: 15 33 . Time: 0.0509102
+NODE:O9 : O59. bounds: 15 39 . Time: 0.0005353
+NODE:O9 : O61. bounds: 15 28 . Time: 0.0002956
+NODE:O9 : O62. bounds: 25 55 . Time: 0.0003845
+NODE:O9 : O64. bounds: 25 51 . Time: 0.0005166
+NODE:O9 : O65. bounds: 5 10 . Time: 7.34e-05
+NODE:O9 : O66. bounds: 5 8 . Time: 0.0001616
+NODE:O9 : O68. bounds: 4 8 . Time: 8.79e-05
+NODE:O9 : O69. bounds: 5 7 . Time: 6.8e-05
+NODE:O9 : O70. bounds: 25 44 . Time: 0.0006091
+NODE:O9 : O71. bounds: 20 36 . Time: 0.0003868
+NODE:O9 : O73. bounds: 20 50 . Time: 0.0033657
+NODE:O9 : O73 ab. bounds: 15 40 . Time: 0.0434626
+NODE:O9 : O74. bounds: 20 38 . Time: 0.0003195
+NODE:O9 : O75. bounds: 20 44 . Time: 0.000343
+NODE:O9 : O76. bounds: 20 38 . Time: 0.0003978
+NODE:O9 : O77. bounds: 10 22 . Time: 0.0004156
+NODE:O9 : O78. bounds: 15 33 . Time: 0.0003927
+NODE:O9 : O79. bounds: 6 14 . Time: 7.54e-05
+NODE:O9 : O82. bounds: 25 55 . Time: 0.0004682
+NODE:O9 : O83. bounds: 5 10 . Time: 0.0001022
+NODE:O9 : O85. bounds: 25 50 . Time: 0.0004692
+NODE:O9 : O86. bounds: 25 51 . Time: 0.0004952
+NODE:O9 : O86.2. bounds: 25 41 . Time: 0.0004857
+NODE:O9 : O86.3. bounds: 25 51 . Time: 0.0004995
+NODE:O9 : O87. bounds: 20 34 . Time: 0.0004464
+NODE:O9 : O88. bounds: 10 26 . Time: 0.0003165
+NODE:O9 : O90. bounds: 20 33 . Time: 0.0004204
+NODE:O9 : O91. bounds: 5 10 . Time: 7.59e-05
+NODE:O9 : O96. bounds: 25 45 . Time: 0.0004741
+NODE:O9 : O97. bounds: 20 45 . Time: 0.000262
+NODE:O9 : O98. bounds: 20 34 . Time: 0.0003964
+NODE:O9 : O99. bounds: 30 69 . Time: 0.0005467
+NODE:O9 : O100. bounds: 25 41 . Time: 0.0004982
+time: 0.30878 Method: NODE
+
+REFINE:O8 : O173. bounds: 0 28 . Time: 0.119105
+REFINE:O8 : O174 ab. bounds: 0 7 . Time: 0.0004316
+REFINE:O8 : O174 ac. bounds: 0 7 . Time: 0.0006207
+REFINE:O8 : O175. bounds: 0 23 . Time: 0.120437
+REFINE:O8 : O176. bounds: 0 13 . Time: 0.0585219
+REFINE:O8 : O177. bounds: 0 20 . Time: 0.0618036
+REFINE:O8 : O178. bounds: 0 31 . Time: 0.11588
+REFINE:O8 : O180. bounds: 0 22 . Time: 0.0618738
+REFINE:O8 : O181. bounds: 0 31 . Time: 0.114048
+REFINE:O8 : O182. bounds: 0 8 . Time: 0.0003087
+REFINE:O8 : O183. bounds: 0 32 . Time: 0.137448
+REFINE:O8 : O184. bounds: 0 21 . Time: 0.0609555
+REFINE:O8 : O185. bounds: 0 30 . Time: 0.118471
+REFINE:O8 : O186. bounds: 0 23 . Time: 0.0601761
+REFINE:O8 : O187. bounds: 0 9 . Time: 0.0009905
+REFINE:O9 : O9 a. bounds: 0 14 . Time: 0.351346
+REFINE:O9 : O10. bounds: 0 46 . Time: 0.421293
+REFINE:O9 : O11. bounds: 0 44 . Time: 0.475755
+REFINE:O9 : O12. bounds: 0 41 . Time: 0.292776
+REFINE:O9 : O13. bounds: 0 46 . Time: 0.378953
+REFINE:O9 : O15. bounds: 0 29 . Time: 0.114763
+REFINE:O9 : O16. bounds: 0 46 . Time: 0.48206
+REFINE:O9 : O16.2. bounds: 0 37 . Time: 0.292983
+REFINE:O9 : O16.3. bounds: 0 36 . Time: 0.295578
+REFINE:O9 : O17. bounds: 0 37 . Time: 0.493373
+REFINE:O9 : O18 A. bounds: 0 50 . Time: 0.479846
+REFINE:O9 : O18 A1. bounds: 0 56 . Time: 0.827429
+REFINE:O9 : O18 A1A2. bounds: 0 60 . Time: 0.590344
+REFINE:O9 : O18 ab. bounds: 0 51 . Time: 0.50273
+REFINE:O9 : O18 ac. bounds: 0 53 . Time: 0.37122
+REFINE:O9 : O18 B. bounds: 0 50 . Time: 0.461244
+REFINE:O9 : O18 B1. bounds: 0 64 . Time: 0.480137
+REFINE:O9 : O19 ab. bounds: 0 6 . Time: 0.0010105
+REFINE:O9 : O20 ab. bounds: 0 17 . Time: 0.0070304
+REFINE:O9 : O20 ac. bounds: 0 29 . Time: 0.0504405
+REFINE:O9 : O21. bounds: 0 50 . Time: 0.329199
+REFINE:O9 : O22. bounds: 0 8 . Time: 0.0410658
+REFINE:O9 : O23 A. bounds: 0 57 . Time: 0.523106
+REFINE:O9 : O24. bounds: 0 36 . Time: 0.210832
+REFINE:O9 : O25. bounds: 0 50 . Time: 0.275395
+REFINE:O9 : O26. bounds: 0 30 . Time: 0.21844
+REFINE:O9 : O27. bounds: 0 60 . Time: 0.38826
+REFINE:O9 : O28 ab. bounds: 0 41 . Time: 0.248364
+REFINE:O9 : O28 ac. bounds: 0 33 . Time: 0.333828
+REFINE:O9 : O29. bounds: 0 62 . Time: 0.649055
+REFINE:O9 : O30. bounds: 0 39 . Time: 0.265085
+REFINE:O9 : O32. bounds: 0 10 . Time: 0.0004704
+REFINE:O9 : O35. bounds: 0 10 . Time: 0.0012985
+REFINE:O9 : O36. bounds: 0 44 . Time: 0.244465
+REFINE:O9 : O37. bounds: 0 52 . Time: 0.471854
+REFINE:O9 : O38. bounds: 0 54 . Time: 0.351406
+REFINE:O9 : O39. bounds: 0 42 . Time: 0.417398
+REFINE:O9 : O40. bounds: 0 39 . Time: 0.323355
+REFINE:O9 : O41. bounds: 0 10 . Time: 0.0013085
+REFINE:O9 : O42. bounds: 0 48 . Time: 0.514915
+REFINE:O9 : O43. bounds: 0 46 . Time: 0.451417
+REFINE:O9 : O44. bounds: 0 36 . Time: 0.441629
+REFINE:O9 : O45. bounds: 0 27 . Time: 0.0576942
+REFINE:O9 : O45 rel. bounds: 0 27 . Time: 0.133725
+REFINE:O9 : O46. bounds: 0 44 . Time: 0.192686
+REFINE:O9 : O48. bounds: 0 52 . Time: 0.456197
+REFINE:O9 : O49. bounds: 0 39 . Time: 0.232579
+REFINE:O9 : O52. bounds: 0 18 . Time: 0.0559782
+REFINE:O9 : O53. bounds: 0 49 . Time: 0.412964
+REFINE:O9 : O55. bounds: 0 48 . Time: 0.281574
+REFINE:O9 : O56. bounds: 0 39 . Time: 0.147726
+REFINE:O9 : O58. bounds: 0 38 . Time: 0.113941
+REFINE:O9 : O59. bounds: 0 40 . Time: 0.439164
+REFINE:O9 : O61. bounds: 0 33 . Time: 0.160925
+REFINE:O9 : O62. bounds: 0 49 . Time: 0.368024
+REFINE:O9 : O64. bounds: 0 49 . Time: 0.380232
+REFINE:O9 : O65. bounds: 0 8 . Time: 0.0010279
+REFINE:O9 : O66. bounds: 0 6 . Time: 0.0009981
+REFINE:O9 : O68. bounds: 0 7 . Time: 0.0020744
+REFINE:O9 : O69. bounds: 0 5 . Time: 0.0510784
+REFINE:O9 : O70. bounds: 0 52 . Time: 0.382276
+REFINE:O9 : O71. bounds: 0 42 . Time: 0.330228
+REFINE:O9 : O73. bounds: 0 45 . Time: 0.65207
+REFINE:O9 : O73 ab. bounds: 0 37 . Time: 0.495621
+REFINE:O9 : O74. bounds: 0 40 . Time: 0.241325
+REFINE:O9 : O75. bounds: 0 40 . Time: 0.179051
+REFINE:O9 : O76. bounds: 0 43 . Time: 0.226679
+REFINE:O9 : O77. bounds: 0 24 . Time: 0.266679
+REFINE:O9 : O78. bounds: 0 38 . Time: 0.28734
+REFINE:O9 : O79. bounds: 0 11 . Time: 0.0012912
+REFINE:O9 : O82. bounds: 0 53 . Time: 0.429926
+REFINE:O9 : O83. bounds: 0 10 . Time: 0.001021
+REFINE:O9 : O85. bounds: 0 46 . Time: 0.541765
+REFINE:O9 : O86. bounds: 0 49 . Time: 0.389059
+REFINE:O9 : O86.2. bounds: 0 45 . Time: 0.400893
+REFINE:O9 : O86.3. bounds: 0 48 . Time: 0.475973
+REFINE:O9 : O87. bounds: 0 39 . Time: 0.232344
+REFINE:O9 : O88. bounds: 0 29 . Time: 0.113868
+REFINE:O9 : O90. bounds: 0 34 . Time: 0.400431
+REFINE:O9 : O91. bounds: 0 10 . Time: 0.0007665
+REFINE:O9 : O96. bounds: 0 51 . Time: 0.308419
+REFINE:O9 : O97. bounds: 0 40 . Time: 0.12042
+REFINE:O9 : O98. bounds: 0 37 . Time: 0.297902
+REFINE:O9 : O99. bounds: 0 54 . Time: 0.742518
+REFINE:O9 : O100. bounds: 0 46 . Time: 0.486343
+time: 26.5965 Method: REFINE
+
+BP_BEAM:O8 : O173. bounds: 0 30 . Time: 0.0047491
+BP_BEAM:O8 : O174 ab. bounds: 0 7 . Time: 0.050886
+BP_BEAM:O8 : O174 ac. bounds: 0 7 . Time: 0.0011803
+BP_BEAM:O8 : O175. bounds: 0 25 . Time: 0.0489059
+BP_BEAM:O8 : O176. bounds: 0 17 . Time: 0.0036596
+BP_BEAM:O8 : O177. bounds: 0 27 . Time: 0.0458715
+BP_BEAM:O8 : O178. bounds: 0 33 . Time: 0.0076161
+BP_BEAM:O8 : O180. bounds: 0 26 . Time: 0.0432163
+BP_BEAM:O8 : O181. bounds: 0 30 . Time: 0.0048779
+BP_BEAM:O8 : O182. bounds: 0 7 . Time: 0.0011608
+BP_BEAM:O8 : O183. bounds: 0 35 . Time: 0.0563341
+BP_BEAM:O8 : O184. bounds: 0 21 . Time: 0.0486479
+BP_BEAM:O8 : O185. bounds: 0 30 . Time: 0.0069794
+BP_BEAM:O8 : O186. bounds: 0 25 . Time: 0.0360415
+BP_BEAM:O8 : O187. bounds: 0 9 . Time: 0.0018097
+BP_BEAM:O9 : O9 a. bounds: 0 23 . Time: 0.057014
+BP_BEAM:O9 : O10. bounds: 0 52 . Time: 0.10237
+BP_BEAM:O9 : O11. bounds: 0 48 . Time: 0.0518458
+BP_BEAM:O9 : O12. bounds: 0 42 . Time: 0.110604
+BP_BEAM:O9 : O13. bounds: 0 51 . Time: 0.0932013
+BP_BEAM:O9 : O15. bounds: 0 29 . Time: 0.005508
+BP_BEAM:O9 : O16. bounds: 0 52 . Time: 0.10602
+BP_BEAM:O9 : O16.2. bounds: 0 44 . Time: 0.0636393
+BP_BEAM:O9 : O16.3. bounds: 0 40 . Time: 0.0510714
+BP_BEAM:O9 : O17. bounds: 0 42 . Time: 0.0937403
+BP_BEAM:O9 : O18 A. bounds: 0 46 . Time: 0.0728441
+BP_BEAM:O9 : O18 A1. bounds: 0 60 . Time: 0.10704
+BP_BEAM:O9 : O18 A1A2. bounds: 0 62 . Time: 0.114156
+BP_BEAM:O9 : O18 ab. bounds: 0 56 . Time: 0.11125
+BP_BEAM:O9 : O18 ac. bounds: 0 53 . Time: 0.104928
+BP_BEAM:O9 : O18 B. bounds: 0 54 . Time: 0.0532049
+BP_BEAM:O9 : O18 B1. bounds: 0 62 . Time: 0.107325
+BP_BEAM:O9 : O19 ab. bounds: 0 6 . Time: 0.0013679
+BP_BEAM:O9 : O20 ab. bounds: 0 21 . Time: 0.0026445
+BP_BEAM:O9 : O20 ac. bounds: 0 29 . Time: 0.0440748
+BP_BEAM:O9 : O21. bounds: 0 53 . Time: 0.0591319
+BP_BEAM:O9 : O22. bounds: 0 8 . Time: 0.05192
+BP_BEAM:O9 : O23 A. bounds: 0 62 . Time: 0.109881
+BP_BEAM:O9 : O24. bounds: 0 38 . Time: 0.0495406
+BP_BEAM:O9 : O25. bounds: 0 51 . Time: 0.0626452
+BP_BEAM:O9 : O26. bounds: 0 34 . Time: 0.0057999
+BP_BEAM:O9 : O27. bounds: 0 61 . Time: 0.0893494
+BP_BEAM:O9 : O28 ab. bounds: 0 46 . Time: 0.0974207
+BP_BEAM:O9 : O28 ac. bounds: 0 41 . Time: 0.0579589
+BP_BEAM:O9 : O29. bounds: 0 65 . Time: 0.113231
+BP_BEAM:O9 : O30. bounds: 0 43 . Time: 0.0939398
+BP_BEAM:O9 : O32. bounds: 0 10 . Time: 0.0301934
+BP_BEAM:O9 : O35. bounds: 0 10 . Time: 0.0022311
+BP_BEAM:O9 : O36. bounds: 0 50 . Time: 0.104919
+BP_BEAM:O9 : O37. bounds: 0 55 . Time: 0.0857838
+BP_BEAM:O9 : O38. bounds: 0 50 . Time: 0.0550182
+BP_BEAM:O9 : O39. bounds: 0 50 . Time: 0.0942631
+BP_BEAM:O9 : O40. bounds: 0 45 . Time: 0.0484689
+BP_BEAM:O9 : O41. bounds: 0 10 . Time: 0.001967
+BP_BEAM:O9 : O42. bounds: 0 48 . Time: 0.0525124
+BP_BEAM:O9 : O43. bounds: 0 47 . Time: 0.0727963
+BP_BEAM:O9 : O44. bounds: 0 44 . Time: 0.104168
+BP_BEAM:O9 : O45. bounds: 0 27 . Time: 0.0059669
+BP_BEAM:O9 : O45 rel. bounds: 0 31 . Time: 0.0547238
+BP_BEAM:O9 : O46. bounds: 0 46 . Time: 0.0586942
+BP_BEAM:O9 : O48. bounds: 0 55 . Time: 0.0563827
+BP_BEAM:O9 : O49. bounds: 0 40 . Time: 0.0592893
+BP_BEAM:O9 : O52. bounds: 0 20 . Time: 0.0341044
+BP_BEAM:O9 : O53. bounds: 0 49 . Time: 0.063945
+BP_BEAM:O9 : O55. bounds: 0 52 . Time: 0.106826
+BP_BEAM:O9 : O56. bounds: 0 39 . Time: 0.0594125
+BP_BEAM:O9 : O58. bounds: 0 38 . Time: 0.0569228
+BP_BEAM:O9 : O59. bounds: 0 45 . Time: 0.094362
+BP_BEAM:O9 : O61. bounds: 0 34 . Time: 0.049357
+BP_BEAM:O9 : O62. bounds: 0 50 . Time: 0.0518021
+BP_BEAM:O9 : O64. bounds: 0 54 . Time: 0.106373
+BP_BEAM:O9 : O65. bounds: 0 8 . Time: 0.001015
+BP_BEAM:O9 : O66. bounds: 0 8 . Time: 0.0018288
+BP_BEAM:O9 : O68. bounds: 0 10 . Time: 0.0010591
+BP_BEAM:O9 : O69. bounds: 0 5 . Time: 0.0013047
+BP_BEAM:O9 : O70. bounds: 0 53 . Time: 0.0510501
+BP_BEAM:O9 : O71. bounds: 0 44 . Time: 0.10171
+BP_BEAM:O9 : O73. bounds: 0 50 . Time: 0.117596
+BP_BEAM:O9 : O73 ab. bounds: 0 39 . Time: 0.0760265
+BP_BEAM:O9 : O74. bounds: 0 46 . Time: 0.0519508
+BP_BEAM:O9 : O75. bounds: 0 42 . Time: 0.0501761
+BP_BEAM:O9 : O76. bounds: 0 45 . Time: 0.132252
+BP_BEAM:O9 : O77. bounds: 0 29 . Time: 0.0505047
+BP_BEAM:O9 : O78. bounds: 0 40 . Time: 0.0493937
+BP_BEAM:O9 : O79. bounds: 0 10 . Time: 0.0520482
+BP_BEAM:O9 : O82. bounds: 0 55 . Time: 0.0514719
+BP_BEAM:O9 : O83. bounds: 0 10 . Time: 0.0022904
+BP_BEAM:O9 : O85. bounds: 0 53 . Time: 0.0542667
+BP_BEAM:O9 : O86. bounds: 0 45 . Time: 0.106773
+BP_BEAM:O9 : O86.2. bounds: 0 48 . Time: 0.168759
+BP_BEAM:O9 : O86.3. bounds: 0 49 . Time: 0.0748144
+BP_BEAM:O9 : O87. bounds: 0 45 . Time: 0.123828
+BP_BEAM:O9 : O88. bounds: 0 35 . Time: 0.0493701
+BP_BEAM:O9 : O90. bounds: 0 35 . Time: 0.0662215
+BP_BEAM:O9 : O91. bounds: 0 9 . Time: 0.0019833
+BP_BEAM:O9 : O96. bounds: 0 51 . Time: 0.103965
+BP_BEAM:O9 : O97. bounds: 0 40 . Time: 0.0491701
+BP_BEAM:O9 : O98. bounds: 0 42 . Time: 0.0407802
+BP_BEAM:O9 : O99. bounds: 0 61 . Time: 0.142832
+BP_BEAM:O9 : O100. bounds: 0 51 . Time: 0.0996363
+time: 5.99133 Method: BP_BEAM
+
+SIMULATED_ANNEALING:O8 : O173. bounds: 0 31 . Time: 1.16559
+SIMULATED_ANNEALING:O8 : O174 ab. bounds: 0 7 . Time: 0.324528
+SIMULATED_ANNEALING:O8 : O174 ac. bounds: 0 7 . Time: 0.330899
+SIMULATED_ANNEALING:O8 : O175. bounds: 0 27 . Time: 1.40855
+SIMULATED_ANNEALING:O8 : O176. bounds: 0 13 . Time: 1.02681
+SIMULATED_ANNEALING:O8 : O177. bounds: 0 19 . Time: 1.04255
+SIMULATED_ANNEALING:O8 : O178. bounds: 0 31 . Time: 1.51975
+SIMULATED_ANNEALING:O8 : O180. bounds: 0 26 . Time: 1.03301
+SIMULATED_ANNEALING:O8 : O181. bounds: 0 40 . Time: 1.23839
+SIMULATED_ANNEALING:O8 : O182. bounds: 0 8 . Time: 0.404029
+SIMULATED_ANNEALING:O8 : O183. bounds: 0 32 . Time: 1.37738
+SIMULATED_ANNEALING:O8 : O184. bounds: 0 19 . Time: 1.03878
+SIMULATED_ANNEALING:O8 : O185. bounds: 0 35 . Time: 1.46187
+SIMULATED_ANNEALING:O8 : O186. bounds: 0 21 . Time: 1.11301
+SIMULATED_ANNEALING:O8 : O187. bounds: 0 7 . Time: 0.46994
+SIMULATED_ANNEALING:O9 : O9 a. bounds: 0 22 . Time: 2.19275
+SIMULATED_ANNEALING:O9 : O10. bounds: 0 57 . Time: 2.8491
+SIMULATED_ANNEALING:O9 : O11. bounds: 0 58 . Time: 2.91898
+SIMULATED_ANNEALING:O9 : O12. bounds: 0 45 . Time: 2.29727
+SIMULATED_ANNEALING:O9 : O13. bounds: 0 53 . Time: 2.83827
+SIMULATED_ANNEALING:O9 : O15. bounds: 0 33 . Time: 1.46229
+SIMULATED_ANNEALING:O9 : O16. bounds: 0 59 . Time: 2.72482
+SIMULATED_ANNEALING:O9 : O16.2. bounds: 0 47 . Time: 2.35997
+SIMULATED_ANNEALING:O9 : O16.3. bounds: 0 46 . Time: 2.40969
+SIMULATED_ANNEALING:O9 : O17. bounds: 0 40 . Time: 2.86604
+SIMULATED_ANNEALING:O9 : O18 A. bounds: 0 60 . Time: 2.88499
+SIMULATED_ANNEALING:O9 : O18 A1. bounds: 0 70 . Time: 3.53653
+SIMULATED_ANNEALING:O9 : O18 A1A2. bounds: 0 68 . Time: 3.56507
+SIMULATED_ANNEALING:O9 : O18 ab. bounds: 0 69 . Time: 2.97303
+SIMULATED_ANNEALING:O9 : O18 ac. bounds: 0 60 . Time: 2.93856
+SIMULATED_ANNEALING:O9 : O18 B. bounds: 0 69 . Time: 2.98599
+SIMULATED_ANNEALING:O9 : O18 B1. bounds: 0 78 . Time: 3.44079
+SIMULATED_ANNEALING:O9 : O19 ab. bounds: 0 6 . Time: 0.578159
+SIMULATED_ANNEALING:O9 : O20 ab. bounds: 0 17 . Time: 0.967083
+SIMULATED_ANNEALING:O9 : O20 ac. bounds: 0 33 . Time: 1.20019
+SIMULATED_ANNEALING:O9 : O21. bounds: 0 60 . Time: 2.26733
+SIMULATED_ANNEALING:O9 : O22. bounds: 0 8 . Time: 0.481012
+SIMULATED_ANNEALING:O9 : O23 A. bounds: 0 74 . Time: 3.42392
+SIMULATED_ANNEALING:O9 : O24. bounds: 0 49 . Time: 2.13714
+SIMULATED_ANNEALING:O9 : O25. bounds: 0 62 . Time: 2.3241
+SIMULATED_ANNEALING:O9 : O26. bounds: 0 41 . Time: 1.60925
+SIMULATED_ANNEALING:O9 : O27. bounds: 0 70 . Time: 2.73854
+SIMULATED_ANNEALING:O9 : O28 ab. bounds: 0 50 . Time: 2.60871
+SIMULATED_ANNEALING:O9 : O28 ac. bounds: 0 45 . Time: 2.33154
+SIMULATED_ANNEALING:O9 : O29. bounds: 0 78 . Time: 3.45455
+SIMULATED_ANNEALING:O9 : O30. bounds: 0 53 . Time: 1.96513
+SIMULATED_ANNEALING:O9 : O32. bounds: 0 10 . Time: 0.423568
+SIMULATED_ANNEALING:O9 : O35. bounds: 0 8 . Time: 0.469101
+SIMULATED_ANNEALING:O9 : O36. bounds: 0 49 . Time: 2.17415
+SIMULATED_ANNEALING:O9 : O37. bounds: 0 46 . Time: 2.85115
+SIMULATED_ANNEALING:O9 : O38. bounds: 0 53 . Time: 2.57627
+SIMULATED_ANNEALING:O9 : O39. bounds: 0 53 . Time: 2.68672
+SIMULATED_ANNEALING:O9 : O40. bounds: 0 50 . Time: 2.14196
+SIMULATED_ANNEALING:O9 : O41. bounds: 0 14 . Time: 0.430057
+SIMULATED_ANNEALING:O9 : O42. bounds: 0 56 . Time: 2.55876
+SIMULATED_ANNEALING:O9 : O43. bounds: 0 60 . Time: 2.58551
+SIMULATED_ANNEALING:O9 : O44. bounds: 0 44 . Time: 2.56722
+SIMULATED_ANNEALING:O9 : O45. bounds: 0 33 . Time: 1.39106
+SIMULATED_ANNEALING:O9 : O45 rel. bounds: 0 34 . Time: 1.39472
+SIMULATED_ANNEALING:O9 : O46. bounds: 0 45 . Time: 2.28987
+SIMULATED_ANNEALING:O9 : O48. bounds: 0 58 . Time: 2.75465
+SIMULATED_ANNEALING:O9 : O49. bounds: 0 50 . Time: 2.26551
+SIMULATED_ANNEALING:O9 : O52. bounds: 0 16 . Time: 0.815174
+SIMULATED_ANNEALING:O9 : O53. bounds: 0 65 . Time: 2.62818
+SIMULATED_ANNEALING:O9 : O55. bounds: 0 60 . Time: 2.07854
+SIMULATED_ANNEALING:O9 : O56. bounds: 0 49 . Time: 1.78655
+SIMULATED_ANNEALING:O9 : O58. bounds: 0 33 . Time: 1.76138
+SIMULATED_ANNEALING:O9 : O59. bounds: 0 52 . Time: 2.61758
+SIMULATED_ANNEALING:O9 : O61. bounds: 0 39 . Time: 1.41595
+SIMULATED_ANNEALING:O9 : O62. bounds: 0 56 . Time: 2.12333
+SIMULATED_ANNEALING:O9 : O64. bounds: 0 59 . Time: 2.70744
+SIMULATED_ANNEALING:O9 : O65. bounds: 0 13 . Time: 0.44566
+SIMULATED_ANNEALING:O9 : O66. bounds: 0 6 . Time: 0.523703
+SIMULATED_ANNEALING:O9 : O68. bounds: 0 7 . Time: 0.489296
+SIMULATED_ANNEALING:O9 : O69. bounds: 0 5 . Time: 0.435692
+SIMULATED_ANNEALING:O9 : O70. bounds: 0 64 . Time: 2.53107
+SIMULATED_ANNEALING:O9 : O71. bounds: 0 36 . Time: 2.29661
+SIMULATED_ANNEALING:O9 : O73. bounds: 0 50 . Time: 2.99547
+SIMULATED_ANNEALING:O9 : O73 ab. bounds: 0 38 . Time: 2.53652
+SIMULATED_ANNEALING:O9 : O74. bounds: 0 38 . Time: 1.81231
+SIMULATED_ANNEALING:O9 : O75. bounds: 0 50 . Time: 1.83553
+SIMULATED_ANNEALING:O9 : O76. bounds: 0 45 . Time: 2.41428
+SIMULATED_ANNEALING:O9 : O77. bounds: 0 36 . Time: 2.33528
+SIMULATED_ANNEALING:O9 : O78. bounds: 0 40 . Time: 2.38751
+SIMULATED_ANNEALING:O9 : O79. bounds: 0 10 . Time: 0.447044
+SIMULATED_ANNEALING:O9 : O82. bounds: 0 55 . Time: 2.7963
+SIMULATED_ANNEALING:O9 : O83. bounds: 0 10 . Time: 0.423586
+SIMULATED_ANNEALING:O9 : O85. bounds: 0 55 . Time: 2.74675
+SIMULATED_ANNEALING:O9 : O86. bounds: 0 55 . Time: 2.67344
+SIMULATED_ANNEALING:O9 : O86.2. bounds: 0 57 . Time: 2.63654
+SIMULATED_ANNEALING:O9 : O86.3. bounds: 0 55 . Time: 3.07143
+SIMULATED_ANNEALING:O9 : O87. bounds: 0 55 . Time: 3.71831
+SIMULATED_ANNEALING:O9 : O88. bounds: 0 37 . Time: 2.87561
+SIMULATED_ANNEALING:O9 : O90. bounds: 0 48 . Time: 3.24034
+SIMULATED_ANNEALING:O9 : O91. bounds: 0 12 . Time: 0.496394
+SIMULATED_ANNEALING:O9 : O96. bounds: 0 60 . Time: 2.95152
+SIMULATED_ANNEALING:O9 : O97. bounds: 0 48 . Time: 1.39947
+SIMULATED_ANNEALING:O9 : O98. bounds: 0 55 . Time: 2.36763
+SIMULATED_ANNEALING:O9 : O99. bounds: 0 59 . Time: 3.10193
+SIMULATED_ANNEALING:O9 : O100. bounds: 0 61 . Time: 2.92032
+time: 200.686 Method: SIMULATED_ANNEALING
+
+HED:O8 : O173. bounds: 19 inf . Time: 0.0024665
+HED:O8 : O174 ab. bounds: 4.5 inf . Time: 0.0001928
+HED:O8 : O174 ac. bounds: 4.5 inf . Time: 0.0001845
+HED:O8 : O175. bounds: 10.125 inf . Time: 0.0029588
+HED:O8 : O176. bounds: 3.875 inf . Time: 0.0419866
+HED:O8 : O177. bounds: 13.75 inf . Time: 0.0020461
+HED:O8 : O178. bounds: 26 inf . Time: 0.0031178
+HED:O8 : O180. bounds: 17.125 inf . Time: 0.0020117
+HED:O8 : O181. bounds: 23.25 inf . Time: 0.002491
+HED:O8 : O182. bounds: 5.75 inf . Time: 0.0001947
+HED:O8 : O183. bounds: 15.75 inf . Time: 0.0530387
+HED:O8 : O184. bounds: 13.75 inf . Time: 0.0020325
+HED:O8 : O185. bounds: 20.375 inf . Time: 0.003103
+HED:O8 : O186. bounds: 19 inf . Time: 0.0520456
+HED:O8 : O187. bounds: 4.25 inf . Time: 0.0005233
+HED:O9 : O9 a. bounds: 0 inf . Time: 0.0056069
+HED:O9 : O10. bounds: 22.5 inf . Time: 0.0467797
+HED:O9 : O11. bounds: 25 inf . Time: 0.0068372
+HED:O9 : O12. bounds: 24.5 inf . Time: 0.0455193
+HED:O9 : O13. bounds: 23.5 inf . Time: 0.067004
+HED:O9 : O15. bounds: 16.5 inf . Time: 0.0031592
+HED:O9 : O16. bounds: 31.75 inf . Time: 0.0468939
+HED:O9 : O16.2. bounds: 24.5 inf . Time: 0.0054117
+HED:O9 : O16.3. bounds: 24.5 inf . Time: 0.0455377
+HED:O9 : O17. bounds: 17.75 inf . Time: 0.0468973
+HED:O9 : O18 A. bounds: 30.75 inf . Time: 0.0073326
+HED:O9 : O18 A1. bounds: 38 inf . Time: 0.0609475
+HED:O9 : O18 A1A2. bounds: 38 inf . Time: 0.0585678
+HED:O9 : O18 ab. bounds: 33.75 inf . Time: 0.0608707
+HED:O9 : O18 ac. bounds: 30.75 inf . Time: 0.0586169
+HED:O9 : O18 B. bounds: 33.75 inf . Time: 0.0583883
+HED:O9 : O18 B1. bounds: 40 inf . Time: 0.0544228
+HED:O9 : O19 ab. bounds: 5.25 inf . Time: 0.0004023
+HED:O9 : O20 ab. bounds: 16.5 inf . Time: 0.0435959
+HED:O9 : O20 ac. bounds: 16.5 inf . Time: 0.0020663
+HED:O9 : O21. bounds: 27 inf . Time: 0.0456877
+HED:O9 : O22. bounds: 8.75 inf . Time: 0.0003641
+HED:O9 : O23 A. bounds: 40 inf . Time: 0.0488665
+HED:O9 : O24. bounds: 25.25 inf . Time: 0.0049371
+HED:O9 : O25. bounds: 30 inf . Time: 0.0549701
+HED:O9 : O26. bounds: 22.75 inf . Time: 0.0030943
+HED:O9 : O27. bounds: 32 inf . Time: 0.006118
+HED:O9 : O28 ab. bounds: 29.5 inf . Time: 0.0554847
+HED:O9 : O28 ac. bounds: 24.5 inf . Time: 0.0495528
+HED:O9 : O29. bounds: 40 inf . Time: 0.0482936
+HED:O9 : O30. bounds: 25.25 inf . Time: 0.0041356
+HED:O9 : O32. bounds: 12.5 inf . Time: 0.0003955
+HED:O9 : O35. bounds: 5.5 inf . Time: 0.0004374
+HED:O9 : O36. bounds: 18.5 inf . Time: 0.0651573
+HED:O9 : O37. bounds: 39.25 inf . Time: 0.0470434
+HED:O9 : O38. bounds: 39.25 inf . Time: 0.0068106
+HED:O9 : O39. bounds: 20.5 inf . Time: 0.0569008
+HED:O9 : O40. bounds: 29.25 inf . Time: 0.0054957
+HED:O9 : O41. bounds: 8 inf . Time: 0.0004661
+HED:O9 : O42. bounds: 27 inf . Time: 0.0467632
+HED:O9 : O43. bounds: 19.5 inf . Time: 0.0474704
+HED:O9 : O44. bounds: 17.75 inf . Time: 0.0669035
+HED:O9 : O45. bounds: 16.5 inf . Time: 0.0031564
+HED:O9 : O45 rel. bounds: 16.5 inf . Time: 0.0031195
+HED:O9 : O46. bounds: 40 inf . Time: 0.0454932
+HED:O9 : O48. bounds: 32.5 inf . Time: 0.007161
+HED:O9 : O49. bounds: 29.25 inf . Time: 0.054568
+HED:O9 : O52. bounds: 13.5 inf . Time: 0.0014379
+HED:O9 : O53. bounds: 29.5 inf . Time: 0.0912588
+HED:O9 : O55. bounds: 22.5 inf . Time: 0.0355852
+HED:O9 : O56. bounds: 25.25 inf . Time: 0.004092
+HED:O9 : O58. bounds: 20 inf . Time: 0.0468813
+HED:O9 : O59. bounds: 17 inf . Time: 0.0484907
+HED:O9 : O61. bounds: 28.75 inf . Time: 0.0033215
+HED:O9 : O62. bounds: 26.5 inf . Time: 0.0677751
+HED:O9 : O64. bounds: 31.25 inf . Time: 0.0394151
+HED:O9 : O65. bounds: 7.75 inf . Time: 0.0003802
+HED:O9 : O66. bounds: 5.5 inf . Time: 0.0004294
+HED:O9 : O68. bounds: 3 inf . Time: 0.0004839
+HED:O9 : O69. bounds: 5 inf . Time: 0.0003456
+HED:O9 : O70. bounds: 33.75 inf . Time: 0.0492563
+HED:O9 : O71. bounds: 35 inf . Time: 0.0468378
+HED:O9 : O73. bounds: 23.25 inf . Time: 0.007899
+HED:O9 : O73 ab. bounds: 13 inf . Time: 0.0468024
+HED:O9 : O74. bounds: 26.25 inf . Time: 0.0482757
+HED:O9 : O75. bounds: 27.5 inf . Time: 0.0041182
+HED:O9 : O76. bounds: 40 inf . Time: 0.0555429
+HED:O9 : O77. bounds: 11.5 inf . Time: 0.0060691
+HED:O9 : O78. bounds: 27.5 inf . Time: 0.0515638
+HED:O9 : O79. bounds: 7 inf . Time: 0.0003919
+HED:O9 : O82. bounds: 44.25 inf . Time: 0.0654864
+HED:O9 : O83. bounds: 12.5 inf . Time: 0.0004081
+HED:O9 : O85. bounds: 31.75 inf . Time: 0.0468989
+HED:O9 : O86. bounds: 27 inf . Time: 0.0721241
+HED:O9 : O86.2. bounds: 22.5 inf . Time: 0.0367751
+HED:O9 : O86.3. bounds: 27 inf . Time: 0.0579226
+HED:O9 : O87. bounds: 29.5 inf . Time: 0.0055583
+HED:O9 : O88. bounds: 12.75 inf . Time: 0.0541799
+HED:O9 : O90. bounds: 24.5 inf . Time: 0.0060473
+HED:O9 : O91. bounds: 10.25 inf . Time: 0.0004008
+HED:O9 : O96. bounds: 35.5 inf . Time: 0.0567518
+HED:O9 : O97. bounds: 26.5 inf . Time: 0.0027935
+HED:O9 : O98. bounds: 29.5 inf . Time: 0.0455823
+HED:O9 : O99. bounds: 26 inf . Time: 0.0610795
+HED:O9 : O100. bounds: 28.25 inf . Time: 0.0615315
+time: 2.90246 Method: HED
+
+STAR:O8 : O173. bounds: 12.75 26 . Time: 0.0042069
+STAR:O8 : O174 ab. bounds: 3.5 8 . Time: 0.0001755
+STAR:O8 : O174 ac. bounds: 3.5 8 . Time: 0.0001914
+STAR:O8 : O175. bounds: 6.75 25 . Time: 0.031778
+STAR:O8 : O176. bounds: 2.5 22 . Time: 0.0012421
+STAR:O8 : O177. bounds: 9 19 . Time: 0.0040291
+STAR:O8 : O178. bounds: 11.25 27 . Time: 0.0014624
+STAR:O8 : O180. bounds: 9 21 . Time: 0.0009811
+STAR:O8 : O181. bounds: 12.75 29 . Time: 0.0011279
+STAR:O8 : O182. bounds: 3.5 8 . Time: 0.0602212
+STAR:O8 : O183. bounds: 12 32 . Time: 0.0013305
+STAR:O8 : O184. bounds: 9 19 . Time: 0.0009047
+STAR:O8 : O185. bounds: 11.25 26 . Time: 0.0013205
+STAR:O8 : O186. bounds: 9 21 . Time: 0.0009586
+STAR:O8 : O187. bounds: 3 12 . Time: 0.0003448
+STAR:O9 : O9 a. bounds: 0 10 . Time: 0.0020361
+STAR:O9 : O10. bounds: 21.25 42 . Time: 0.0027241
+STAR:O9 : O11. bounds: 17.5 41 . Time: 0.0429185
+STAR:O9 : O12. bounds: 15 33 . Time: 0.0022759
+STAR:O9 : O13. bounds: 21.25 40 . Time: 0.0028436
+STAR:O9 : O15. bounds: 11.25 23 . Time: 0.0013506
+STAR:O9 : O16. bounds: 21.25 43 . Time: 0.0662535
+STAR:O9 : O16.2. bounds: 15 33 . Time: 0.0025128
+STAR:O9 : O16.3. bounds: 15 33 . Time: 0.0328019
+STAR:O9 : O17. bounds: 13.75 32 . Time: 0.003166
+STAR:O9 : O18 A. bounds: 21.25 45 . Time: 0.0030077
+STAR:O9 : O18 A1. bounds: 27.5 55 . Time: 0.061947
+STAR:O9 : O18 A1A2. bounds: 27.5 55 . Time: 0.0035545
+STAR:O9 : O18 ab. bounds: 21.25 46 . Time: 0.0029186
+STAR:O9 : O18 ac. bounds: 21.25 45 . Time: 0.0028863
+STAR:O9 : O18 B. bounds: 21.25 46 . Time: 0.0531049
+STAR:O9 : O18 B1. bounds: 27.5 56 . Time: 0.0035892
+STAR:O9 : O19 ab. bounds: 3.75 8 . Time: 0.0002567
+STAR:O9 : O20 ab. bounds: 7.5 17 . Time: 0.0007344
+STAR:O9 : O20 ac. bounds: 13.75 27 . Time: 0.0010271
+STAR:O9 : O21. bounds: 23.75 46 . Time: 0.002262
+STAR:O9 : O22. bounds: 3.75 10 . Time: 0.0002932
+STAR:O9 : O23 A. bounds: 27.5 56 . Time: 0.0435891
+STAR:O9 : O24. bounds: 17.5 38 . Time: 0.0018882
+STAR:O9 : O25. bounds: 19 46 . Time: 0.0023203
+STAR:O9 : O26. bounds: 11.25 26 . Time: 0.0014051
+STAR:O9 : O27. bounds: 24 58 . Time: 0.0628636
+STAR:O9 : O28 ab. bounds: 15 34 . Time: 0.0023305
+STAR:O9 : O28 ac. bounds: 15 33 . Time: 0.0023495
+STAR:O9 : O29. bounds: 27.5 66 . Time: 0.0035231
+STAR:O9 : O30. bounds: 17.5 38 . Time: 0.0418832
+STAR:O9 : O32. bounds: 3.75 10 . Time: 0.0002742
+STAR:O9 : O35. bounds: 5 10 . Time: 0.0003013
+STAR:O9 : O36. bounds: 20 52 . Time: 0.0022647
+STAR:O9 : O37. bounds: 21.25 46 . Time: 0.0029954
+STAR:O9 : O38. bounds: 21.25 46 . Time: 0.0530014
+STAR:O9 : O39. bounds: 17.5 38 . Time: 0.0029195
+STAR:O9 : O40. bounds: 15 35 . Time: 0.0026391
+STAR:O9 : O41. bounds: 5 10 . Time: 0.0002869
+STAR:O9 : O42. bounds: 21.25 43 . Time: 0.002957
+STAR:O9 : O43. bounds: 17.5 39 . Time: 0.053563
+STAR:O9 : O44. bounds: 13.75 32 . Time: 0.002965
+STAR:O9 : O45. bounds: 11.25 23 . Time: 0.0013891
+STAR:O9 : O45 rel. bounds: 11.25 23 . Time: 0.0014385
+STAR:O9 : O46. bounds: 15 38 . Time: 0.0524938
+STAR:O9 : O48. bounds: 21.25 46 . Time: 0.0029366
+STAR:O9 : O49. bounds: 15 35 . Time: 0.0025332
+STAR:O9 : O52. bounds: 7.5 16 . Time: 0.0007255
+STAR:O9 : O53. bounds: 21.25 46 . Time: 0.0429404
+STAR:O9 : O55. bounds: 23.75 46 . Time: 0.0023288
+STAR:O9 : O56. bounds: 17.5 38 . Time: 0.0018497
+STAR:O9 : O58. bounds: 13.75 33 . Time: 0.0019448
+STAR:O9 : O59. bounds: 13.75 34 . Time: 0.0028745
+STAR:O9 : O61. bounds: 11.25 28 . Time: 0.041558
+STAR:O9 : O62. bounds: 23.75 48 . Time: 0.0028459
+STAR:O9 : O64. bounds: 21.25 42 . Time: 0.0040698
+STAR:O9 : O65. bounds: 3.75 10 . Time: 0.0003026
+STAR:O9 : O66. bounds: 3.75 8 . Time: 0.0002695
+STAR:O9 : O68. bounds: 4 7 . Time: 0.0619641
+STAR:O9 : O69. bounds: 3.75 7 . Time: 0.0002743
+STAR:O9 : O70. bounds: 21.25 44 . Time: 0.0029958
+STAR:O9 : O71. bounds: 15 36 . Time: 0.0028199
+STAR:O9 : O73. bounds: 20 42 . Time: 0.0034259
+STAR:O9 : O73 ab. bounds: 13.75 32 . Time: 0.0577208
+STAR:O9 : O74. bounds: 17.5 38 . Time: 0.0437246
+STAR:O9 : O75. bounds: 17.5 36 . Time: 0.0019285
+STAR:O9 : O76. bounds: 15 38 . Time: 0.0024593
+STAR:O9 : O77. bounds: 7.5 22 . Time: 0.002349
+STAR:O9 : O78. bounds: 11.25 33 . Time: 0.0426003
+STAR:O9 : O79. bounds: 5 12 . Time: 0.0003215
+STAR:O9 : O82. bounds: 21.25 48 . Time: 0.0029508
+STAR:O9 : O83. bounds: 3.75 10 . Time: 0.0002759
+STAR:O9 : O85. bounds: 21.25 43 . Time: 0.0037351
+STAR:O9 : O86. bounds: 21.25 43 . Time: 0.0559493
+STAR:O9 : O86.2. bounds: 21.25 41 . Time: 0.0418276
+STAR:O9 : O86.3. bounds: 21.25 43 . Time: 0.0445734
+STAR:O9 : O87. bounds: 15 34 . Time: 0.0024951
+STAR:O9 : O88. bounds: 10 26 . Time: 0.0016997
+STAR:O9 : O90. bounds: 15 33 . Time: 0.0022764
+STAR:O9 : O91. bounds: 3.75 10 . Time: 0.0002531
+STAR:O9 : O96. bounds: 21.25 45 . Time: 0.0434642
+STAR:O9 : O97. bounds: 20 36 . Time: 0.0012972
+STAR:O9 : O98. bounds: 15 34 . Time: 0.0023533
+STAR:O9 : O99. bounds: 27.5 50 . Time: 0.0033048
+STAR:O9 : O100. bounds: 21.25 41 . Time: 0.043487
+time: 1.32616 Method: STAR
+
+
+FINAL RESULT:
+O8 : O173 . bounds: 23 26
+O8 : O174 ab . bounds: 6.5 7
+O8 : O174 ac . bounds: 6.5 7
+O8 : O175 . bounds: 13.0357 20
+O8 : O176 . bounds: 6.25207 11
+O8 : O177 . bounds: 17 19
+O8 : O178 . bounds: 26 27
+O8 : O180 . bounds: 18.0909 21
+O8 : O181 . bounds: 26.1071 29
+O8 : O182 . bounds: 7 7
+O8 : O183 . bounds: 23 27
+O8 : O184 . bounds: 17 19
+O8 : O185 . bounds: 22 26
+O8 : O186 . bounds: 20 21
+O8 : O187 . bounds: 6 7
+O9 : O9 a . bounds: 2.05263 9
+O9 : O10 . bounds: 39.5 42
+O9 : O11 . bounds: 37 41
+O9 : O12 . bounds: 27 33
+O9 : O13 . bounds: 31.5208 40
+O9 : O15 . bounds: 19 23
+O9 : O16 . bounds: 37 43
+O9 : O16.2 . bounds: 27 32
+O9 : O16.3 . bounds: 27 33
+O9 : O17 . bounds: 25.0208 32
+O9 : O18 A . bounds: 38.0208 45
+O9 : O18 A1 . bounds: 48.0172 53
+O9 : O18 A1A2 . bounds: 48.0172 55
+O9 : O18 ab . bounds: 42 46
+O9 : O18 ac . bounds: 38.0208 43
+O9 : O18 B . bounds: 42 46
+O9 : O18 B1 . bounds: 52 56
+O9 : O19 ab . bounds: 6 6
+O9 : O20 ab . bounds: 16.5 17
+O9 : O20 ac . bounds: 23.6786 27
+O9 : O21 . bounds: 41.5 45
+O9 : O22 . bounds: 8.75 8
+O9 : O23 A . bounds: 52 56
+O9 : O24 . bounds: 33.1316 36
+O9 : O25 . bounds: 44 46
+O9 : O26 . bounds: 24 26
+O9 : O27 . bounds: 53 57
+O9 : O28 ab . bounds: 32 34
+O9 : O28 ac . bounds: 27 33
+O9 : O29 . bounds: 52 57
+O9 : O30 . bounds: 33.1316 37
+O9 : O32 . bounds: 12.5 10
+O9 : O35 . bounds: 8 8
+O9 : O36 . bounds: 36.5 40
+O9 : O37 . bounds: 44 46
+O9 : O38 . bounds: 44 46
+O9 : O39 . bounds: 32 38
+O9 : O40 . bounds: 30.0263 35
+O9 : O41 . bounds: 10 10
+O9 : O42 . bounds: 37 43
+O9 : O43 . bounds: 37 39
+O9 : O44 . bounds: 25.0208 32
+O9 : O45 . bounds: 19 23
+O9 : O45 rel . bounds: 19 23
+O9 : O46 . bounds: 40 38
+O9 : O48 . bounds: 42.0833 46
+O9 : O49 . bounds: 30.0263 35
+O9 : O52 . bounds: 16 16
+O9 : O53 . bounds: 41.5 46
+O9 : O55 . bounds: 41.5 46
+O9 : O56 . bounds: 33.1316 36
+O9 : O58 . bounds: 30.5 33
+O9 : O59 . bounds: 32 34
+O9 : O61 . bounds: 28.75 28
+O9 : O62 . bounds: 40.7083 48
+O9 : O64 . bounds: 42 42
+O9 : O65 . bounds: 8 8
+O9 : O66 . bounds: 6 6
+O9 : O68 . bounds: 6.625 7
+O9 : O69 . bounds: 5 5
+O9 : O70 . bounds: 42 44
+O9 : O71 . bounds: 36 36
+O9 : O73 . bounds: 35 42
+O9 : O73 ab . bounds: 25 32
+O9 : O74 . bounds: 35.5 38
+O9 : O75 . bounds: 34 36
+O9 : O76 . bounds: 40 38
+O9 : O77 . bounds: 15.0263 22
+O9 : O78 . bounds: 30 33
+O9 : O79 . bounds: 9.34 10
+O9 : O82 . bounds: 45 48
+O9 : O83 . bounds: 12.5 10
+O9 : O85 . bounds: 39.1667 43
+O9 : O86 . bounds: 37 43
+O9 : O86.2 . bounds: 34.6042 40
+O9 : O86.3 . bounds: 37 43
+O9 : O87 . bounds: 32 34
+O9 : O88 . bounds: 24 26
+O9 : O90 . bounds: 27 33
+O9 : O91 . bounds: 10.25 9
+O9 : O96 . bounds: 40.0208 45
+O9 : O97 . bounds: 36 36
+O9 : O98 . bounds: 32 34
+O9 : O99 . bounds: 40.0172 50
+O9 : O100 . bounds: 37 41

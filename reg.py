@@ -1,5 +1,5 @@
-import re, collections
 import networkx as nx
+import re, collections
 import matplotlib.pyplot as plt
 from collections import namedtuple
 import numpy as np
@@ -49,7 +49,7 @@ def get_graph_strings():
         next_name, next_str = "", ""
         for line in file.readlines():
             if not re.search(r"\||-", line):
-                if not len(next_name) == 0 and not len(next_str) == 0:
+                if (not len(next_name) == 0 and not len(next_str) == 0):
                     valid_name = next_name.replace("\t","").replace("\n","")
                     _incr, name_postfix = 2, ""
                     while valid_name + name_postfix in graph_strings:
@@ -318,17 +318,17 @@ def parse_cpp_edit_dists(gs:dict):
     """
     parse batches
     """
-    mypath = "cpp_logs"
+    mypath = "gedlib_results"
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-    assert(len(onlyfiles)==176)
+    # assert(len(onlyfiles)==179)
     num_graphs = len(gs)
     cpp_edit_dists=np.zeros(shape=(num_graphs, num_graphs), dtype=np.float)
     num_entries=0
     graph_names = list(gs.keys())
     _i1check, _i2check, _i1reset, _i2reset = -1,-1, 0, 1
     # for logfilestr in onlyfiles:
-    logfiletemplate="log_BRANCH_batch_%i_2-33-12_17.3.20"
-    for batch_ind in range(176):
+    logfiletemplate="log_batch_%i_17h-28.6.20"
+    for batch_ind in range(178):
         assert(logfiletemplate%batch_ind in onlyfiles)
         with open(mypath+"/"+logfiletemplate%batch_ind) as logfile:
             lines = logfile.readlines()
@@ -357,7 +357,7 @@ def parse_cpp_edit_dists(gs:dict):
                 num_entries+=2
     assert(num_entries==num_graphs**2-num_graphs)
     dataset = pd.DataFrame(data=cpp_edit_dists, index=graph_names, columns=graph_names)
-    dataset.to_csv("cpp_edit_dists.csv")
+    dataset.to_csv("gedlib_edit_dists.csv")
     return cpp_edit_dists
 
 
@@ -378,7 +378,7 @@ if __name__=="__main__":
     # overall = (len(graphs)**2-len(graphs))//2
     # left = overall
     # stdout_orig = sys.stdout
-    # rep_data_file = "rep_data/graphs_rep_data_batch_%i.txt"
+    # rep_data_file = "repeated_pairs/rep_pairs_of_graphs_batch_%i.txt"
     # sys.stdout = open(rep_data_file % batch, "w+")
     # print(min(left*2, batch_sz*2))
     # for i in range(len(graphs)):
@@ -392,15 +392,13 @@ if __name__=="__main__":
     #             left -= num_pairs
     #             assert num_pairs == batch_sz
     #             num_pairs = 0
+    #             sys.stdout.close()
     #             sys.stdout = open(rep_data_file % batch, "w+")
     #             print(min(left*2, batch_sz*2))
     #     # print()
     # sys.stdout.close()
     # sys.stdout = stdout_orig
     
-    
-
-
     # calc_edit_distances(graphs)
 
     #17578

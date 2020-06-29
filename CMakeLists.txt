@@ -4,7 +4,8 @@ project(oantigens)
 set(GEDLIB_ROOT ${CMAKE_SOURCE_DIR}/gedlib)
 message("gedlib": ${GEDLIB_ROOT})
 
-find_package(Boost 1.69 REQUIRED COMPONENTS thread chrono system)
+# find_package(Boost 1.69 REQUIRED COMPONENTS thread chrono system)
+find_package(Boost 1.69 REQUIRED)
 
 include_directories(    
     ${GEDLIB_ROOT} 
