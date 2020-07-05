@@ -310,9 +310,10 @@ def print_repeated_pair_of_graphs(i,j):
     return True
 
 def get_edit_dist_value(lbf:float, ubf:float):
-    if lbf>ubf:
-        return ubf
-    return (lbf+ubf)/2
+    # if lbf>ubf:
+    #     return ubf
+    # return (lbf+ubf)/2
+    return lbf
 
 def parse_cpp_edit_dists(gs:dict):
     """
@@ -357,7 +358,7 @@ def parse_cpp_edit_dists(gs:dict):
                 num_entries+=2
     assert(num_entries==num_graphs**2-num_graphs)
     dataset = pd.DataFrame(data=cpp_edit_dists, index=graph_names, columns=graph_names)
-    dataset.to_csv("gedlib_edit_dists.csv")
+    dataset.to_csv("gedlib_lower.csv")
     return cpp_edit_dists
 
 
